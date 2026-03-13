@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Season</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>The Season 25-26</h1>
+    </header>
+
+    <main>
+        {% for jugador in jugadores %}
+            <div class="jugador{% if loop.first %} primer-lugar{% endif %}">
+
+                <div class="fila-jugador">
+                    <span class="posicion">{{ loop.index }}°</span>
+                    <span class="nombre">{{ jugador.nombre }}</span>
+                    <div class="total-right">
+                        <span class="puntos">{{ jugador.puntos }}</span>
+                        <span class="total-pj">{{ jugador.pj }} PJ</span>
+                    </div>
+                </div>
+
+                {% for equipo in jugador.equipos %}
+                <div class="fila-equipo">
+                    <div class="izq">
+                        {% if equipo.escudo %}
+                        <img class="escudo" src="{{ equipo.escudo }}" alt="{{ equipo.nombre }}">
+                        {% else %}
+                        <div class="escudo-placeholder"></div>
+                        {% endif %}
+                        <span class="equipo-nombre">{{ equipo.nombre }}</span>
+                    </div>
+                    {% if equipo.pendiente %}
+                    <span class="pendiente-tag">pendiente</span>
+                    {% else %}
+                    <span class="puntos-equipo">{{ equipo.puntos }} <span class="pj-inline">· {{ equipo.pj }} PJ</span></span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+
+            </div>
+        {% endfor %}
+    </main>
+
+
+</body>
+</html>

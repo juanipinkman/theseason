@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ── Shared header ── */
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.26;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ── Home ── */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 20px;
+    flex: 1;
+}
+
+
+.jugador {
+    background-color: #242424;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.primer-lugar {
+    border-color: #FFC906;
+}
+
+/* Top row: position · name · total */
+
+.fila-jugador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.posicion {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.nombre {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    flex: 1;
+}
+
+.total-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+
+.puntos {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.total-pj {
+    font-size: 11px;
+    font-weight: 400;
+    color: #888888;
+    line-height: 1.2;
+}
+
+/* 1° lugar: top row en amarillo */
+.primer-lugar .fila-jugador .posicion,
+.primer-lugar .fila-jugador .nombre,
+.primer-lugar .fila-jugador .puntos {
+    color: #FFC906;
+}
+
+/* Team rows */
+
+.fila-equipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding-left: 20px;
+}
+
+.izq {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.escudo {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.escudo-placeholder {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #444444;
+    flex-shrink: 0;
+}
+
+.equipo-nombre {
+    font-size: 12px;
+    font-weight: 400;
+    color: #cccccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.puntos-equipo {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.pj-inline {
+    font-size: 11px;
+    font-weight: 400;
+    color: #888888;
+}
+
+.pendiente-tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: #888888;
+    background-color: #333333;
+    border-radius: 4px;
+    padding: 2px 6px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* ── Detail page ── */
+
+.detalle-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    width: 100%;
+}
+
+.detalle-header h1 {
+    text-align: left;
+}
+
+.back-btn {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.detalle-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 12px 16px 76px;
+    flex: 1;
+}
+
+.liga-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+
+/* Pendiente row in detail */
+
+.pendiente-row {
+    background-color: #242424;
+    border-radius: 12px;
+    padding: 14px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pendiente-row .escudo-det {
+    opacity: 0.4;
+}
+
+.pendiente-row .equipo-det-nombre {
+    color: #666666;
+}
+
+.pendiente-badge {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 600;
+    color: #888888;
+    background-color: #333333;
+    border-radius: 4px;
+    padding: 2px 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+/* Scrollable table */
+
+.tabla-wrapper {
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+.tabla-rounds {
+    border-collapse: collapse;
+    width: max-content;
+    min-width: 100%;
+    background-color: #242424;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabla-rounds thead tr {
+    background-color: #1e1e1e;
+}
+
+.tabla-rounds th {
+    font-size: 11px;
+    font-weight: 600;
+    color: #888888;
+    padding: 8px 6px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Sticky first column */
+
+.col-equipo {
+    position: sticky;
+    left: 0;
+    background-color: inherit;
+    min-width: 160px;
+    max-width: 160px;
+    text-align: left;
+    padding: 12px;
+    z-index: 1;
+}
+
+thead .col-equipo {
+    background-color: #1e1e1e;
+}
+
+tbody .col-equipo {
+    background-color: #242424;
+}
+
+.col-round {
+    min-width: 32px;
+    width: 32px;
+    text-align: center;
+    padding: 0;
+}
+
+.equipo-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.escudo-det {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.escudo-placeholder-det {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #444444;
+    flex-shrink: 0;
+}
+
+.equipo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: hidden;
+}
+
+.equipo-det-nombre {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.equipo-det-pts {
+    font-size: 11px;
+    font-weight: 400;
+    color: #aaaaaa;
+}
+
+/* Result cells */
+
+.resultado-celda {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.resultado-win  { background-color: #1a3a1f; color: #4ade80; }
+.resultado-draw { background-color: #3a3010; color: #FFC906; }
+.resultado-loss { background-color: #3a1a1a; color: #f87171; }
+.resultado-vacio { background-color: transparent; }
+
