@@ -2,6 +2,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from flask import Flask, render_template
+from functools import lru_cache
 
 app = Flask(__name__)
 
@@ -127,6 +128,54 @@ def scrape_bbc_tabla(codigo, url):
         return None
 
 
+# Términos de búsqueda para TheSportsDB por nombre de equipo.
+# Hampton & Richmond Borough FC no existe en TheSportsDB → queda sin escudo (placeholder).
+SPORTSDB_TERMINOS = {
+    "Plymouth Argyle FC":         "Plymouth Argyle",
+    "Wigan Athletic FC":          "Wigan Athletic",
+    "AFC Wimbledon":              "AFC Wimbledon",
+    "Notts County FC":            "Notts County",
+    "Barrow AFC":                 "Barrow",
+    "Oldham Athletic AFC":        "Oldham Athletic",
+    "York City FC":               "York City",
+    "Boston United FC":           "Boston United",
+    "Carlisle United FC":         "Carlisle United",
+    "Kidderminster Harriers FC":  "Kidderminster Harriers",
+    "Hereford FC":                "Hereford",
+    "Chester FC":                 "Chester",
+    "Torquay United FC":          "Torquay United",
+    "Maidstone United FC":        "Maidstone United",
+}
+
+# Escudos hardcodeados para equipos no encontrados en TheSportsDB
+ESCUDOS_HARDCODEADOS = {
+    "Hampton & Richmond Borough FC": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Hampton_and_Richmond_Badge.png/250px-Hampton_and_Richmond_Badge.png",
+}
+
+
+@lru_cache(maxsize=None)
+def obtener_escudo_sportsdb(termino):
+    """Consulta TheSportsDB y devuelve la URL del escudo (strBadge).
+
+    Cachea el resultado en memoria para no repetir el request entre page loads.
+    Devuelve '' si no encuentra el equipo o si la llamada falla.
+    """
+    try:
+        r = requests.get(
+            "https://www.thesportsdb.com/api/v1/json/3/searchteams.php",
+            params={"t": termino},
+            timeout=5,
+        )
+        teams = r.json().get("teams") or []
+        if teams:
+            badge = teams[0].get("strBadge", "")
+            print(f"[SPORTSDB] {termino}: {badge[:60] if badge else 'sin escudo'}")
+            return badge
+    except Exception as e:
+        print(f"[ERROR] obtener_escudo_sportsdb({termino}): {e}")
+    return ""
+
+
 def _buscar_en_tabla(tabla, nombre_jugador):
     """Lookup con fallback substring: maneja 'Plymouth Argyle' ↔ 'Plymouth Argyle FC'.
 
@@ -171,6 +220,13 @@ def enriquecer_equipos(equipos_def, datos_por_liga):
         else:
             puntos, pj, escudo = 0, 0, ""
             pendiente = True
+
+        # Si no hay escudo: buscar en TheSportsDB o usar hardcodeado
+        if not escudo:
+            if eq["nombre"] in ESCUDOS_HARDCODEADOS:
+                escudo = ESCUDOS_HARDCODEADOS[eq["nombre"]]
+            elif eq["nombre"] in SPORTSDB_TERMINOS:
+                escudo = obtener_escudo_sportsdb(SPORTSDB_TERMINOS[eq["nombre"]])
 
         resultado.append({
             "liga":      eq["liga"],
