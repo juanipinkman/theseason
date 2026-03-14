@@ -39,6 +39,7 @@ BONUS = {
     "York City FC":            3,
     "Torquay United FC":       3,
     "Wrexham AFC":             6,
+    "Wigan Athletic FC":       3,
     "Barrow AFC":              3,
     "Hereford FC":             3,
     "Manchester United FC":    3,
