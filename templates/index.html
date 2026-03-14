@@ -37,6 +37,11 @@
                         {% endif %}
                         <span class="equipo-nombre">{{ equipo.nombre }}</span>
                     </div>
+                    {% if equipo.bonus %}
+                    <span class="bonus-tag">+{{ equipo.bonus }}</span>
+                    {% else %}
+                    <span class="bonus-vacio"></span>
+                    {% endif %}
                     {% if equipo.pendiente %}
                     <span class="pendiente-tag">pendiente</span>
                     {% else %}

@@ -30,6 +30,22 @@ SCRAPE_HEADERS = {
     )
 }
 
+# ── Puntos bonus hardcodeados ────────────────────────────────────────────────
+# Clave: nombre del equipo exacto. Valor: puntos bonus (entero).
+BONUS = {
+    "Chelsea FC":              3,
+    "Charlton Athletic FC":    3,
+    "Notts County FC":         3,
+    "York City FC":            3,
+    "Torquay United FC":       3,
+    "Wrexham AFC":             6,
+    "Barrow AFC":              3,
+    "Hereford FC":             3,
+    "Manchester United FC":    3,
+    "Leicester City FC":       3,
+    "Maidstone United FC":     3,
+}
+
 # ── Jugadores ───────────────────────────────────────────────────────────────
 jugadores = [
     {
@@ -235,6 +251,7 @@ def enriquecer_equipos(equipos_def, datos_por_liga):
             "puntos":    puntos,
             "pj":        pj,
             "pendiente": pendiente,
+            "bonus":     BONUS.get(eq["nombre"], 0),
             "id":        eq.get("id"),
             "codigo":    codigo,
         })
@@ -262,7 +279,7 @@ def index():
         equipos = enriquecer_equipos(j["equipos"], datos_por_liga)
         lista.append({
             "nombre":  j["nombre"],
-            "puntos":  sum(e["puntos"] for e in equipos),
+            "puntos":  sum(e["puntos"] + e["bonus"] for e in equipos),
             "pj":      sum(e["pj"] for e in equipos),
             "equipos": equipos,
         })
