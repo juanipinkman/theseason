@@ -23,12 +23,13 @@
                     <span class="nombre">{{ jugador.nombre }}</span>
                     <div class="total-right">
                         <span class="puntos">{{ jugador.puntos }}</span>
-                        <span class="total-pj">{{ jugador.pj }} PJ</span>
+                        <span class="total-pj">{{ jugador.pj }}</span>
                     </div>
                 </div>
 
                 {% for equipo in jugador.equipos %}
                 <div class="fila-equipo">
+                    <span class="live-dot{% if not equipo.en_vivo %} live-dot--oculto{% endif %}"></span>
                     <div class="izq">
                         {% if equipo.escudo %}
                         <img class="escudo" src="{{ equipo.escudo }}" alt="{{ equipo.nombre }}">
@@ -45,7 +46,8 @@
                     {% if equipo.pendiente %}
                     <span class="pendiente-tag">pendiente</span>
                     {% else %}
-                    <span class="puntos-equipo">{{ equipo.puntos }} <span class="pj-inline">· {{ equipo.pj }} PJ</span></span>
+                    <span class="puntos-equipo">{{ equipo.puntos }}</span>
+                    <span class="pj-inline">{{ equipo.pj }}</span>
                     {% endif %}
                 </div>
                 {% endfor %}

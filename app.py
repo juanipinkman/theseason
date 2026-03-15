@@ -1,8 +1,11 @@
+import datetime
+import json
 import re
 import requests
 from bs4 import BeautifulSoup
 from flask import Flask, render_template
 from functools import lru_cache
+from pathlib import Path
 
 app = Flask(__name__)
 
@@ -30,22 +33,16 @@ SCRAPE_HEADERS = {
     )
 }
 
-# ── Puntos bonus hardcodeados ────────────────────────────────────────────────
+# ── Puntos bonus desde bonus.json ────────────────────────────────────────────
 # Clave: nombre del equipo exacto. Valor: puntos bonus (entero).
-BONUS = {
-    "Chelsea FC":              3,
-    "Charlton Athletic FC":    3,
-    "Notts County FC":         3,
-    "York City FC":            3,
-    "Torquay United FC":       3,
-    "Wrexham AFC":             6,
-    "Wigan Athletic FC":       3,
-    "Barrow AFC":              3,
-    "Hereford FC":             3,
-    "Manchester United FC":    3,
-    "Leicester City FC":       3,
-    "Maidstone United FC":     3,
-}
+# Las claves que empiezan con "_" se ignoran (son comentarios/notas).
+def _cargar_bonus():
+    path = Path(__file__).parent / "bonus.json"
+    with open(path, encoding="utf-8") as f:
+        raw = json.load(f)
+    return {k: v for k, v in raw.items() if not k.startswith("_")}
+
+BONUS = _cargar_bonus()
 
 # ── Jugadores ───────────────────────────────────────────────────────────────
 jugadores = [
@@ -211,7 +208,7 @@ def _buscar_en_tabla(tabla, nombre_jugador):
     return None
 
 
-def enriquecer_equipos(equipos_def, datos_por_liga):
+def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None):
     """Combina definición de equipos con datos de API/scraping.
 
     datos_por_liga[codigo]:
@@ -253,10 +250,118 @@ def enriquecer_equipos(equipos_def, datos_por_liga):
             "pj":        pj,
             "pendiente": pendiente,
             "bonus":     BONUS.get(eq["nombre"], 0),
+            "en_vivo":   _equipo_en_vivo(eq["nombre"], equipos_en_vivo or set()),
             "id":        eq.get("id"),
             "codigo":    codigo,
         })
     return resultado
+
+
+# Mapeo de nombres abreviados/alternativos de BBC → nombre exacto en jugadores.
+# BBC usa nombres completos en visually-hidden, pero por si acaso aparecen abreviaciones.
+BBC_NOMBRES = {
+    # Premier League
+    "Man Utd":            "Manchester United FC",
+    "Manchester Utd":     "Manchester United FC",
+    "Man City":           "Manchester City FC",
+    "Wolves":             "Wolverhampton Wanderers FC",
+    "Spurs":              "Tottenham Hotspur FC",
+    "Newcastle":          "Newcastle United FC",
+    "Leeds":              "Leeds United FC",
+    "Leicester":          "Leicester City FC",
+    # Championship
+    "Sheff Utd":          "Sheffield United FC",
+    "Sheff Wed":          "Sheffield Wednesday FC",
+    "West Brom":          "West Bromwich Albion FC",
+    "QPR":                "Queens Park Rangers FC",
+    "Stoke":              "Stoke City FC",
+    "Swansea":            "Swansea City AFC",
+    "Middlesbrough":      "Middlesbrough FC",
+    "Coventry":           "Coventry City FC",
+    "Blackburn":          "Blackburn Rovers FC",
+    "Preston":            "Preston North End FC",
+    "Norwich":            "Norwich City FC",
+    "Watford":            "Watford FC",
+    # League One
+    "Wigan":              "Wigan Athletic FC",
+    "Plymouth":           "Plymouth Argyle FC",
+    "Wimbledon":          "AFC Wimbledon",
+    # League Two
+    "Notts Co":           "Notts County FC",
+    "Oldham":             "Oldham Athletic AFC",
+    # National League
+    "York":               "York City FC",
+    "Carlisle":           "Carlisle United FC",
+    "Boston":             "Boston United FC",
+    # National League North
+    "Kidderminster":      "Kidderminster Harriers FC",
+    "Chester":            "Chester FC",
+    "Hereford":           "Hereford FC",
+    # National League South
+    "Torquay":            "Torquay United FC",
+    "Maidstone":          "Maidstone United FC",
+    "Hampton":            "Hampton & Richmond Borough FC",
+}
+
+
+def scrape_equipos_en_vivo():
+    """Scrape BBC Sport scores-fixtures para detectar equipos con partido en curso.
+
+    URL: https://www.bbc.com/sport/football/scores-fixtures
+    Detecta partidos en vivo por texto "in progress" o "minutes" en la página.
+    Extrae nombres de local/visitante desde span.visually-hidden (BBC usa nombres
+    completos ahí, p.ej. "Liverpool" y "Manchester United").
+
+    Retorna set de nombres de jugadores que están en vivo (ya mapeados/normalizados).
+    Retorna set vacío si el scraping falla → en_vivo queda False para todos.
+    """
+    try:
+        r = requests.get(
+            "https://www.bbc.com/sport/football/scores-fixtures",
+            headers=SCRAPE_HEADERS,
+            timeout=10,
+        )
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        en_vivo = set()
+        # Detectar partidos en vivo por texto "in progress" o "minutes"
+        for text_node in soup.find_all(
+            string=lambda t: t and ("in progress" in t.lower() or "minutes" in t.lower())
+        ):
+            li = text_node.find_parent("li")
+            if not li:
+                continue
+            hidden = li.find_all("span", class_="visually-hidden")
+            # Estructura: hidden[0]="Home score, Away score"  hidden[1]=home  hidden[2]=away
+            if len(hidden) >= 3:
+                for nombre_bbc in (hidden[1].get_text(strip=True), hidden[2].get_text(strip=True)):
+                    en_vivo.add(nombre_bbc)
+
+        print(f"[LIVE] {len(en_vivo)} equipos en vivo (nombres BBC): {en_vivo if en_vivo else 'ninguno'}")
+        return en_vivo
+    except Exception as e:
+        print(f"[ERROR] scrape_equipos_en_vivo: {e}")
+        return set()
+
+
+def _equipo_en_vivo(nombre_jugador, equipos_en_vivo):
+    """Comprueba si un equipo está en vivo.
+
+    Orden de lookup:
+    1. Mapeo exacto BBC_NOMBRES (cubre abreviaciones como 'Man Utd')
+    2. Substring match bidireccional (cubre 'Chelsea' ↔ 'Chelsea FC')
+    """
+    nombre_lower = nombre_jugador.lower()
+    for bbc in equipos_en_vivo:
+        # 1. Mapeo explícito
+        if BBC_NOMBRES.get(bbc) == nombre_jugador:
+            return True
+        # 2. Substring match
+        bbc_lower = bbc.lower()
+        if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
+            return True
+    return False
 
 
 def cargar_todos_los_datos():
@@ -273,11 +378,12 @@ def cargar_todos_los_datos():
 
 @app.route("/")
 def index():
-    datos_por_liga = cargar_todos_los_datos()
+    datos_por_liga  = cargar_todos_los_datos()
+    equipos_en_vivo = scrape_equipos_en_vivo()
 
     lista = []
     for j in jugadores:
-        equipos = enriquecer_equipos(j["equipos"], datos_por_liga)
+        equipos = enriquecer_equipos(j["equipos"], datos_por_liga, equipos_en_vivo)
         lista.append({
             "nombre":  j["nombre"],
             "puntos":  sum(e["puntos"] + e["bonus"] for e in equipos),
