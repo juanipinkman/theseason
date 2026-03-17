@@ -21,32 +21,58 @@
                 <div class="fila-jugador">
                     <span class="posicion">{{ loop.index }}°</span>
                     <span class="nombre">{{ jugador.nombre }}</span>
-                    <div class="total-right">
-                        <span class="puntos">{{ jugador.puntos }}</span>
-                        <span class="total-pj">{{ jugador.pj }}</span>
-                    </div>
+                    {% if jugador.puntos_provisionales is not none %}
+                    <span class="puntos-prov{% if jugador.puntos_provisionales > 0 %} prov-verde{% endif %}">
+                        +{{ jugador.puntos_provisionales }}
+                    </span>
+                    {% else %}
+                    <span class="puntos-prov-placeholder"></span>
+                    {% endif %}
+                    <span class="puntos">{{ jugador.puntos }}</span>
+                    <span class="total-pj">{{ jugador.pj }}</span>
+                </div>
+
+                <div class="fila-col-header">
+                    <span class="col-escudo-spacer"></span>
+                    <span class="col-nombre-spacer"></span>
+                    <span class="col-header-marcador"></span>
+                    <span class="col-header-pts">Pts</span>
+                    <span class="col-header-bonus">⚡</span>
+                    <span class="col-header-pj">PJ</span>
                 </div>
 
                 {% for equipo in jugador.equipos %}
                 <div class="fila-equipo">
-                    <span class="live-dot{% if not equipo.en_vivo %} live-dot--oculto{% endif %}"></span>
-                    <div class="izq">
-                        {% if equipo.escudo %}
-                        <img class="escudo" src="{{ equipo.escudo }}" alt="{{ equipo.nombre }}">
+                    {% if equipo.escudo %}
+                    <img class="escudo" src="{{ equipo.escudo }}" alt="{{ equipo.nombre }}">
+                    {% else %}
+                    <div class="escudo-placeholder"></div>
+                    {% endif %}
+                    <span class="equipo-nombre">{{ equipo.nombre }}</span>
+                    {% if equipo.en_vivo and equipo.marcador_vivo %}
+                        {% if equipo.pts_provisionales == 3 %}
+                        <span class="marcador-vivo marcador-ganando">{{ equipo.marcador_vivo }}</span>
+                        {% elif equipo.pts_provisionales == 1 %}
+                        <span class="marcador-vivo marcador-empatando">{{ equipo.marcador_vivo }}</span>
                         {% else %}
-                        <div class="escudo-placeholder"></div>
+                        <span class="marcador-vivo marcador-perdiendo">{{ equipo.marcador_vivo }}</span>
                         {% endif %}
-                        <span class="equipo-nombre">{{ equipo.nombre }}</span>
-                    </div>
+                    {% else %}
+                    <span class="marcador-vivo-placeholder"></span>
+                    {% endif %}
+                    {% if equipo.pendiente %}
+                    <span class="pendiente-tag">pend.</span>
+                    {% else %}
+                    <span class="puntos-equipo">{{ equipo.puntos }}</span>
+                    {% endif %}
                     {% if equipo.bonus %}
                     <span class="bonus-tag">+{{ equipo.bonus }}</span>
                     {% else %}
                     <span class="bonus-vacio"></span>
                     {% endif %}
                     {% if equipo.pendiente %}
-                    <span class="pendiente-tag">pendiente</span>
+                    <span class="pj-inline pj-vacio"></span>
                     {% else %}
-                    <span class="puntos-equipo">{{ equipo.puntos }}</span>
                     <span class="pj-inline">{{ equipo.pj }}</span>
                     {% endif %}
                 </div>
@@ -55,7 +81,9 @@
             </div>
         {% endfor %}
     </main>
-
+    <footer>
+        <p> The Season 2026 &copy; Todos los derechos reservados. </p>
+    </footer>
 
 </body>
 </html>

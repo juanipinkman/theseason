@@ -208,7 +208,7 @@ def _buscar_en_tabla(tabla, nombre_jugador):
     return None
 
 
-def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None):
+def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_prov_dict=None):
     """Combina definición de equipos con datos de API/scraping.
 
     datos_por_liga[codigo]:
@@ -242,17 +242,24 @@ def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None):
             elif eq["nombre"] in SPORTSDB_TERMINOS:
                 escudo = obtener_escudo_sportsdb(SPORTSDB_TERMINOS[eq["nombre"]])
 
+        en_vivo   = _equipo_en_vivo(eq["nombre"], equipos_en_vivo or set())
+        prov_data = _puntos_prov_equipo(eq["nombre"], pts_prov_dict) if (pts_prov_dict is not None and en_vivo) else None
+        pts_prov     = prov_data["pts"]      if prov_data else None
+        marcador_vivo = prov_data["marcador"] if prov_data else None
+
         resultado.append({
-            "liga":      eq["liga"],
-            "nombre":    eq["nombre"],
-            "escudo":    escudo,
-            "puntos":    puntos,
-            "pj":        pj,
-            "pendiente": pendiente,
-            "bonus":     BONUS.get(eq["nombre"], 0),
-            "en_vivo":   _equipo_en_vivo(eq["nombre"], equipos_en_vivo or set()),
-            "id":        eq.get("id"),
-            "codigo":    codigo,
+            "liga":              eq["liga"],
+            "nombre":            eq["nombre"],
+            "escudo":            escudo,
+            "puntos":            puntos,
+            "pj":                pj,
+            "pendiente":         pendiente,
+            "bonus":             BONUS.get(eq["nombre"], 0),
+            "en_vivo":           en_vivo,
+            "pts_provisionales": pts_prov,
+            "marcador_vivo":     marcador_vivo,
+            "id":                eq.get("id"),
+            "codigo":            codigo,
         })
     return resultado
 
@@ -304,16 +311,57 @@ BBC_NOMBRES = {
 }
 
 
+# Competiciones permitidas para puntos en vivo (lowercase, coincidencia exacta).
+LIGAS_EN_VIVO = {
+    "premier league",
+    "championship",
+    "league one",
+    "league two",
+    "national league",
+    "national league north",
+    "national league south",
+}
+
+
+def _competicion_del_partido(li):
+    """Sube por el DOM desde un <li> de partido buscando el encabezado de competición más cercano.
+
+    BBC Sport agrupa los partidos bajo headings (h2–h5) o elementos con aria-label.
+    Estrategia: subir de <li> → <ul>/<ol> → contenedor → buscar hermano previo con heading.
+    Devuelve el texto normalizado del heading, o '' si no se encuentra.
+    """
+    node = li.parent  # normalmente <ul> u <ol>
+    while node and node.name not in ("body", "html", "[document]"):
+        # Buscar hermanos anteriores que sean o contengan un heading
+        for sib in node.previous_siblings:
+            if not hasattr(sib, "name"):
+                continue
+            if sib.name in ("h2", "h3", "h4", "h5"):
+                return sib.get_text(strip=True).lower()
+            heading = sib.find(["h2", "h3", "h4", "h5"])
+            if heading:
+                return heading.get_text(strip=True).lower()
+        # También revisar heading dentro del propio padre antes de subir más
+        parent = node.parent
+        if parent:
+            heading = parent.find(["h2", "h3", "h4", "h5"])
+            if heading:
+                return heading.get_text(strip=True).lower()
+        node = parent
+    return ""
+
+
 def scrape_equipos_en_vivo():
     """Scrape BBC Sport scores-fixtures para detectar equipos con partido en curso.
 
     URL: https://www.bbc.com/sport/football/scores-fixtures
-    Detecta partidos en vivo por texto "in progress" o "minutes" en la página.
-    Extrae nombres de local/visitante desde span.visually-hidden (BBC usa nombres
-    completos ahí, p.ej. "Liverpool" y "Manchester United").
+    Solo considera partidos de las ligas inglesas definidas en LIGAS_EN_VIVO.
+    Ignora Champions League, FA Cup, amistosos y cualquier otra competición.
 
-    Retorna set de nombres de jugadores que están en vivo (ya mapeados/normalizados).
-    Retorna set vacío si el scraping falla → en_vivo queda False para todos.
+    Retorna (en_vivo_set, pts_prov_dict):
+      - en_vivo_set: set de nombres BBC de equipos en partido en curso
+      - pts_prov_dict: {bbc_nombre: {"pts": 3|1|0, "marcador": "X-Y"}}
+    Retorna None si el scraping falla → en_vivo queda False para todos.
     """
     try:
         r = requests.get(
@@ -325,24 +373,62 @@ def scrape_equipos_en_vivo():
         soup = BeautifulSoup(r.text, "html.parser")
 
         en_vivo = set()
-        # Detectar partidos en vivo por texto "in progress" o "minutes"
+        pts_prov = {}  # bbc_nombre → {"pts": 3|1|0, "marcador": "X-Y"}
+
         for text_node in soup.find_all(
             string=lambda t: t and ("in progress" in t.lower() or "minutes" in t.lower())
         ):
             li = text_node.find_parent("li")
             if not li:
                 continue
+
+            # Verificar que el partido pertenece a una liga permitida
+            competicion = _competicion_del_partido(li)
+            if competicion not in LIGAS_EN_VIVO:
+                print(f"[LIVE-SKIP] partido ignorado (competición: '{competicion}')")
+                continue
+
             hidden = li.find_all("span", class_="visually-hidden")
             # Estructura: hidden[0]="Home score, Away score"  hidden[1]=home  hidden[2]=away
             if len(hidden) >= 3:
-                for nombre_bbc in (hidden[1].get_text(strip=True), hidden[2].get_text(strip=True)):
-                    en_vivo.add(nombre_bbc)
+                home_name = hidden[1].get_text(strip=True)
+                away_name = hidden[2].get_text(strip=True)
+                en_vivo.add(home_name)
+                en_vivo.add(away_name)
 
-        print(f"[LIVE] {len(en_vivo)} equipos en vivo (nombres BBC): {en_vivo if en_vivo else 'ninguno'}")
-        return en_vivo
+                score_text = hidden[0].get_text(strip=True)
+                nums = re.findall(r'\d+', score_text)
+                if len(nums) >= 2:
+                    home_score, away_score = int(nums[0]), int(nums[1])
+                    marcador = f"{home_score}-{away_score}"
+                    if home_score > away_score:
+                        pts_prov[home_name] = {"pts": 3, "marcador": marcador}
+                        pts_prov[away_name] = {"pts": 0, "marcador": marcador}
+                    elif home_score < away_score:
+                        pts_prov[home_name] = {"pts": 0, "marcador": marcador}
+                        pts_prov[away_name] = {"pts": 3, "marcador": marcador}
+                    else:
+                        pts_prov[home_name] = {"pts": 1, "marcador": marcador}
+                        pts_prov[away_name] = {"pts": 1, "marcador": marcador}
+                    print(f"[LIVE-OK] {home_name} {marcador} {away_name} ({competicion})")
+
+        print(f"[LIVE] {len(en_vivo)} equipos en vivo: {en_vivo if en_vivo else 'ninguno'}")
+        return en_vivo, pts_prov
     except Exception as e:
         print(f"[ERROR] scrape_equipos_en_vivo: {e}")
-        return set()
+        return None
+
+
+def _puntos_prov_equipo(nombre_jugador, pts_prov_dict):
+    """Devuelve {"pts": 3|1|0, "marcador": "X-Y"} para un equipo en vivo, o None si no está en partido."""
+    nombre_lower = nombre_jugador.lower()
+    for bbc, data in pts_prov_dict.items():
+        if BBC_NOMBRES.get(bbc) == nombre_jugador:
+            return data
+        bbc_lower = bbc.lower()
+        if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
+            return data
+    return None
 
 
 def _equipo_en_vivo(nombre_jugador, equipos_en_vivo):
@@ -378,17 +464,33 @@ def cargar_todos_los_datos():
 
 @app.route("/")
 def index():
-    datos_por_liga  = cargar_todos_los_datos()
-    equipos_en_vivo = scrape_equipos_en_vivo()
+    datos_por_liga = cargar_todos_los_datos()
+    live_result    = scrape_equipos_en_vivo()
+
+    if live_result is not None:
+        equipos_en_vivo, pts_prov_dict = live_result
+    else:
+        equipos_en_vivo, pts_prov_dict = set(), None  # None indica fallo de scraping
 
     lista = []
     for j in jugadores:
-        equipos = enriquecer_equipos(j["equipos"], datos_por_liga, equipos_en_vivo)
+        equipos = enriquecer_equipos(j["equipos"], datos_por_liga, equipos_en_vivo, pts_prov_dict)
+        tiene_en_vivo = any(e["en_vivo"] for e in equipos)
+        # Puntos provisionales: solo se muestran si hay al menos un equipo en vivo
+        # y el scraping fue exitoso. None → no mostrar.
+        if pts_prov_dict is not None and tiene_en_vivo:
+            puntos_prov = sum(
+                e["pts_provisionales"] for e in equipos if e["pts_provisionales"] is not None
+            )
+        else:
+            puntos_prov = None
+
         lista.append({
-            "nombre":  j["nombre"],
-            "puntos":  sum(e["puntos"] + e["bonus"] for e in equipos),
-            "pj":      sum(e["pj"] for e in equipos),
-            "equipos": equipos,
+            "nombre":               j["nombre"],
+            "puntos":               sum(e["puntos"] + e["bonus"] for e in equipos),
+            "pj":                   sum(e["pj"] for e in equipos),
+            "equipos":              equipos,
+            "puntos_provisionales": puntos_prov,
         })
 
     lista.sort(key=lambda j: j["puntos"], reverse=True)
