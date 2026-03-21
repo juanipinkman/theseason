@@ -208,7 +208,7 @@ def _buscar_en_tabla(tabla, nombre_jugador):
     return None
 
 
-def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_prov_dict=None):
+def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_prov_dict=None, h2h_equipos=None):
     """Combina definición de equipos con datos de API/scraping.
 
     datos_por_liga[codigo]:
@@ -244,8 +244,12 @@ def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_pr
 
         en_vivo   = _equipo_en_vivo(eq["nombre"], equipos_en_vivo or set())
         prov_data = _puntos_prov_equipo(eq["nombre"], pts_prov_dict) if (pts_prov_dict is not None and en_vivo) else None
-        pts_prov     = prov_data["pts"]      if prov_data else None
-        marcador_vivo = prov_data["marcador"] if prov_data else None
+        pts_prov      = prov_data["pts"]      if prov_data else None
+        if prov_data:
+            goles = prov_data["marcador"].split("-")
+            marcador_vivo = prov_data["marcador"] if prov_data.get("es_local", True) else f"{goles[1]}-{goles[0]}"
+        else:
+            marcador_vivo = None
 
         resultado.append({
             "liga":              eq["liga"],
@@ -258,6 +262,7 @@ def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_pr
             "en_vivo":           en_vivo,
             "pts_provisionales": pts_prov,
             "marcador_vivo":     marcador_vivo,
+            "h2h_en_vivo":       eq["nombre"] in (h2h_equipos or set()),
             "id":                eq.get("id"),
             "codigo":            codigo,
         })
@@ -322,6 +327,30 @@ LIGAS_EN_VIVO = {
     "national league south",
 }
 
+# BBC Sport usa nombres alternativos para algunas ligas; los normalizamos al nombre canónico.
+def _normalizar_competicion(headings):
+    """Dado un contenedor DOM, combina los headings h2+h3 para National League N/S.
+
+    BBC Sport usa dos estructuras:
+      - North: <h2>National League N / S</h2> + <h3>North</h3> en el mismo contenedor
+      - South: solo <h3>South</h3> en su propio contenedor (el h2 queda en el bloque North)
+    En ambos casos devolvemos "national league north" / "national league south".
+    Para cualquier otra liga devuelve el texto del primer heading en minúsculas.
+    """
+    texts = [h.get_text(strip=True).lower() for h in headings]
+    if not texts:
+        return ""
+    h2 = texts[0]
+    # Caso: "national league n / s" + sub-heading "north"/"south"
+    if h2 == "national league n / s" and len(texts) >= 2:
+        sub = texts[1]
+        if sub in ("north", "south"):
+            return f"national league {sub}"
+    # Caso: heading solitario "north" o "south" (bloque South de BBC)
+    if h2 in ("north", "south"):
+        return f"national league {h2}"
+    return h2
+
 
 def _competicion_del_partido(li):
     """Sube por el DOM desde un <li> de partido buscando el encabezado de competición más cercano.
@@ -332,21 +361,21 @@ def _competicion_del_partido(li):
     """
     node = li.parent  # normalmente <ul> u <ol>
     while node and node.name not in ("body", "html", "[document]"):
-        # Buscar hermanos anteriores que sean o contengan un heading
+        # Buscar hermanos anteriores que sean o contengan headings
         for sib in node.previous_siblings:
             if not hasattr(sib, "name"):
                 continue
             if sib.name in ("h2", "h3", "h4", "h5"):
-                return sib.get_text(strip=True).lower()
-            heading = sib.find(["h2", "h3", "h4", "h5"])
-            if heading:
-                return heading.get_text(strip=True).lower()
-        # También revisar heading dentro del propio padre antes de subir más
+                return _normalizar_competicion([sib])
+            headings = sib.find_all(["h2", "h3", "h4", "h5"])
+            if headings:
+                return _normalizar_competicion(headings)
+        # También revisar headings dentro del propio padre antes de subir más
         parent = node.parent
         if parent:
-            heading = parent.find(["h2", "h3", "h4", "h5"])
-            if heading:
-                return heading.get_text(strip=True).lower()
+            headings = parent.find_all(["h2", "h3", "h4", "h5"])
+            if headings:
+                return _normalizar_competicion(headings)
         node = parent
     return ""
 
@@ -402,14 +431,14 @@ def scrape_equipos_en_vivo():
                     home_score, away_score = int(nums[0]), int(nums[1])
                     marcador = f"{home_score}-{away_score}"
                     if home_score > away_score:
-                        pts_prov[home_name] = {"pts": 3, "marcador": marcador}
-                        pts_prov[away_name] = {"pts": 0, "marcador": marcador}
+                        pts_prov[home_name] = {"pts": 3, "marcador": marcador, "rival": away_name,  "es_local": True}
+                        pts_prov[away_name] = {"pts": 0, "marcador": marcador, "rival": home_name, "es_local": False}
                     elif home_score < away_score:
-                        pts_prov[home_name] = {"pts": 0, "marcador": marcador}
-                        pts_prov[away_name] = {"pts": 3, "marcador": marcador}
+                        pts_prov[home_name] = {"pts": 0, "marcador": marcador, "rival": away_name,  "es_local": True}
+                        pts_prov[away_name] = {"pts": 3, "marcador": marcador, "rival": home_name, "es_local": False}
                     else:
-                        pts_prov[home_name] = {"pts": 1, "marcador": marcador}
-                        pts_prov[away_name] = {"pts": 1, "marcador": marcador}
+                        pts_prov[home_name] = {"pts": 1, "marcador": marcador, "rival": away_name,  "es_local": True}
+                        pts_prov[away_name] = {"pts": 1, "marcador": marcador, "rival": home_name, "es_local": False}
                     print(f"[LIVE-OK] {home_name} {marcador} {away_name} ({competicion})")
 
         print(f"[LIVE] {len(en_vivo)} equipos en vivo: {en_vivo if en_vivo else 'ninguno'}")
@@ -429,6 +458,50 @@ def _puntos_prov_equipo(nombre_jugador, pts_prov_dict):
         if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
             return data
     return None
+
+
+def _canonical_team(bbc_name, all_canonical):
+    """Resuelve un nombre BBC al nombre canónico del equipo en The Season, o None."""
+    bbc_lower = bbc_name.lower()
+    for nombre in all_canonical:
+        if BBC_NOMBRES.get(bbc_name) == nombre:
+            return nombre
+        nombre_lower = nombre.lower()
+        if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
+            return nombre
+    return None
+
+
+def _detectar_h2h(pts_prov_dict, jugadores):
+    """Detecta partidos en vivo donde ambos equipos pertenecen a distintos jugadores.
+
+    Retorna un set de nombres canónicos de equipos involucrados en un H2H en vivo.
+    """
+    if not pts_prov_dict:
+        return set()
+
+    equipo_a_jugador = {
+        eq["nombre"]: j["nombre"]
+        for j in jugadores
+        for eq in j["equipos"]
+    }
+    all_canonical = set(equipo_a_jugador.keys())
+
+    h2h = set()
+    for bbc_name, data in pts_prov_dict.items():
+        rival_bbc = data.get("rival")
+        if not rival_bbc:
+            continue
+        can_home = _canonical_team(bbc_name, all_canonical)
+        can_away = _canonical_team(rival_bbc, all_canonical)
+        if can_home and can_away:
+            jug_home = equipo_a_jugador[can_home]
+            jug_away = equipo_a_jugador[can_away]
+            if jug_home != jug_away:
+                h2h.add(can_home)
+                h2h.add(can_away)
+                print(f"[H2H] {can_home} ({jug_home}) vs {can_away} ({jug_away})")
+    return h2h
 
 
 def _equipo_en_vivo(nombre_jugador, equipos_en_vivo):
@@ -472,9 +545,11 @@ def index():
     else:
         equipos_en_vivo, pts_prov_dict = set(), None  # None indica fallo de scraping
 
+    h2h_equipos = _detectar_h2h(pts_prov_dict, jugadores)
+
     lista = []
     for j in jugadores:
-        equipos = enriquecer_equipos(j["equipos"], datos_por_liga, equipos_en_vivo, pts_prov_dict)
+        equipos = enriquecer_equipos(j["equipos"], datos_por_liga, equipos_en_vivo, pts_prov_dict, h2h_equipos)
         tiene_en_vivo = any(e["en_vivo"] for e in equipos)
         # Puntos provisionales: solo se muestran si hay al menos un equipo en vivo
         # y el scraping fue exitoso. None → no mostrar.

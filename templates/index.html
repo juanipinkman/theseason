@@ -1,3 +1,4 @@
+{% macro bolt_svg() %}<svg class="bolt-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2L5 14h6l-1 8 9-12h-6z"/></svg>{% endmacro %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -35,9 +36,10 @@
                 <div class="fila-col-header">
                     <span class="col-escudo-spacer"></span>
                     <span class="col-nombre-spacer"></span>
+                    <span class="col-header-h2h"></span>
                     <span class="col-header-marcador"></span>
                     <span class="col-header-pts">Pts</span>
-                    <span class="col-header-bonus">⚡</span>
+                    <span class="col-header-bonus">{{ bolt_svg() }}</span>
                     <span class="col-header-pj">PJ</span>
                 </div>
 
@@ -49,6 +51,11 @@
                     <div class="escudo-placeholder"></div>
                     {% endif %}
                     <span class="equipo-nombre">{{ equipo.nombre }}</span>
+                    {% if equipo.h2h_en_vivo %}
+                    <span class="h2h-indicador">{{ bolt_svg() }}</span>
+                    {% else %}
+                    <span class="h2h-vacio"></span>
+                    {% endif %}
                     {% if equipo.en_vivo and equipo.marcador_vivo %}
                         {% if equipo.pts_provisionales == 3 %}
                         <span class="marcador-vivo marcador-ganando">{{ equipo.marcador_vivo }}</span>
