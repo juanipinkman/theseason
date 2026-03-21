@@ -57,7 +57,7 @@
                     <span class="h2h-vacio"></span>
                     {% endif %}
                     {% if equipo.en_vivo and equipo.marcador_vivo %}
-                        {% if equipo.pts_provisionales == 3 %}
+                        {% if equipo.pts_provisionales >= 3 %}
                         <span class="marcador-vivo marcador-ganando">{{ equipo.marcador_vivo }}</span>
                         {% elif equipo.pts_provisionales == 1 %}
                         <span class="marcador-vivo marcador-empatando">{{ equipo.marcador_vivo }}</span>
@@ -73,7 +73,7 @@
                     <span class="puntos-equipo">{{ equipo.puntos }}</span>
                     {% endif %}
                     {% if equipo.bonus %}
-                    <span class="bonus-tag">+{{ equipo.bonus }}</span>
+                    <span class="bonus-tag">{{ equipo.bonus }}</span>
                     {% else %}
                     <span class="bonus-vacio"></span>
                     {% endif %}

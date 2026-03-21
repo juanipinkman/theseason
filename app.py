@@ -243,12 +243,16 @@ def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_pr
                 escudo = obtener_escudo_sportsdb(SPORTSDB_TERMINOS[eq["nombre"]])
 
         en_vivo   = _equipo_en_vivo(eq["nombre"], equipos_en_vivo or set())
+        h2h_vivo  = eq["nombre"] in (h2h_equipos or set())
         prov_data = _puntos_prov_equipo(eq["nombre"], pts_prov_dict) if (pts_prov_dict is not None and en_vivo) else None
-        pts_prov      = prov_data["pts"]      if prov_data else None
         if prov_data:
+            pts_base = prov_data["pts"]
+            # H2H ganando: 3 normales + 3 bonus = 6. Empate/derrota: sin bonus.
+            pts_prov = 6 if (h2h_vivo and pts_base == 3) else pts_base
             goles = prov_data["marcador"].split("-")
             marcador_vivo = prov_data["marcador"] if prov_data.get("es_local", True) else f"{goles[1]}-{goles[0]}"
         else:
+            pts_prov      = None
             marcador_vivo = None
 
         resultado.append({
@@ -262,7 +266,7 @@ def enriquecer_equipos(equipos_def, datos_por_liga, equipos_en_vivo=None, pts_pr
             "en_vivo":           en_vivo,
             "pts_provisionales": pts_prov,
             "marcador_vivo":     marcador_vivo,
-            "h2h_en_vivo":       eq["nombre"] in (h2h_equipos or set()),
+            "h2h_en_vivo":       h2h_vivo,
             "id":                eq.get("id"),
             "codigo":            codigo,
         })
@@ -404,11 +408,12 @@ def scrape_equipos_en_vivo():
         en_vivo = set()
         pts_prov = {}  # bbc_nombre → {"pts": 3|1|0, "marcador": "X-Y"}
 
-        for text_node in soup.find_all(
-            string=lambda t: t and ("in progress" in t.lower() or "minutes" in t.lower())
-        ):
-            li = text_node.find_parent("li")
-            if not li:
+        for li in soup.find_all("li"):
+            # Verificar que este partido específico está en curso
+            if not any(
+                "in progress" in span.get_text(strip=True).lower()
+                for span in li.find_all("span", class_="visually-hidden")
+            ):
                 continue
 
             # Verificar que el partido pertenece a una liga permitida
@@ -448,26 +453,58 @@ def scrape_equipos_en_vivo():
         return None
 
 
+def _normalizar_nombre_club(name):
+    """Quita sufijos/prefijos FC/AFC para comparación segura entre nombres BBC y canónicos.
+
+    Ejemplos:
+      "Chester FC"      → "chester"
+      "Wrexham AFC"     → "wrexham"
+      "AFC Wimbledon"   → "wimbledon"
+      "Manchester United FC" → "manchester united"
+    Evita que "Chester" haga substring match contra "Manchester United FC".
+    """
+    n = name.lower().strip()
+    for sufijo in (" fc", " afc"):
+        if n.endswith(sufijo):
+            return n[: -len(sufijo)].strip()
+    for prefijo in ("afc ", "fc "):
+        if n.startswith(prefijo):
+            return n[len(prefijo) :].strip()
+    return n
+
+
+def _nombre_coincide(bbc_name, canonical_name):
+    """True si el nombre BBC corresponde al equipo canónico.
+
+    Orden:
+    1. Mapeo explícito en BBC_NOMBRES.
+    2. Igualdad exacta de nombres normalizados (sin FC/AFC).
+    3. Substring con word-boundary (regex \b) sobre nombres normalizados.
+       Evita que 'chester' matchee 'man*chester* united' al nivel de caracteres.
+    """
+    if BBC_NOMBRES.get(bbc_name) == canonical_name:
+        return True
+    bbc_norm = _normalizar_nombre_club(bbc_name)
+    can_norm = _normalizar_nombre_club(canonical_name)
+    if bbc_norm == can_norm:
+        return True
+    pattern_bbc = r"\b" + re.escape(bbc_norm) + r"\b"
+    pattern_can = r"\b" + re.escape(can_norm) + r"\b"
+    return bool(re.search(pattern_bbc, can_norm) or re.search(pattern_can, bbc_norm))
+
+
 def _puntos_prov_equipo(nombre_jugador, pts_prov_dict):
     """Devuelve {"pts": 3|1|0, "marcador": "X-Y"} para un equipo en vivo, o None si no está en partido."""
-    nombre_lower = nombre_jugador.lower()
     for bbc, data in pts_prov_dict.items():
-        if BBC_NOMBRES.get(bbc) == nombre_jugador:
-            return data
-        bbc_lower = bbc.lower()
-        if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
+        if _nombre_coincide(bbc, nombre_jugador):
             return data
     return None
 
 
 def _canonical_team(bbc_name, all_canonical):
     """Resuelve un nombre BBC al nombre canónico del equipo en The Season, o None."""
-    bbc_lower = bbc_name.lower()
     for nombre in all_canonical:
-        if BBC_NOMBRES.get(bbc_name) == nombre:
-            return nombre
-        nombre_lower = nombre.lower()
-        if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
+        if _nombre_coincide(bbc_name, nombre):
             return nombre
     return None
 
@@ -505,22 +542,8 @@ def _detectar_h2h(pts_prov_dict, jugadores):
 
 
 def _equipo_en_vivo(nombre_jugador, equipos_en_vivo):
-    """Comprueba si un equipo está en vivo.
-
-    Orden de lookup:
-    1. Mapeo exacto BBC_NOMBRES (cubre abreviaciones como 'Man Utd')
-    2. Substring match bidireccional (cubre 'Chelsea' ↔ 'Chelsea FC')
-    """
-    nombre_lower = nombre_jugador.lower()
-    for bbc in equipos_en_vivo:
-        # 1. Mapeo explícito
-        if BBC_NOMBRES.get(bbc) == nombre_jugador:
-            return True
-        # 2. Substring match
-        bbc_lower = bbc.lower()
-        if bbc_lower in nombre_lower or nombre_lower in bbc_lower:
-            return True
-    return False
+    """Comprueba si un equipo está en vivo usando _nombre_coincide."""
+    return any(_nombre_coincide(bbc, nombre_jugador) for bbc in equipos_en_vivo)
 
 
 def cargar_todos_los_datos():
