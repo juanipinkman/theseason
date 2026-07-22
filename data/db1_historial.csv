@@ -1,0 +1,2455 @@
+temporada,equipo,division,posicion,pts_tabla,factor_division,pts_ponderados,modificadores,puntos_base,puntos_modificadores,valor_temporada
+2016/17,Chelsea,Premier League,1,93,1.0,93.0,campeon,100,20.0,213.0
+2016/17,Tottenham Hotspur,Premier League,2,86,1.0,86.0,-,100,0.0,186.0
+2016/17,Manchester City,Premier League,3,78,1.0,78.0,-,100,0.0,178.0
+2016/17,Liverpool,Premier League,4,76,1.0,76.0,-,100,0.0,176.0
+2016/17,Arsenal,Premier League,5,75,1.0,75.0,-,100,0.0,175.0
+2016/17,Manchester United,Premier League,6,69,1.0,69.0,-,100,0.0,169.0
+2016/17,Everton,Premier League,7,61,1.0,61.0,-,100,0.0,161.0
+2016/17,Southampton,Premier League,8,46,1.0,46.0,-,100,0.0,146.0
+2016/17,Bournemouth,Premier League,9,46,1.0,46.0,-,100,0.0,146.0
+2016/17,West Bromwich Albion,Premier League,10,45,1.0,45.0,-,100,0.0,145.0
+2016/17,West Ham United,Premier League,11,45,1.0,45.0,-,100,0.0,145.0
+2016/17,Leicester City,Premier League,12,44,1.0,44.0,-,100,0.0,144.0
+2016/17,Stoke City,Premier League,13,44,1.0,44.0,-,100,0.0,144.0
+2016/17,Crystal Palace,Premier League,14,41,1.0,41.0,-,100,0.0,141.0
+2016/17,Swansea City,Premier League,15,41,1.0,41.0,-,100,0.0,141.0
+2016/17,Burnley,Premier League,16,40,1.0,40.0,-,100,0.0,140.0
+2016/17,Watford,Premier League,17,40,1.0,40.0,-,100,0.0,140.0
+2016/17,Hull City,Premier League,18,34,1.0,34.0,descenso,100,-15.0,119.0
+2016/17,Middlesbrough,Premier League,19,28,1.0,28.0,descenso,100,-15.0,113.0
+2016/17,Sunderland,Premier League,20,24,1.0,24.0,"descenso, ultimo_lugar",100,-25.0,99.0
+2016/17,Newcastle United,Championship,1,94,0.7,65.8,campeon,70,14.0,149.8
+2016/17,Brighton & Hove Albion,Championship,2,93,0.7,65.1,ascenso_directo,70,7.0,142.1
+2016/17,Reading,Championship,3,85,0.7,59.5,playoff_sin_ascenso,70,2.1,131.6
+2016/17,Sheffield Wednesday,Championship,4,81,0.7,56.7,playoff_sin_ascenso,70,2.1,128.8
+2016/17,Huddersfield Town,Championship,5,81,0.7,56.7,playoff_sin_ascenso,70,2.1,128.8
+2016/17,Fulham,Championship,6,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2016/17,Leeds United,Championship,7,75,0.7,52.5,-,70,0.0,122.5
+2016/17,Norwich City,Championship,8,70,0.7,49.0,-,70,0.0,119.0
+2016/17,Derby County,Championship,9,67,0.7,46.9,-,70,0.0,116.9
+2016/17,Brentford,Championship,10,64,0.7,44.8,-,70,0.0,114.8
+2016/17,Preston North End,Championship,11,62,0.7,43.4,-,70,0.0,113.4
+2016/17,Cardiff City,Championship,12,62,0.7,43.4,-,70,0.0,113.4
+2016/17,Aston Villa,Championship,13,62,0.7,43.4,-,70,0.0,113.4
+2016/17,Barnsley,Championship,14,58,0.7,40.6,-,70,0.0,110.6
+2016/17,Wolverhampton Wanderers,Championship,15,58,0.7,40.6,-,70,0.0,110.6
+2016/17,Ipswich Town,Championship,16,55,0.7,38.5,-,70,0.0,108.5
+2016/17,Bristol City,Championship,17,54,0.7,37.8,-,70,0.0,107.8
+2016/17,Queens Park Rangers,Championship,18,53,0.7,37.1,-,70,0.0,107.1
+2016/17,Birmingham City,Championship,19,53,0.7,37.1,-,70,0.0,107.1
+2016/17,Burton Albion,Championship,20,52,0.7,36.4,-,70,0.0,106.4
+2016/17,Nottingham Forest,Championship,21,51,0.7,35.7,-,70,0.0,105.7
+2016/17,Blackburn Rovers,Championship,22,51,0.7,35.7,descenso,70,-10.5,95.2
+2016/17,Wigan Athletic,Championship,23,42,0.7,29.4,descenso,70,-10.5,88.9
+2016/17,Rotherham United,Championship,24,23,0.7,16.1,"descenso, ultimo_lugar",70,-17.5,68.6
+2016/17,Sheffield United,League One,1,100,0.45,45.0,campeon,45,9.0,99.0
+2016/17,Bolton Wanderers,League One,2,86,0.45,38.7,ascenso_directo,45,4.5,88.2
+2016/17,Scunthorpe United,League One,3,82,0.45,36.9,playoff_sin_ascenso,45,1.3,83.2
+2016/17,Fleetwood Town,League One,4,82,0.45,36.9,playoff_sin_ascenso,45,1.3,83.2
+2016/17,Bradford City,League One,5,79,0.45,35.6,playoff_sin_ascenso,45,1.3,81.9
+2016/17,Millwall,League One,6,73,0.45,32.9,playoff_sin_ascenso,45,1.3,79.2
+2016/17,Southend United,League One,7,72,0.45,32.4,-,45,0.0,77.4
+2016/17,Oxford United,League One,8,69,0.45,31.1,-,45,0.0,76.1
+2016/17,Rochdale,League One,9,69,0.45,31.1,-,45,0.0,76.1
+2016/17,Bristol Rovers,League One,10,66,0.45,29.7,-,45,0.0,74.7
+2016/17,Peterborough United,League One,11,62,0.45,27.9,-,45,0.0,72.9
+2016/17,Milton Keynes Dons,League One,12,61,0.45,27.4,-,45,0.0,72.4
+2016/17,Charlton Athletic,League One,13,60,0.45,27.0,-,45,0.0,72.0
+2016/17,Walsall,League One,14,58,0.45,26.1,-,45,0.0,71.1
+2016/17,AFC Wimbledon,League One,15,57,0.45,25.7,-,45,0.0,70.7
+2016/17,Northampton Town,League One,16,53,0.45,23.9,-,45,0.0,68.9
+2016/17,Oldham Athletic,League One,17,53,0.45,23.9,-,45,0.0,68.9
+2016/17,Shrewsbury Town,League One,18,51,0.45,22.9,-,45,0.0,67.9
+2016/17,Bury,League One,19,50,0.45,22.5,-,45,0.0,67.5
+2016/17,Gillingham,League One,20,50,0.45,22.5,-,45,0.0,67.5
+2016/17,Port Vale,League One,21,49,0.45,22.1,descenso,45,-6.8,60.3
+2016/17,Swindon Town,League One,22,44,0.45,19.8,descenso,45,-6.8,58.0
+2016/17,Coventry City,League One,23,39,0.45,17.6,descenso,45,-6.8,55.8
+2016/17,Chesterfield,League One,24,37,0.45,16.7,"descenso, ultimo_lugar",45,-11.3,50.4
+2016/17,Portsmouth,League Two,1,87,0.25,21.8,campeon,25,5.0,51.8
+2016/17,Plymouth Argyle,League Two,2,87,0.25,21.8,ascenso_directo,25,2.5,49.3
+2016/17,Doncaster Rovers,League Two,3,85,0.25,21.2,ascenso_directo,25,2.5,48.7
+2016/17,Luton Town,League Two,4,77,0.25,19.2,playoff_sin_ascenso,25,0.8,45.0
+2016/17,Exeter City,League Two,5,71,0.25,17.8,playoff_sin_ascenso,25,0.8,43.6
+2016/17,Carlisle United,League Two,6,71,0.25,17.8,playoff_sin_ascenso,25,0.8,43.6
+2016/17,Blackpool,League Two,7,70,0.25,17.5,playoff_sin_ascenso,25,0.8,43.3
+2016/17,Colchester United,League Two,8,69,0.25,17.2,-,25,0.0,42.2
+2016/17,Wycombe Wanderers,League Two,9,69,0.25,17.2,-,25,0.0,42.2
+2016/17,Stevenage,League Two,10,67,0.25,16.8,-,25,0.0,41.8
+2016/17,Cambridge United,League Two,11,66,0.25,16.5,-,25,0.0,41.5
+2016/17,Mansfield Town,League Two,12,66,0.25,16.5,-,25,0.0,41.5
+2016/17,Accrington Stanley,League Two,13,65,0.25,16.2,-,25,0.0,41.2
+2016/17,Grimsby Town,League Two,14,62,0.25,15.5,-,25,0.0,40.5
+2016/17,Barnet,League Two,15,57,0.25,14.2,-,25,0.0,39.2
+2016/17,Notts County,League Two,16,56,0.25,14.0,-,25,0.0,39.0
+2016/17,Crewe Alexandra,League Two,17,55,0.25,13.8,-,25,0.0,38.8
+2016/17,Morecambe,League Two,18,52,0.25,13.0,-,25,0.0,38.0
+2016/17,Crawley Town,League Two,19,51,0.25,12.8,-,25,0.0,37.8
+2016/17,Yeovil Town,League Two,20,50,0.25,12.5,-,25,0.0,37.5
+2016/17,Cheltenham Town,League Two,21,50,0.25,12.5,-,25,0.0,37.5
+2016/17,Newport County,League Two,22,48,0.25,12.0,-,25,0.0,37.0
+2016/17,Hartlepool United,League Two,23,46,0.25,11.5,descenso,25,-3.8,32.7
+2016/17,Leyton Orient,League Two,24,36,0.25,9.0,"descenso, ultimo_lugar",25,-6.3,27.7
+2016/17,Lincoln City,National League,1,99,0.15,14.8,campeon,15,3.0,32.8
+2016/17,Tranmere Rovers,National League,2,95,0.15,14.2,ascenso_directo,15,1.5,30.7
+2016/17,Forest Green Rovers,National League,3,86,0.15,12.9,playoff_sin_ascenso,15,0.4,28.3
+2016/17,Dagenham & Redbridge,National League,4,84,0.15,12.6,playoff_sin_ascenso,15,0.4,28.0
+2016/17,Aldershot Town,National League,5,82,0.15,12.3,playoff_sin_ascenso,15,0.4,27.7
+2016/17,Dover Athletic,National League,6,79,0.15,11.8,playoff_sin_ascenso,15,0.4,27.2
+2016/17,Barrow,National League,7,75,0.15,11.2,-,15,0.0,26.2
+2016/17,Gateshead,National League,8,70,0.15,10.5,-,15,0.0,25.5
+2016/17,Macclesfield Town,National League,9,68,0.15,10.2,-,15,0.0,25.2
+2016/17,Bromley,National League,10,62,0.15,9.3,-,15,0.0,24.3
+2016/17,Boreham Wood,National League,11,58,0.15,8.7,-,15,0.0,23.7
+2016/17,Sutton United,National League,12,58,0.15,8.7,-,15,0.0,23.7
+2016/17,Wrexham,National League,13,58,0.15,8.7,-,15,0.0,23.7
+2016/17,Maidstone United,National League,14,58,0.15,8.7,-,15,0.0,23.7
+2016/17,Eastleigh,National League,15,57,0.15,8.5,-,15,0.0,23.5
+2016/17,Solihull Moors,National League,16,55,0.15,8.2,-,15,0.0,23.2
+2016/17,Torquay United,National League,17,53,0.15,7.9,-,15,0.0,22.9
+2016/17,Woking,National League,18,53,0.15,7.9,-,15,0.0,22.9
+2016/17,Chester,National League,19,52,0.15,7.8,-,15,0.0,22.8
+2016/17,Guiseley,National League,20,51,0.15,7.6,-,15,0.0,22.6
+2016/17,York City,National League,21,50,0.15,7.5,-,15,0.0,22.5
+2016/17,Braintree Town,National League,22,48,0.15,7.2,descenso,15,-2.2,20.0
+2016/17,Southport,National League,23,39,0.15,5.8,descenso,15,-2.2,18.6
+2016/17,North Ferriby United,National League,24,39,0.15,5.8,"descenso, ultimo_lugar",15,-3.7,17.1
+2016/17,Lincoln City,National League North,1,99,0.08,7.9,campeon,8,1.6,17.5
+2016/17,Tranmere Rovers,National League North,2,95,0.08,7.6,ascenso_directo,8,0.8,16.4
+2016/17,Forest Green Rovers,National League North,3,86,0.08,6.9,playoff_sin_ascenso,8,0.2,15.1
+2016/17,Dagenham & Redbridge,National League North,4,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2016/17,Aldershot Town,National League North,5,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2016/17,Dover Athletic,National League North,6,79,0.08,6.3,playoff_sin_ascenso,8,0.2,14.5
+2016/17,Barrow,National League North,7,75,0.08,6.0,-,8,0.0,14.0
+2016/17,Gateshead,National League North,8,70,0.08,5.6,-,8,0.0,13.6
+2016/17,Macclesfield Town,National League North,9,68,0.08,5.4,-,8,0.0,13.4
+2016/17,Bromley,National League North,10,62,0.08,5.0,-,8,0.0,13.0
+2016/17,Boreham Wood,National League North,11,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Sutton United,National League North,12,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Wrexham,National League North,13,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Maidstone United,National League North,14,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Eastleigh,National League North,15,57,0.08,4.6,-,8,0.0,12.6
+2016/17,Solihull Moors,National League North,16,55,0.08,4.4,-,8,0.0,12.4
+2016/17,Torquay United,National League North,17,53,0.08,4.2,-,8,0.0,12.2
+2016/17,Woking,National League North,18,53,0.08,4.2,-,8,0.0,12.2
+2016/17,Chester,National League North,19,52,0.08,4.2,-,8,0.0,12.2
+2016/17,Guiseley,National League North,20,51,0.08,4.1,-,8,0.0,12.1
+2016/17,York City,National League North,21,50,0.08,4.0,-,8,0.0,12.0
+2016/17,Braintree Town,National League North,22,48,0.08,3.8,descenso,8,-1.2,10.6
+2016/17,Southport,National League North,23,39,0.08,3.1,descenso,8,-1.2,9.9
+2016/17,North Ferriby United,National League North,24,39,0.08,3.1,"descenso, ultimo_lugar",8,-2.0,9.1
+2016/17,Lincoln City,National League South,1,99,0.08,7.9,campeon,8,1.6,17.5
+2016/17,Tranmere Rovers,National League South,2,95,0.08,7.6,ascenso_directo,8,0.8,16.4
+2016/17,Forest Green Rovers,National League South,3,86,0.08,6.9,playoff_sin_ascenso,8,0.2,15.1
+2016/17,Dagenham & Redbridge,National League South,4,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2016/17,Aldershot Town,National League South,5,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2016/17,Dover Athletic,National League South,6,79,0.08,6.3,playoff_sin_ascenso,8,0.2,14.5
+2016/17,Barrow,National League South,7,75,0.08,6.0,-,8,0.0,14.0
+2016/17,Gateshead,National League South,8,70,0.08,5.6,-,8,0.0,13.6
+2016/17,Macclesfield Town,National League South,9,68,0.08,5.4,-,8,0.0,13.4
+2016/17,Bromley,National League South,10,62,0.08,5.0,-,8,0.0,13.0
+2016/17,Boreham Wood,National League South,11,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Sutton United,National League South,12,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Wrexham,National League South,13,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Maidstone United,National League South,14,58,0.08,4.6,-,8,0.0,12.6
+2016/17,Eastleigh,National League South,15,57,0.08,4.6,-,8,0.0,12.6
+2016/17,Solihull Moors,National League South,16,55,0.08,4.4,-,8,0.0,12.4
+2016/17,Torquay United,National League South,17,53,0.08,4.2,-,8,0.0,12.2
+2016/17,Woking,National League South,18,53,0.08,4.2,-,8,0.0,12.2
+2016/17,Chester,National League South,19,52,0.08,4.2,-,8,0.0,12.2
+2016/17,Guiseley,National League South,20,51,0.08,4.1,-,8,0.0,12.1
+2016/17,York City,National League South,21,50,0.08,4.0,-,8,0.0,12.0
+2016/17,Braintree Town,National League South,22,48,0.08,3.8,descenso,8,-1.2,10.6
+2016/17,Southport,National League South,23,39,0.08,3.1,descenso,8,-1.2,9.9
+2016/17,North Ferriby United,National League South,24,39,0.08,3.1,"descenso, ultimo_lugar",8,-2.0,9.1
+2016/17,Blyth Spartans,Northern Premier Division,1,101,0.04,4.0,campeon,4,0.8,8.8
+2016/17,Spennymoor Town,Northern Premier Division,2,87,0.04,3.5,ascenso_directo,4,0.4,7.9
+2016/17,Stourbridge,Northern Premier Division,3,85,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2016/17,Workington,Northern Premier Division,4,83,0.04,3.3,playoff_sin_ascenso,4,0.1,7.4
+2016/17,Nantwich Town,Northern Premier Division,5,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2016/17,Whitby Town,Northern Premier Division,6,79,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2016/17,Buxton,Northern Premier Division,7,78,0.04,3.1,-,4,0.0,7.1
+2016/17,Grantham Town,Northern Premier Division,8,76,0.04,3.0,-,4,0.0,7.0
+2016/17,Matlock Town,Northern Premier Division,9,75,0.04,3.0,-,4,0.0,7.0
+2016/17,Warrington Town,Northern Premier Division,10,74,0.04,3.0,-,4,0.0,7.0
+2016/17,Ashton United,Northern Premier Division,11,68,0.04,2.7,-,4,0.0,6.7
+2016/17,Rushall Olympic,Northern Premier Division,12,64,0.04,2.6,-,4,0.0,6.6
+2016/17,Stafford Rangers,Northern Premier Division,13,63,0.04,2.5,-,4,0.0,6.5
+2016/17,Barwell,Northern Premier Division,14,62,0.04,2.5,-,4,0.0,6.5
+2016/17,Hednesford Town,Northern Premier Division,15,61,0.04,2.4,-,4,0.0,6.4
+2016/17,Mickleover Sports,Northern Premier Division,16,60,0.04,2.4,-,4,0.0,6.4
+2016/17,Coalville Town,Northern Premier Division,17,55,0.04,2.2,-,4,0.0,6.2
+2016/17,Marine,Northern Premier Division,18,55,0.04,2.2,-,4,0.0,6.2
+2016/17,Halesowen Town,Northern Premier Division,19,51,0.04,2.0,-,4,0.0,6.0
+2016/17,Sutton Coldfield Town,Northern Premier Division,20,47,0.04,1.9,-,4,0.0,5.9
+2016/17,Corby Town,Northern Premier Division,21,46,0.04,1.8,-,4,0.0,5.8
+2016/17,Frickley Athletic,Northern Premier Division,22,39,0.04,1.6,descenso,4,-0.6,5.0
+2016/17,Ilkeston,Northern Premier Division,23,27,0.04,1.1,descenso,4,-0.6,4.5
+2016/17,Skelmersdale United,Northern Premier Division,24,24,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2016/17,Chippenham Town,Southern League Premier Central,1,103,0.04,4.1,campeon,4,0.8,8.9
+2016/17,Leamington,Southern League Premier Central,2,92,0.04,3.7,ascenso_directo,4,0.4,8.1
+2016/17,Merthyr Town,Southern League Premier Central,3,89,0.04,3.6,playoff_sin_ascenso,4,0.1,7.7
+2016/17,Hitchin Town,Southern League Premier Central,4,86,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2016/17,Slough Town,Southern League Premier Central,5,85,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2016/17,Banbury United,Southern League Premier Central,6,80,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2016/17,Biggleswade Town,Southern League Premier Central,7,74,0.04,3.0,-,4,0.0,7.0
+2016/17,Frome Town,Southern League Premier Central,8,74,0.04,3.0,-,4,0.0,7.0
+2016/17,Kettering Town,Southern League Premier Central,9,73,0.04,2.9,-,4,0.0,6.9
+2016/17,Weymouth,Southern League Premier Central,10,66,0.04,2.6,-,4,0.0,6.6
+2016/17,Chesham United,Southern League Premier Central,11,64,0.04,2.6,-,4,0.0,6.6
+2016/17,Basingstoke Town,Southern League Premier Central,12,62,0.04,2.5,-,4,0.0,6.5
+2016/17,King's Lynn Town,Southern League Premier Central,13,60,0.04,2.4,-,4,0.0,6.4
+2016/17,Stratford Town,Southern League Premier Central,14,56,0.04,2.2,-,4,0.0,6.2
+2016/17,St Ives Town,Southern League Premier Central,15,56,0.04,2.2,-,4,0.0,6.2
+2016/17,Dunstable Town,Southern League Premier Central,16,54,0.04,2.2,-,4,0.0,6.2
+2016/17,Redditch United,Southern League Premier Central,17,50,0.04,2.0,-,4,0.0,6.0
+2016/17,Dorchester Town,Southern League Premier Central,18,48,0.04,1.9,-,4,0.0,5.9
+2016/17,St Neots Town,Southern League Premier Central,19,48,0.04,1.9,-,4,0.0,5.9
+2016/17,Kings Langley,Southern League Premier Central,20,47,0.04,1.9,-,4,0.0,5.9
+2016/17,Cambridge City,Southern League Premier Central,21,47,0.04,1.9,-,4,0.0,5.9
+2016/17,Cirencester Town,Southern League Premier Central,22,42,0.04,1.7,descenso,4,-0.6,5.1
+2016/17,Hayes & Yeading United,Southern League Premier Central,23,41,0.04,1.6,descenso,4,-0.6,5.0
+2016/17,Cinderford Town,Southern League Premier Central,24,27,0.04,1.1,"descenso, ultimo_lugar",4,-1.0,4.1
+2016/17,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2016/17,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2016/17,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2016/17,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2016/17,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2016/17,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2016/17,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2016/17,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2016/17,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2016/17,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2016/17,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2016/17,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2016/17,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2016/17,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2016/17,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2016/17,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2016/17,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2016/17,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2016/17,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2016/17,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2016/17,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2016/17,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2016/17,Havant & Waterlooville,Isthmian League Premier Division,1,94,0.04,3.8,campeon,4,0.8,8.6
+2016/17,Bognor Regis Town,Isthmian League Premier Division,2,92,0.04,3.7,ascenso_directo,4,0.4,8.1
+2016/17,Dulwich Hamlet,Isthmian League Premier Division,3,80,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2016/17,Enfield Town,Isthmian League Premier Division,4,76,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2016/17,Wingate & Finchley,Isthmian League Premier Division,5,75,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2016/17,Tonbridge Angels,Isthmian League Premier Division,6,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2016/17,Leiston,Isthmian League Premier Division,7,73,0.04,2.9,-,4,0.0,6.9
+2016/17,Billericay Town,Isthmian League Premier Division,8,72,0.04,2.9,-,4,0.0,6.9
+2016/17,Needham Market,Isthmian League Premier Division,9,72,0.04,2.9,-,4,0.0,6.9
+2016/17,Harlow Town,Isthmian League Premier Division,10,67,0.04,2.7,-,4,0.0,6.7
+2016/17,Lowestoft Town,Isthmian League Premier Division,11,64,0.04,2.6,-,4,0.0,6.6
+2016/17,Staines Town,Isthmian League Premier Division,12,61,0.04,2.4,-,4,0.0,6.4
+2016/17,Worthing,Isthmian League Premier Division,14,56,0.04,2.2,-,4,0.0,6.2
+2016/17,Folkestone Invicta,Isthmian League Premier Division,15,55,0.04,2.2,-,4,0.0,6.2
+2016/17,Kingstonian,Isthmian League Premier Division,16,55,0.04,2.2,-,4,0.0,6.2
+2016/17,Metropolitan Police,Isthmian League Premier Division,17,54,0.04,2.2,-,4,0.0,6.2
+2016/17,Hendon,Isthmian League Premier Division,18,54,0.04,2.2,-,4,0.0,6.2
+2016/17,Burgess Hill Town,Isthmian League Premier Division,19,54,0.04,2.2,-,4,0.0,6.2
+2016/17,Harrow Borough,Isthmian League Premier Division,21,53,0.04,2.1,-,4,0.0,6.1
+2016/17,Canvey Island,Isthmian League Premier Division,22,52,0.04,2.1,descenso,4,-0.6,5.5
+2016/17,AFC Sudbury,Isthmian League Premier Division,23,46,0.04,1.8,descenso,4,-0.6,5.2
+2016/17,Grays Athletic,Isthmian League Premier Division,24,38,0.04,1.5,"descenso, ultimo_lugar",4,-1.0,4.5
+2017/18,Manchester City,Premier League,1,100,1.0,100.0,campeon,100,20.0,220.0
+2017/18,Manchester United,Premier League,2,81,1.0,81.0,-,100,0.0,181.0
+2017/18,Tottenham Hotspur,Premier League,3,77,1.0,77.0,-,100,0.0,177.0
+2017/18,Liverpool,Premier League,4,75,1.0,75.0,-,100,0.0,175.0
+2017/18,Chelsea,Premier League,5,70,1.0,70.0,-,100,0.0,170.0
+2017/18,Arsenal,Premier League,6,63,1.0,63.0,-,100,0.0,163.0
+2017/18,Burnley,Premier League,7,54,1.0,54.0,-,100,0.0,154.0
+2017/18,Everton,Premier League,8,49,1.0,49.0,-,100,0.0,149.0
+2017/18,Leicester City,Premier League,9,47,1.0,47.0,-,100,0.0,147.0
+2017/18,Newcastle United,Premier League,10,44,1.0,44.0,-,100,0.0,144.0
+2017/18,Crystal Palace,Premier League,11,44,1.0,44.0,-,100,0.0,144.0
+2017/18,Bournemouth,Premier League,12,44,1.0,44.0,-,100,0.0,144.0
+2017/18,West Ham United,Premier League,13,42,1.0,42.0,-,100,0.0,142.0
+2017/18,Watford,Premier League,14,41,1.0,41.0,-,100,0.0,141.0
+2017/18,Brighton & Hove Albion,Premier League,15,40,1.0,40.0,-,100,0.0,140.0
+2017/18,Huddersfield Town,Premier League,16,37,1.0,37.0,-,100,0.0,137.0
+2017/18,Southampton,Premier League,17,36,1.0,36.0,-,100,0.0,136.0
+2017/18,Swansea City,Premier League,18,33,1.0,33.0,descenso,100,-15.0,118.0
+2017/18,Stoke City,Premier League,19,33,1.0,33.0,descenso,100,-15.0,118.0
+2017/18,West Bromwich Albion,Premier League,20,31,1.0,31.0,"descenso, ultimo_lugar",100,-25.0,106.0
+2017/18,Wolverhampton Wanderers,Championship,1,99,0.7,69.3,campeon,70,14.0,153.3
+2017/18,Cardiff City,Championship,2,90,0.7,63.0,ascenso_directo,70,7.0,140.0
+2017/18,Fulham,Championship,3,88,0.7,61.6,playoff_sin_ascenso,70,2.1,133.7
+2017/18,Aston Villa,Championship,4,83,0.7,58.1,playoff_sin_ascenso,70,2.1,130.2
+2017/18,Middlesbrough,Championship,5,76,0.7,53.2,playoff_sin_ascenso,70,2.1,125.3
+2017/18,Derby County,Championship,6,75,0.7,52.5,playoff_sin_ascenso,70,2.1,124.6
+2017/18,Preston North End,Championship,7,73,0.7,51.1,-,70,0.0,121.1
+2017/18,Millwall,Championship,8,72,0.7,50.4,-,70,0.0,120.4
+2017/18,Brentford,Championship,9,69,0.7,48.3,-,70,0.0,118.3
+2017/18,Sheffield United,Championship,10,69,0.7,48.3,-,70,0.0,118.3
+2017/18,Bristol City,Championship,11,67,0.7,46.9,-,70,0.0,116.9
+2017/18,Ipswich Town,Championship,12,60,0.7,42.0,-,70,0.0,112.0
+2017/18,Leeds United,Championship,13,60,0.7,42.0,-,70,0.0,112.0
+2017/18,Norwich City,Championship,14,60,0.7,42.0,-,70,0.0,112.0
+2017/18,Sheffield Wednesday,Championship,15,57,0.7,39.9,-,70,0.0,109.9
+2017/18,Queens Park Rangers,Championship,16,56,0.7,39.2,-,70,0.0,109.2
+2017/18,Nottingham Forest,Championship,17,53,0.7,37.1,-,70,0.0,107.1
+2017/18,Hull City,Championship,18,49,0.7,34.3,-,70,0.0,104.3
+2017/18,Birmingham City,Championship,19,46,0.7,32.2,-,70,0.0,102.2
+2017/18,Reading,Championship,20,44,0.7,30.8,-,70,0.0,100.8
+2017/18,Bolton Wanderers,Championship,21,43,0.7,30.1,-,70,0.0,100.1
+2017/18,Barnsley,Championship,22,41,0.7,28.7,descenso,70,-10.5,88.2
+2017/18,Burton Albion,Championship,23,41,0.7,28.7,descenso,70,-10.5,88.2
+2017/18,Sunderland,Championship,24,37,0.7,25.9,"descenso, ultimo_lugar",70,-17.5,78.4
+2017/18,Wigan Athletic,League One,1,98,0.45,44.1,campeon,45,9.0,98.1
+2017/18,Blackburn Rovers,League One,2,96,0.45,43.2,ascenso_directo,45,4.5,92.7
+2017/18,Shrewsbury Town,League One,3,87,0.45,39.1,playoff_sin_ascenso,45,1.3,85.4
+2017/18,Rotherham United,League One,4,79,0.45,35.6,playoff_sin_ascenso,45,1.3,81.9
+2017/18,Scunthorpe United,League One,5,74,0.45,33.3,playoff_sin_ascenso,45,1.3,79.6
+2017/18,Charlton Athletic,League One,6,71,0.45,31.9,playoff_sin_ascenso,45,1.3,78.2
+2017/18,Plymouth Argyle,League One,7,68,0.45,30.6,-,45,0.0,75.6
+2017/18,Portsmouth,League One,8,66,0.45,29.7,-,45,0.0,74.7
+2017/18,Peterborough United,League One,9,64,0.45,28.8,-,45,0.0,73.8
+2017/18,Southend United,League One,10,63,0.45,28.4,-,45,0.0,73.4
+2017/18,Bradford City,League One,11,63,0.45,28.4,-,45,0.0,73.4
+2017/18,Blackpool,League One,12,60,0.45,27.0,-,45,0.0,72.0
+2017/18,Bristol Rovers,League One,13,59,0.45,26.6,-,45,0.0,71.6
+2017/18,Fleetwood Town,League One,14,57,0.45,25.7,-,45,0.0,70.7
+2017/18,Doncaster Rovers,League One,15,56,0.45,25.2,-,45,0.0,70.2
+2017/18,Oxford United,League One,16,56,0.45,25.2,-,45,0.0,70.2
+2017/18,Gillingham,League One,17,56,0.45,25.2,-,45,0.0,70.2
+2017/18,AFC Wimbledon,League One,18,53,0.45,23.9,-,45,0.0,68.9
+2017/18,Walsall,League One,19,52,0.45,23.4,-,45,0.0,68.4
+2017/18,Rochdale,League One,20,51,0.45,22.9,-,45,0.0,67.9
+2017/18,Oldham Athletic,League One,21,50,0.45,22.5,descenso,45,-6.8,60.7
+2017/18,Northampton Town,League One,22,47,0.45,21.2,descenso,45,-6.8,59.4
+2017/18,Milton Keynes Dons,League One,23,45,0.45,20.2,descenso,45,-6.8,58.4
+2017/18,Bury,League One,24,36,0.45,16.2,"descenso, ultimo_lugar",45,-11.3,49.9
+2017/18,Accrington Stanley,League Two,1,93,0.25,23.2,campeon,25,5.0,53.2
+2017/18,Luton Town,League Two,2,88,0.25,22.0,ascenso_directo,25,2.5,49.5
+2017/18,Wycombe Wanderers,League Two,3,84,0.25,21.0,ascenso_directo,25,2.5,48.5
+2017/18,Exeter City,League Two,4,80,0.25,20.0,playoff_sin_ascenso,25,0.8,45.8
+2017/18,Notts County,League Two,5,77,0.25,19.2,playoff_sin_ascenso,25,0.8,45.0
+2017/18,Coventry City,League Two,6,75,0.25,18.8,playoff_sin_ascenso,25,0.8,44.6
+2017/18,Lincoln City,League Two,7,75,0.25,18.8,playoff_sin_ascenso,25,0.8,44.6
+2017/18,Mansfield Town,League Two,8,72,0.25,18.0,-,25,0.0,43.0
+2017/18,Swindon Town,League Two,9,68,0.25,17.0,-,25,0.0,42.0
+2017/18,Carlisle United,League Two,10,67,0.25,16.8,-,25,0.0,41.8
+2017/18,Newport County,League Two,11,64,0.25,16.0,-,25,0.0,41.0
+2017/18,Cambridge United,League Two,12,64,0.25,16.0,-,25,0.0,41.0
+2017/18,Colchester United,League Two,13,62,0.25,15.5,-,25,0.0,40.5
+2017/18,Crawley Town,League Two,14,59,0.25,14.8,-,25,0.0,39.8
+2017/18,Crewe Alexandra,League Two,15,56,0.25,14.0,-,25,0.0,39.0
+2017/18,Stevenage,League Two,16,55,0.25,13.8,-,25,0.0,38.8
+2017/18,Cheltenham Town,League Two,17,51,0.25,12.8,-,25,0.0,37.8
+2017/18,Grimsby Town,League Two,18,51,0.25,12.8,-,25,0.0,37.8
+2017/18,Yeovil Town,League Two,19,48,0.25,12.0,-,25,0.0,37.0
+2017/18,Port Vale,League Two,20,47,0.25,11.8,-,25,0.0,36.8
+2017/18,Forest Green Rovers,League Two,21,47,0.25,11.8,-,25,0.0,36.8
+2017/18,Morecambe,League Two,22,46,0.25,11.5,-,25,0.0,36.5
+2017/18,Barnet,League Two,23,46,0.25,11.5,descenso,25,-3.8,32.7
+2017/18,Chesterfield,League Two,24,38,0.25,9.5,"descenso, ultimo_lugar",25,-6.3,28.2
+2017/18,Macclesfield Town,National League,1,92,0.15,13.8,campeon,15,3.0,31.8
+2017/18,Tranmere Rovers,National League,2,82,0.15,12.3,ascenso_directo,15,1.5,28.8
+2017/18,Sutton United,National League,3,79,0.15,11.8,playoff_sin_ascenso,15,0.4,27.2
+2017/18,Boreham Wood,National League,4,75,0.15,11.2,playoff_sin_ascenso,15,0.4,26.6
+2017/18,Aldershot Town,National League,5,75,0.15,11.2,playoff_sin_ascenso,15,0.4,26.6
+2017/18,Ebbsfleet United,National League,6,74,0.15,11.1,playoff_sin_ascenso,15,0.4,26.5
+2017/18,AFC Fylde,National League,7,73,0.15,10.9,-,15,0.0,25.9
+2017/18,Dover Athletic,National League,8,73,0.15,10.9,-,15,0.0,25.9
+2017/18,Bromley,National League,9,70,0.15,10.5,-,15,0.0,25.5
+2017/18,Wrexham,National League,10,70,0.15,10.5,-,15,0.0,25.5
+2017/18,Dagenham & Redbridge,National League,11,68,0.15,10.2,-,15,0.0,25.2
+2017/18,Maidenhead United,National League,12,64,0.15,9.6,-,15,0.0,24.6
+2017/18,Leyton Orient,National League,13,60,0.15,9.0,-,15,0.0,24.0
+2017/18,Eastleigh,National League,14,56,0.15,8.4,-,15,0.0,23.4
+2017/18,Hartlepool United,National League,15,56,0.15,8.4,-,15,0.0,23.4
+2017/18,FC Halifax Town,National League,16,55,0.15,8.2,-,15,0.0,23.2
+2017/18,Gateshead,National League,17,54,0.15,8.1,-,15,0.0,23.1
+2017/18,Solihull Moors,National League,18,54,0.15,8.1,-,15,0.0,23.1
+2017/18,Maidstone United,National League,19,54,0.15,8.1,-,15,0.0,23.1
+2017/18,Barrow,National League,20,49,0.15,7.3,-,15,0.0,22.3
+2017/18,Woking,National League,21,48,0.15,7.2,-,15,0.0,22.2
+2017/18,Torquay United,National League,22,42,0.15,6.3,descenso,15,-2.2,19.1
+2017/18,Chester,National League,23,37,0.15,5.5,descenso,15,-2.2,18.3
+2017/18,Guiseley,National League,24,33,0.15,5.0,"descenso, ultimo_lugar",15,-3.7,16.3
+2017/18,Macclesfield Town,National League North,1,92,0.08,7.4,campeon,8,1.6,17.0
+2017/18,Tranmere Rovers,National League North,2,82,0.08,6.6,ascenso_directo,8,0.8,15.4
+2017/18,Sutton United,National League North,3,79,0.08,6.3,playoff_sin_ascenso,8,0.2,14.5
+2017/18,Boreham Wood,National League North,4,75,0.08,6.0,playoff_sin_ascenso,8,0.2,14.2
+2017/18,Aldershot Town,National League North,5,75,0.08,6.0,playoff_sin_ascenso,8,0.2,14.2
+2017/18,Ebbsfleet United,National League North,6,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2017/18,AFC Fylde,National League North,7,73,0.08,5.8,-,8,0.0,13.8
+2017/18,Dover Athletic,National League North,8,73,0.08,5.8,-,8,0.0,13.8
+2017/18,Bromley,National League North,9,70,0.08,5.6,-,8,0.0,13.6
+2017/18,Wrexham,National League North,10,70,0.08,5.6,-,8,0.0,13.6
+2017/18,Dagenham & Redbridge,National League North,11,68,0.08,5.4,-,8,0.0,13.4
+2017/18,Maidenhead United,National League North,12,64,0.08,5.1,-,8,0.0,13.1
+2017/18,Leyton Orient,National League North,13,60,0.08,4.8,-,8,0.0,12.8
+2017/18,Eastleigh,National League North,14,56,0.08,4.5,-,8,0.0,12.5
+2017/18,Hartlepool United,National League North,15,56,0.08,4.5,-,8,0.0,12.5
+2017/18,FC Halifax Town,National League North,16,55,0.08,4.4,-,8,0.0,12.4
+2017/18,Gateshead,National League North,17,54,0.08,4.3,-,8,0.0,12.3
+2017/18,Solihull Moors,National League North,18,54,0.08,4.3,-,8,0.0,12.3
+2017/18,Maidstone United,National League North,19,54,0.08,4.3,-,8,0.0,12.3
+2017/18,Barrow,National League North,20,49,0.08,3.9,-,8,0.0,11.9
+2017/18,Woking,National League North,21,48,0.08,3.8,-,8,0.0,11.8
+2017/18,Torquay United,National League North,22,42,0.08,3.4,descenso,8,-1.2,10.2
+2017/18,Chester,National League North,23,37,0.08,3.0,descenso,8,-1.2,9.8
+2017/18,Guiseley,National League North,24,33,0.08,2.6,"descenso, ultimo_lugar",8,-2.0,8.6
+2017/18,Macclesfield Town,National League South,1,92,0.08,7.4,campeon,8,1.6,17.0
+2017/18,Tranmere Rovers,National League South,2,82,0.08,6.6,ascenso_directo,8,0.8,15.4
+2017/18,Sutton United,National League South,3,79,0.08,6.3,playoff_sin_ascenso,8,0.2,14.5
+2017/18,Boreham Wood,National League South,4,75,0.08,6.0,playoff_sin_ascenso,8,0.2,14.2
+2017/18,Aldershot Town,National League South,5,75,0.08,6.0,playoff_sin_ascenso,8,0.2,14.2
+2017/18,Ebbsfleet United,National League South,6,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2017/18,AFC Fylde,National League South,7,73,0.08,5.8,-,8,0.0,13.8
+2017/18,Dover Athletic,National League South,8,73,0.08,5.8,-,8,0.0,13.8
+2017/18,Bromley,National League South,9,70,0.08,5.6,-,8,0.0,13.6
+2017/18,Wrexham,National League South,10,70,0.08,5.6,-,8,0.0,13.6
+2017/18,Dagenham & Redbridge,National League South,11,68,0.08,5.4,-,8,0.0,13.4
+2017/18,Maidenhead United,National League South,12,64,0.08,5.1,-,8,0.0,13.1
+2017/18,Leyton Orient,National League South,13,60,0.08,4.8,-,8,0.0,12.8
+2017/18,Eastleigh,National League South,14,56,0.08,4.5,-,8,0.0,12.5
+2017/18,Hartlepool United,National League South,15,56,0.08,4.5,-,8,0.0,12.5
+2017/18,FC Halifax Town,National League South,16,55,0.08,4.4,-,8,0.0,12.4
+2017/18,Gateshead,National League South,17,54,0.08,4.3,-,8,0.0,12.3
+2017/18,Solihull Moors,National League South,18,54,0.08,4.3,-,8,0.0,12.3
+2017/18,Maidstone United,National League South,19,54,0.08,4.3,-,8,0.0,12.3
+2017/18,Barrow,National League South,20,49,0.08,3.9,-,8,0.0,11.9
+2017/18,Woking,National League South,21,48,0.08,3.8,-,8,0.0,11.8
+2017/18,Torquay United,National League South,22,42,0.08,3.4,descenso,8,-1.2,10.2
+2017/18,Chester,National League South,23,37,0.08,3.0,descenso,8,-1.2,9.8
+2017/18,Guiseley,National League South,24,33,0.08,2.6,"descenso, ultimo_lugar",8,-2.0,8.6
+2017/18,Altrincham,Northern Premier Division,1,95,0.04,3.8,campeon,4,0.8,8.6
+2017/18,Ashton United,Northern Premier Division,2,82,0.04,3.3,ascenso_directo,4,0.4,7.7
+2017/18,Warrington Town,Northern Premier Division,3,82,0.04,3.3,playoff_sin_ascenso,4,0.1,7.4
+2017/18,Grantham Town,Northern Premier Division,4,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2017/18,Farsley Celtic,Northern Premier Division,5,80,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2017/18,Witton Albion,Northern Premier Division,7,70,0.04,2.8,-,4,0.0,6.8
+2017/18,Buxton,Northern Premier Division,8,64,0.04,2.6,-,4,0.0,6.6
+2017/18,Barwell,Northern Premier Division,9,64,0.04,2.6,-,4,0.0,6.6
+2017/18,Stourbridge,Northern Premier Division,10,62,0.04,2.5,-,4,0.0,6.5
+2017/18,Workington,Northern Premier Division,11,62,0.04,2.5,-,4,0.0,6.5
+2017/18,Mickleover Sports,Northern Premier Division,12,61,0.04,2.4,-,4,0.0,6.4
+2017/18,Stafford Rangers,Northern Premier Division,13,61,0.04,2.4,-,4,0.0,6.4
+2017/18,Matlock Town,Northern Premier Division,14,60,0.04,2.4,-,4,0.0,6.4
+2017/18,Nantwich Town,Northern Premier Division,15,57,0.04,2.3,-,4,0.0,6.3
+2017/18,Hednesford Town,Northern Premier Division,16,57,0.04,2.3,-,4,0.0,6.3
+2017/18,Lancaster City,Northern Premier Division,17,55,0.04,2.2,-,4,0.0,6.2
+2017/18,Marine,Northern Premier Division,19,53,0.04,2.1,-,4,0.0,6.1
+2017/18,Coalville Town,Northern Premier Division,20,52,0.04,2.1,descenso,4,-0.6,5.5
+2017/18,Whitby Town,Northern Premier Division,21,50,0.04,2.0,descenso,4,-0.6,5.4
+2017/18,Stalybridge Celtic,Northern Premier Division,22,48,0.04,1.9,"descenso, ultimo_lugar",4,-1.0,4.9
+2017/18,Hereford,Southern League Premier Central,1,113,0.04,4.5,campeon,4,0.8,9.3
+2017/18,King's Lynn Town,Southern League Premier Central,2,100,0.04,4.0,ascenso_directo,4,0.4,8.4
+2017/18,Slough Town,Southern League Premier Central,3,99,0.04,4.0,playoff_sin_ascenso,4,0.1,8.1
+2017/18,Kettering Town,Southern League Premier Central,4,97,0.04,3.9,playoff_sin_ascenso,4,0.1,8.0
+2017/18,Weymouth,Southern League Premier Central,5,97,0.04,3.9,playoff_sin_ascenso,4,0.1,8.0
+2017/18,Tiverton Town,Southern League Premier Central,6,78,0.04,3.1,playoff_sin_ascenso,4,0.1,7.2
+2017/18,Royston Town,Southern League Premier Central,7,77,0.04,3.1,-,4,0.0,7.1
+2017/18,Chesham United,Southern League Premier Central,8,74,0.04,3.0,-,4,0.0,7.0
+2017/18,Banbury United,Southern League Premier Central,9,72,0.04,2.9,-,4,0.0,6.9
+2017/18,Basingstoke Town,Southern League Premier Central,10,71,0.04,2.8,-,4,0.0,6.8
+2017/18,Hitchin Town,Southern League Premier Central,11,66,0.04,2.6,-,4,0.0,6.6
+2017/18,St Neots Town,Southern League Premier Central,12,64,0.04,2.6,-,4,0.0,6.6
+2017/18,Frome Town,Southern League Premier Central,13,61,0.04,2.4,-,4,0.0,6.4
+2017/18,Redditch United,Southern League Premier Central,14,55,0.04,2.2,-,4,0.0,6.2
+2017/18,Stratford Town,Southern League Premier Central,15,55,0.04,2.2,-,4,0.0,6.2
+2017/18,Biggleswade Town,Southern League Premier Central,16,53,0.04,2.1,-,4,0.0,6.1
+2017/18,Merthyr Town,Southern League Premier Central,17,53,0.04,2.1,-,4,0.0,6.1
+2017/18,Bishop's Stortford,Southern League Premier Central,18,52,0.04,2.1,-,4,0.0,6.1
+2017/18,Dorchester Town,Southern League Premier Central,19,51,0.04,2.0,-,4,0.0,6.0
+2017/18,Farnborough,Southern League Premier Central,20,51,0.04,2.0,-,4,0.0,6.0
+2017/18,Kings Langley,Southern League Premier Central,21,38,0.04,1.5,-,4,0.0,5.5
+2017/18,St Ives Town,Southern League Premier Central,22,33,0.04,1.3,descenso,4,-0.6,4.7
+2017/18,Dunstable Town,Southern League Premier Central,24,17,0.04,0.7,"descenso, ultimo_lugar",4,-1.0,3.7
+2017/18,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2017/18,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2017/18,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2017/18,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2017/18,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2017/18,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2017/18,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2017/18,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2017/18,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2017/18,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2017/18,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2017/18,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2017/18,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2017/18,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2017/18,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2017/18,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2017/18,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2017/18,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2017/18,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2017/18,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2017/18,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2017/18,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2017/18,Billericay Town,Isthmian League Premier Division,1,99,0.04,4.0,campeon,4,0.8,8.8
+2017/18,Dulwich Hamlet,Isthmian League Premier Division,2,95,0.04,3.8,ascenso_directo,4,0.4,8.2
+2017/18,Hendon,Isthmian League Premier Division,3,85,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2017/18,Folkestone Invicta,Isthmian League Premier Division,4,85,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2017/18,Leiston,Isthmian League Premier Division,5,79,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2017/18,Leatherhead,Isthmian League Premier Division,6,79,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2017/18,Margate,Isthmian League Premier Division,7,77,0.04,3.1,-,4,0.0,7.1
+2017/18,Staines Town,Isthmian League Premier Division,8,75,0.04,3.0,-,4,0.0,7.0
+2017/18,Wingate & Finchley,Isthmian League Premier Division,9,69,0.04,2.8,-,4,0.0,6.8
+2017/18,Tonbridge Angels,Isthmian League Premier Division,11,64,0.04,2.6,-,4,0.0,6.6
+2017/18,Harrow Borough,Isthmian League Premier Division,12,63,0.04,2.5,-,4,0.0,6.5
+2017/18,Kingstonian,Isthmian League Premier Division,13,59,0.04,2.4,-,4,0.0,6.4
+2017/18,Dorking Wanderers,Isthmian League Premier Division,14,58,0.04,2.3,-,4,0.0,6.3
+2017/18,Thurrock,Isthmian League Premier Division,15,57,0.04,2.3,-,4,0.0,6.3
+2017/18,Worthing,Isthmian League Premier Division,16,57,0.04,2.3,-,4,0.0,6.3
+2017/18,Enfield Town,Isthmian League Premier Division,17,56,0.04,2.2,-,4,0.0,6.2
+2017/18,Merstham,Isthmian League Premier Division,18,56,0.04,2.2,-,4,0.0,6.2
+2017/18,Needham Market,Isthmian League Premier Division,19,49,0.04,2.0,-,4,0.0,6.0
+2017/18,Brightlingsea Regent,Isthmian League Premier Division,20,48,0.04,1.9,-,4,0.0,5.9
+2017/18,Harlow Town,Isthmian League Premier Division,21,47,0.04,1.9,-,4,0.0,5.9
+2017/18,Lowestoft Town,Isthmian League Premier Division,22,43,0.04,1.7,descenso,4,-0.6,5.1
+2017/18,Burgess Hill Town,Isthmian League Premier Division,23,36,0.04,1.4,descenso,4,-0.6,4.8
+2017/18,Tooting & Mitcham United,Isthmian League Premier Division,24,36,0.04,1.4,"descenso, ultimo_lugar",4,-1.0,4.4
+2018/19,Manchester City,Premier League,1,98,1.0,98.0,campeon,100,20.0,218.0
+2018/19,Liverpool,Premier League,2,97,1.0,97.0,-,100,0.0,197.0
+2018/19,Chelsea,Premier League,3,72,1.0,72.0,-,100,0.0,172.0
+2018/19,Tottenham Hotspur,Premier League,4,71,1.0,71.0,-,100,0.0,171.0
+2018/19,Arsenal,Premier League,5,70,1.0,70.0,-,100,0.0,170.0
+2018/19,Manchester United,Premier League,6,66,1.0,66.0,-,100,0.0,166.0
+2018/19,Wolverhampton Wanderers,Premier League,7,57,1.0,57.0,-,100,0.0,157.0
+2018/19,Everton,Premier League,8,54,1.0,54.0,-,100,0.0,154.0
+2018/19,Leicester City,Premier League,9,52,1.0,52.0,-,100,0.0,152.0
+2018/19,West Ham United,Premier League,10,52,1.0,52.0,-,100,0.0,152.0
+2018/19,Watford,Premier League,11,50,1.0,50.0,-,100,0.0,150.0
+2018/19,Crystal Palace,Premier League,12,49,1.0,49.0,-,100,0.0,149.0
+2018/19,Newcastle United,Premier League,13,45,1.0,45.0,-,100,0.0,145.0
+2018/19,Bournemouth,Premier League,14,45,1.0,45.0,-,100,0.0,145.0
+2018/19,Burnley,Premier League,15,40,1.0,40.0,-,100,0.0,140.0
+2018/19,Southampton,Premier League,16,39,1.0,39.0,-,100,0.0,139.0
+2018/19,Brighton & Hove Albion,Premier League,17,36,1.0,36.0,-,100,0.0,136.0
+2018/19,Cardiff City,Premier League,18,34,1.0,34.0,descenso,100,-15.0,119.0
+2018/19,Fulham,Premier League,19,26,1.0,26.0,descenso,100,-15.0,111.0
+2018/19,Huddersfield Town,Premier League,20,16,1.0,16.0,"descenso, ultimo_lugar",100,-25.0,91.0
+2018/19,Norwich City,Championship,1,94,0.7,65.8,campeon,70,14.0,149.8
+2018/19,Sheffield United,Championship,2,89,0.7,62.3,ascenso_directo,70,7.0,139.3
+2018/19,Leeds United,Championship,3,83,0.7,58.1,playoff_sin_ascenso,70,2.1,130.2
+2018/19,West Bromwich Albion,Championship,4,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2018/19,Aston Villa,Championship,5,76,0.7,53.2,playoff_sin_ascenso,70,2.1,125.3
+2018/19,Derby County,Championship,6,74,0.7,51.8,playoff_sin_ascenso,70,2.1,123.9
+2018/19,Middlesbrough,Championship,7,73,0.7,51.1,-,70,0.0,121.1
+2018/19,Bristol City,Championship,8,70,0.7,49.0,-,70,0.0,119.0
+2018/19,Nottingham Forest,Championship,9,66,0.7,46.2,-,70,0.0,116.2
+2018/19,Swansea City,Championship,10,65,0.7,45.5,-,70,0.0,115.5
+2018/19,Sheffield Wednesday,Championship,12,64,0.7,44.8,-,70,0.0,114.8
+2018/19,Hull City,Championship,13,62,0.7,43.4,-,70,0.0,113.4
+2018/19,Preston North End,Championship,14,61,0.7,42.7,-,70,0.0,112.7
+2018/19,Blackburn Rovers,Championship,15,60,0.7,42.0,-,70,0.0,112.0
+2018/19,Stoke City,Championship,16,55,0.7,38.5,-,70,0.0,108.5
+2018/19,Wigan Athletic,Championship,18,52,0.7,36.4,-,70,0.0,106.4
+2018/19,Queens Park Rangers,Championship,19,51,0.7,35.7,-,70,0.0,105.7
+2018/19,Reading,Championship,20,47,0.7,32.9,-,70,0.0,102.9
+2018/19,Millwall,Championship,21,44,0.7,30.8,-,70,0.0,100.8
+2018/19,Rotherham United,Championship,22,40,0.7,28.0,descenso,70,-10.5,87.5
+2018/19,Ipswich Town,Championship,24,31,0.7,21.7,"descenso, ultimo_lugar",70,-17.5,74.2
+2018/19,Luton Town,League One,1,94,0.45,42.3,campeon,45,9.0,96.3
+2018/19,Barnsley,League One,2,91,0.45,41.0,ascenso_directo,45,4.5,90.5
+2018/19,Charlton Athletic,League One,3,88,0.45,39.6,playoff_sin_ascenso,45,1.3,85.9
+2018/19,Portsmouth,League One,4,88,0.45,39.6,playoff_sin_ascenso,45,1.3,85.9
+2018/19,Sunderland,League One,5,85,0.45,38.2,playoff_sin_ascenso,45,1.3,84.5
+2018/19,Doncaster Rovers,League One,6,73,0.45,32.9,playoff_sin_ascenso,45,1.3,79.2
+2018/19,Peterborough United,League One,7,72,0.45,32.4,-,45,0.0,77.4
+2018/19,Coventry City,League One,8,65,0.45,29.2,-,45,0.0,74.2
+2018/19,Burton Albion,League One,9,63,0.45,28.4,-,45,0.0,73.4
+2018/19,Blackpool,League One,10,62,0.45,27.9,-,45,0.0,72.9
+2018/19,Fleetwood Town,League One,11,61,0.45,27.4,-,45,0.0,72.4
+2018/19,Oxford United,League One,12,60,0.45,27.0,-,45,0.0,72.0
+2018/19,Gillingham,League One,13,55,0.45,24.8,-,45,0.0,69.8
+2018/19,Accrington Stanley,League One,14,55,0.45,24.8,-,45,0.0,69.8
+2018/19,Bristol Rovers,League One,15,54,0.45,24.3,-,45,0.0,69.3
+2018/19,Rochdale,League One,16,54,0.45,24.3,-,45,0.0,69.3
+2018/19,Wycombe Wanderers,League One,17,53,0.45,23.9,-,45,0.0,68.9
+2018/19,Shrewsbury Town,League One,18,52,0.45,23.4,-,45,0.0,68.4
+2018/19,Southend United,League One,19,50,0.45,22.5,-,45,0.0,67.5
+2018/19,AFC Wimbledon,League One,20,50,0.45,22.5,-,45,0.0,67.5
+2018/19,Plymouth Argyle,League One,21,50,0.45,22.5,descenso,45,-6.8,60.7
+2018/19,Walsall,League One,22,47,0.45,21.2,descenso,45,-6.8,59.4
+2018/19,Scunthorpe United,League One,23,46,0.45,20.7,descenso,45,-6.8,58.9
+2018/19,Bradford City,League One,24,41,0.45,18.4,"descenso, ultimo_lugar",45,-11.3,52.1
+2018/19,Lincoln City,League Two,1,85,0.25,21.2,campeon,25,5.0,51.2
+2018/19,Bury,League Two,2,79,0.25,19.8,ascenso_directo,25,2.5,47.3
+2018/19,Milton Keynes Dons,League Two,3,79,0.25,19.8,ascenso_directo,25,2.5,47.3
+2018/19,Mansfield Town,League Two,4,76,0.25,19.0,playoff_sin_ascenso,25,0.8,44.8
+2018/19,Forest Green Rovers,League Two,5,74,0.25,18.5,playoff_sin_ascenso,25,0.8,44.3
+2018/19,Tranmere Rovers,League Two,6,73,0.25,18.2,playoff_sin_ascenso,25,0.8,44.0
+2018/19,Newport County,League Two,7,71,0.25,17.8,playoff_sin_ascenso,25,0.8,43.6
+2018/19,Colchester United,League Two,8,70,0.25,17.5,-,25,0.0,42.5
+2018/19,Exeter City,League Two,9,70,0.25,17.5,-,25,0.0,42.5
+2018/19,Stevenage,League Two,10,70,0.25,17.5,-,25,0.0,42.5
+2018/19,Carlisle United,League Two,11,68,0.25,17.0,-,25,0.0,42.0
+2018/19,Crewe Alexandra,League Two,12,65,0.25,16.2,-,25,0.0,41.2
+2018/19,Swindon Town,League Two,13,64,0.25,16.0,-,25,0.0,41.0
+2018/19,Oldham Athletic,League Two,14,62,0.25,15.5,-,25,0.0,40.5
+2018/19,Northampton Town,League Two,15,61,0.25,15.2,-,25,0.0,40.2
+2018/19,Cheltenham Town,League Two,16,57,0.25,14.2,-,25,0.0,39.2
+2018/19,Grimsby Town,League Two,17,56,0.25,14.0,-,25,0.0,39.0
+2018/19,Morecambe,League Two,18,54,0.25,13.5,-,25,0.0,38.5
+2018/19,Crawley Town,League Two,19,53,0.25,13.2,-,25,0.0,38.2
+2018/19,Port Vale,League Two,20,49,0.25,12.2,-,25,0.0,37.2
+2018/19,Cambridge United,League Two,21,47,0.25,11.8,-,25,0.0,36.8
+2018/19,Macclesfield Town,League Two,22,44,0.25,11.0,-,25,0.0,36.0
+2018/19,Notts County,League Two,23,41,0.25,10.2,descenso,25,-3.8,31.4
+2018/19,Yeovil Town,League Two,24,40,0.25,10.0,"descenso, ultimo_lugar",25,-6.3,28.7
+2018/19,Leyton Orient,National League,1,89,0.15,13.3,campeon,15,3.0,31.3
+2018/19,Solihull Moors,National League,2,86,0.15,12.9,ascenso_directo,15,1.5,29.4
+2018/19,Salford City,National League,3,85,0.15,12.8,playoff_sin_ascenso,15,0.4,28.2
+2018/19,Wrexham,National League,4,84,0.15,12.6,playoff_sin_ascenso,15,0.4,28.0
+2018/19,AFC Fylde,National League,5,81,0.15,12.2,playoff_sin_ascenso,15,0.4,27.6
+2018/19,Harrogate Town,National League,6,74,0.15,11.1,playoff_sin_ascenso,15,0.4,26.5
+2018/19,Eastleigh,National League,7,74,0.15,11.1,-,15,0.0,26.1
+2018/19,Ebbsfleet United,National League,8,67,0.15,10.0,-,15,0.0,25.0
+2018/19,Sutton United,National League,9,65,0.15,9.8,-,15,0.0,24.8
+2018/19,Barrow,National League,10,64,0.15,9.6,-,15,0.0,24.6
+2018/19,Bromley,National League,11,60,0.15,9.0,-,15,0.0,24.0
+2018/19,Barnet,National League,12,60,0.15,9.0,-,15,0.0,24.0
+2018/19,Dover Athletic,National League,13,60,0.15,9.0,-,15,0.0,24.0
+2018/19,Chesterfield,National League,14,59,0.15,8.8,-,15,0.0,23.8
+2018/19,FC Halifax Town,National League,15,59,0.15,8.8,-,15,0.0,23.8
+2018/19,Hartlepool United,National League,16,59,0.15,8.8,-,15,0.0,23.8
+2018/19,Dagenham & Redbridge,National League,18,56,0.15,8.4,-,15,0.0,23.4
+2018/19,Maidenhead United,National League,19,54,0.15,8.1,-,15,0.0,23.1
+2018/19,Boreham Wood,National League,20,52,0.15,7.8,-,15,0.0,22.8
+2018/19,Havant & Waterlooville,National League,22,40,0.15,6.0,descenso,15,-2.2,18.8
+2018/19,Maidstone United,National League,24,34,0.15,5.1,"descenso, ultimo_lugar",15,-3.7,16.4
+2018/19,Leyton Orient,National League North,1,89,0.08,7.1,campeon,8,1.6,16.7
+2018/19,Solihull Moors,National League North,2,86,0.08,6.9,ascenso_directo,8,0.8,15.7
+2018/19,Salford City,National League North,3,85,0.08,6.8,playoff_sin_ascenso,8,0.2,15.0
+2018/19,Wrexham,National League North,4,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2018/19,AFC Fylde,National League North,5,81,0.08,6.5,playoff_sin_ascenso,8,0.2,14.7
+2018/19,Harrogate Town,National League North,6,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2018/19,Eastleigh,National League North,7,74,0.08,5.9,-,8,0.0,13.9
+2018/19,Ebbsfleet United,National League North,8,67,0.08,5.4,-,8,0.0,13.4
+2018/19,Sutton United,National League North,9,65,0.08,5.2,-,8,0.0,13.2
+2018/19,Barrow,National League North,10,64,0.08,5.1,-,8,0.0,13.1
+2018/19,Bromley,National League North,11,60,0.08,4.8,-,8,0.0,12.8
+2018/19,Barnet,National League North,12,60,0.08,4.8,-,8,0.0,12.8
+2018/19,Dover Athletic,National League North,13,60,0.08,4.8,-,8,0.0,12.8
+2018/19,Chesterfield,National League North,14,59,0.08,4.7,-,8,0.0,12.7
+2018/19,FC Halifax Town,National League North,15,59,0.08,4.7,-,8,0.0,12.7
+2018/19,Hartlepool United,National League North,16,59,0.08,4.7,-,8,0.0,12.7
+2018/19,Dagenham & Redbridge,National League North,18,56,0.08,4.5,-,8,0.0,12.5
+2018/19,Maidenhead United,National League North,19,54,0.08,4.3,-,8,0.0,12.3
+2018/19,Boreham Wood,National League North,20,52,0.08,4.2,-,8,0.0,12.2
+2018/19,Havant & Waterlooville,National League North,22,40,0.08,3.2,descenso,8,-1.2,10.0
+2018/19,Maidstone United,National League North,24,34,0.08,2.7,"descenso, ultimo_lugar",8,-2.0,8.7
+2018/19,Leyton Orient,National League South,1,89,0.08,7.1,campeon,8,1.6,16.7
+2018/19,Solihull Moors,National League South,2,86,0.08,6.9,ascenso_directo,8,0.8,15.7
+2018/19,Salford City,National League South,3,85,0.08,6.8,playoff_sin_ascenso,8,0.2,15.0
+2018/19,Wrexham,National League South,4,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2018/19,AFC Fylde,National League South,5,81,0.08,6.5,playoff_sin_ascenso,8,0.2,14.7
+2018/19,Harrogate Town,National League South,6,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2018/19,Eastleigh,National League South,7,74,0.08,5.9,-,8,0.0,13.9
+2018/19,Ebbsfleet United,National League South,8,67,0.08,5.4,-,8,0.0,13.4
+2018/19,Sutton United,National League South,9,65,0.08,5.2,-,8,0.0,13.2
+2018/19,Barrow,National League South,10,64,0.08,5.1,-,8,0.0,13.1
+2018/19,Bromley,National League South,11,60,0.08,4.8,-,8,0.0,12.8
+2018/19,Barnet,National League South,12,60,0.08,4.8,-,8,0.0,12.8
+2018/19,Dover Athletic,National League South,13,60,0.08,4.8,-,8,0.0,12.8
+2018/19,Chesterfield,National League South,14,59,0.08,4.7,-,8,0.0,12.7
+2018/19,FC Halifax Town,National League South,15,59,0.08,4.7,-,8,0.0,12.7
+2018/19,Hartlepool United,National League South,16,59,0.08,4.7,-,8,0.0,12.7
+2018/19,Dagenham & Redbridge,National League South,18,56,0.08,4.5,-,8,0.0,12.5
+2018/19,Maidenhead United,National League South,19,54,0.08,4.3,-,8,0.0,12.3
+2018/19,Boreham Wood,National League South,20,52,0.08,4.2,-,8,0.0,12.2
+2018/19,Havant & Waterlooville,National League South,22,40,0.08,3.2,descenso,8,-1.2,10.0
+2018/19,Maidstone United,National League South,24,34,0.08,2.7,"descenso, ultimo_lugar",8,-2.0,8.7
+2018/19,Farsley Celtic,Northern Premier Division,1,90,0.04,3.6,campeon,4,0.8,8.4
+2018/19,South Shields,Northern Premier Division,2,87,0.04,3.5,ascenso_directo,4,0.4,7.9
+2018/19,Warrington Town,Northern Premier Division,3,84,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2018/19,Nantwich Town,Northern Premier Division,4,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Buxton,Northern Premier Division,5,66,0.04,2.6,playoff_sin_ascenso,4,0.1,6.7
+2018/19,Gainsborough Trinity,Northern Premier Division,6,65,0.04,2.6,playoff_sin_ascenso,4,0.1,6.7
+2018/19,Basford United,Northern Premier Division,7,61,0.04,2.4,-,4,0.0,6.4
+2018/19,Scarborough Athletic,Northern Premier Division,8,61,0.04,2.4,-,4,0.0,6.4
+2018/19,Witton Albion,Northern Premier Division,9,58,0.04,2.3,-,4,0.0,6.3
+2018/19,Hyde United,Northern Premier Division,10,53,0.04,2.1,-,4,0.0,6.1
+2018/19,Whitby Town,Northern Premier Division,11,49,0.04,2.0,-,4,0.0,6.0
+2018/19,Lancaster City,Northern Premier Division,12,49,0.04,2.0,-,4,0.0,6.0
+2018/19,Hednesford Town,Northern Premier Division,13,48,0.04,1.9,-,4,0.0,5.9
+2018/19,Stafford Rangers,Northern Premier Division,14,47,0.04,1.9,-,4,0.0,5.9
+2018/19,Matlock Town,Northern Premier Division,15,44,0.04,1.8,-,4,0.0,5.8
+2018/19,Bamber Bridge,Northern Premier Division,16,42,0.04,1.7,-,4,0.0,5.7
+2018/19,Stalybridge Celtic,Northern Premier Division,17,42,0.04,1.7,-,4,0.0,5.7
+2018/19,Grantham Town,Northern Premier Division,18,42,0.04,1.7,-,4,0.0,5.7
+2018/19,Mickleover Sports,Northern Premier Division,19,41,0.04,1.6,-,4,0.0,5.6
+2018/19,Marine,Northern Premier Division,20,40,0.04,1.6,descenso,4,-0.6,5.0
+2018/19,Workington,Northern Premier Division,21,29,0.04,1.2,descenso,4,-0.6,4.6
+2018/19,North Ferriby United,Northern Premier Division,22,0,0.04,0.0,"descenso, ultimo_lugar",4,-1.0,3.0
+2018/19,Kettering Town,Southern League Premier Central,1,94,0.04,3.8,campeon,4,0.8,8.6
+2018/19,King's Lynn Town,Southern League Premier Central,2,80,0.04,3.2,ascenso_directo,4,0.4,7.6
+2018/19,Stourbridge,Southern League Premier Central,3,78,0.04,3.1,playoff_sin_ascenso,4,0.1,7.2
+2018/19,Alvechurch,Southern League Premier Central,4,73,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2018/19,Stratford Town,Southern League Premier Central,5,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2018/19,Coalville Town,Southern League Premier Central,6,67,0.04,2.7,playoff_sin_ascenso,4,0.1,6.8
+2018/19,Biggleswade Town,Southern League Premier Central,7,66,0.04,2.6,-,4,0.0,6.6
+2018/19,Rushall Olympic,Southern League Premier Central,8,62,0.04,2.5,-,4,0.0,6.5
+2018/19,AFC Rushden & Diamonds,Southern League Premier Central,9,61,0.04,2.4,-,4,0.0,6.4
+2018/19,Needham Market,Southern League Premier Central,11,60,0.04,2.4,-,4,0.0,6.4
+2018/19,Tamworth,Southern League Premier Central,12,58,0.04,2.3,-,4,0.0,6.3
+2018/19,St Ives Town,Southern League Premier Central,13,55,0.04,2.2,-,4,0.0,6.2
+2018/19,Lowestoft Town,Southern League Premier Central,14,51,0.04,2.0,-,4,0.0,6.0
+2018/19,Redditch United,Southern League Premier Central,15,50,0.04,2.0,-,4,0.0,6.0
+2018/19,Barwell,Southern League Premier Central,16,49,0.04,2.0,-,4,0.0,6.0
+2018/19,Hitchin Town,Southern League Premier Central,18,48,0.04,1.9,-,4,0.0,5.9
+2018/19,Leiston,Southern League Premier Central,19,47,0.04,1.9,-,4,0.0,5.9
+2018/19,St Neots Town,Southern League Premier Central,20,36,0.04,1.4,descenso,4,-0.6,4.8
+2018/19,Halesowen Town,Southern League Premier Central,21,32,0.04,1.3,descenso,4,-0.6,4.7
+2018/19,Bedworth United,Southern League Premier Central,22,19,0.04,0.8,"descenso, ultimo_lugar",4,-1.0,3.8
+2018/19,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2018/19,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2018/19,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2018/19,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2018/19,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2018/19,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2018/19,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2018/19,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2018/19,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2018/19,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2018/19,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2018/19,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2018/19,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2018/19,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2018/19,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2018/19,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2018/19,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2018/19,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2018/19,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2018/19,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2018/19,Dorking Wanderers,Isthmian League Premier Division,1,93,0.04,3.7,campeon,4,0.8,8.5
+2018/19,Carshalton Athletic,Isthmian League Premier Division,2,71,0.04,2.8,ascenso_directo,4,0.4,7.2
+2018/19,Haringey Borough,Isthmian League Premier Division,3,71,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Tonbridge Angels,Isthmian League Premier Division,4,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Merstham,Isthmian League Premier Division,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Folkestone Invicta,Isthmian League Premier Division,6,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2018/19,Bishop's Stortford,Isthmian League Premier Division,7,67,0.04,2.7,-,4,0.0,6.7
+2018/19,Leatherhead,Isthmian League Premier Division,8,65,0.04,2.6,-,4,0.0,6.6
+2018/19,Worthing,Isthmian League Premier Division,9,65,0.04,2.6,-,4,0.0,6.6
+2018/19,Enfield Town,Isthmian League Premier Division,10,61,0.04,2.4,-,4,0.0,6.4
+2018/19,Lewes,Isthmian League Premier Division,11,60,0.04,2.4,-,4,0.0,6.4
+2018/19,Margate,Isthmian League Premier Division,12,59,0.04,2.4,-,4,0.0,6.4
+2018/19,Brightlingsea Regent,Isthmian League Premier Division,13,59,0.04,2.4,-,4,0.0,6.4
+2018/19,Hornchurch,Isthmian League Premier Division,15,50,0.04,2.0,-,4,0.0,6.0
+2018/19,Potters Bar Town,Isthmian League Premier Division,16,49,0.04,2.0,-,4,0.0,6.0
+2018/19,Corinthian-Casuals,Isthmian League Premier Division,17,47,0.04,1.9,-,4,0.0,5.9
+2018/19,Kingstonian,Isthmian League Premier Division,18,45,0.04,1.8,-,4,0.0,5.8
+2018/19,Wingate & Finchley,Isthmian League Premier Division,19,43,0.04,1.7,-,4,0.0,5.7
+2018/19,Whitehawk,Isthmian League Premier Division,20,41,0.04,1.6,descenso,4,-0.6,5.0
+2018/19,Burgess Hill Town,Isthmian League Premier Division,21,37,0.04,1.5,descenso,4,-0.6,4.9
+2018/19,Harlow Town,Isthmian League Premier Division,22,34,0.04,1.4,"descenso, ultimo_lugar",4,-1.0,4.4
+2019/20,Liverpool,Premier League,1,99,1.0,99.0,campeon,100,20.0,219.0
+2019/20,Manchester City,Premier League,2,81,1.0,81.0,-,100,0.0,181.0
+2019/20,Manchester United,Premier League,3,66,1.0,66.0,-,100,0.0,166.0
+2019/20,Chelsea,Premier League,4,66,1.0,66.0,-,100,0.0,166.0
+2019/20,Leicester City,Premier League,5,62,1.0,62.0,-,100,0.0,162.0
+2019/20,Tottenham Hotspur,Premier League,6,59,1.0,59.0,-,100,0.0,159.0
+2019/20,Wolverhampton Wanderers,Premier League,7,59,1.0,59.0,-,100,0.0,159.0
+2019/20,Arsenal,Premier League,8,56,1.0,56.0,-,100,0.0,156.0
+2019/20,Sheffield United,Premier League,9,54,1.0,54.0,-,100,0.0,154.0
+2019/20,Burnley,Premier League,10,54,1.0,54.0,-,100,0.0,154.0
+2019/20,Southampton,Premier League,11,52,1.0,52.0,-,100,0.0,152.0
+2019/20,Everton,Premier League,12,49,1.0,49.0,-,100,0.0,149.0
+2019/20,Newcastle United,Premier League,13,44,1.0,44.0,-,100,0.0,144.0
+2019/20,Crystal Palace,Premier League,14,43,1.0,43.0,-,100,0.0,143.0
+2019/20,Brighton & Hove Albion,Premier League,15,41,1.0,41.0,-,100,0.0,141.0
+2019/20,West Ham United,Premier League,16,39,1.0,39.0,-,100,0.0,139.0
+2019/20,Aston Villa,Premier League,17,35,1.0,35.0,-,100,0.0,135.0
+2019/20,Bournemouth,Premier League,18,34,1.0,34.0,descenso,100,-15.0,119.0
+2019/20,Watford,Premier League,19,34,1.0,34.0,descenso,100,-15.0,119.0
+2019/20,Norwich City,Premier League,20,21,1.0,21.0,"descenso, ultimo_lugar",100,-25.0,96.0
+2019/20,Leeds United,Championship,1,93,0.7,65.1,campeon,70,14.0,149.1
+2019/20,West Bromwich Albion,Championship,2,83,0.7,58.1,ascenso_directo,70,7.0,135.1
+2019/20,Brentford,Championship,3,81,0.7,56.7,playoff_sin_ascenso,70,2.1,128.8
+2019/20,Fulham,Championship,4,81,0.7,56.7,playoff_sin_ascenso,70,2.1,128.8
+2019/20,Cardiff City,Championship,5,73,0.7,51.1,playoff_sin_ascenso,70,2.1,123.2
+2019/20,Swansea City,Championship,6,70,0.7,49.0,playoff_sin_ascenso,70,2.1,121.1
+2019/20,Nottingham Forest,Championship,7,70,0.7,49.0,-,70,0.0,119.0
+2019/20,Millwall,Championship,8,68,0.7,47.6,-,70,0.0,117.6
+2019/20,Preston North End,Championship,9,66,0.7,46.2,-,70,0.0,116.2
+2019/20,Derby County,Championship,10,64,0.7,44.8,-,70,0.0,114.8
+2019/20,Blackburn Rovers,Championship,11,63,0.7,44.1,-,70,0.0,114.1
+2019/20,Bristol City,Championship,12,63,0.7,44.1,-,70,0.0,114.1
+2019/20,Queens Park Rangers,Championship,13,58,0.7,40.6,-,70,0.0,110.6
+2019/20,Reading,Championship,14,56,0.7,39.2,-,70,0.0,109.2
+2019/20,Stoke City,Championship,15,56,0.7,39.2,-,70,0.0,109.2
+2019/20,Sheffield Wednesday,Championship,16,56,0.7,39.2,-,70,0.0,109.2
+2019/20,Middlesbrough,Championship,17,53,0.7,37.1,-,70,0.0,107.1
+2019/20,Huddersfield Town,Championship,18,51,0.7,35.7,-,70,0.0,105.7
+2019/20,Luton Town,Championship,19,51,0.7,35.7,-,70,0.0,105.7
+2019/20,Birmingham City,Championship,20,50,0.7,35.0,-,70,0.0,105.0
+2019/20,Barnsley,Championship,21,49,0.7,34.3,-,70,0.0,104.3
+2019/20,Charlton Athletic,Championship,22,48,0.7,33.6,descenso,70,-10.5,93.1
+2019/20,Hull City,Championship,24,45,0.7,31.5,"descenso, ultimo_lugar",70,-17.5,84.0
+2019/20,Coventry City,League One,1,67,0.45,30.2,campeon,45,9.0,84.2
+2019/20,Rotherham United,League One,2,62,0.45,27.9,ascenso_directo,45,4.5,77.4
+2019/20,Wycombe Wanderers,League One,3,59,0.45,26.6,playoff_sin_ascenso,45,1.3,72.9
+2019/20,Oxford United,League One,4,60,0.45,27.0,playoff_sin_ascenso,45,1.3,73.3
+2019/20,Portsmouth,League One,5,60,0.45,27.0,playoff_sin_ascenso,45,1.3,73.3
+2019/20,Fleetwood Town,League One,6,60,0.45,27.0,playoff_sin_ascenso,45,1.3,73.3
+2019/20,Peterborough United,League One,7,59,0.45,26.6,-,45,0.0,71.6
+2019/20,Sunderland,League One,8,59,0.45,26.6,-,45,0.0,71.6
+2019/20,Doncaster Rovers,League One,9,54,0.45,24.3,-,45,0.0,69.3
+2019/20,Gillingham,League One,10,51,0.45,22.9,-,45,0.0,67.9
+2019/20,Ipswich Town,League One,11,52,0.45,23.4,-,45,0.0,68.4
+2019/20,Burton Albion,League One,12,48,0.45,21.6,-,45,0.0,66.6
+2019/20,Blackpool,League One,13,45,0.45,20.2,-,45,0.0,65.2
+2019/20,Bristol Rovers,League One,14,45,0.45,20.2,-,45,0.0,65.2
+2019/20,Shrewsbury Town,League One,15,41,0.45,18.4,-,45,0.0,63.4
+2019/20,Lincoln City,League One,16,42,0.45,18.9,-,45,0.0,63.9
+2019/20,Accrington Stanley,League One,17,40,0.45,18.0,-,45,0.0,63.0
+2019/20,Rochdale,League One,18,36,0.45,16.2,-,45,0.0,61.2
+2019/20,Milton Keynes Dons,League One,19,37,0.45,16.7,descenso,45,-6.8,54.9
+2019/20,AFC Wimbledon,League One,20,35,0.45,15.8,descenso,45,-6.8,54.0
+2019/20,Tranmere Rovers,League One,21,32,0.45,14.4,descenso,45,-6.8,52.6
+2019/20,Southend United,League One,22,19,0.45,8.6,"descenso, ultimo_lugar",45,-11.3,42.3
+2019/20,Swindon Town,League Two,1,69,0.25,17.2,campeon,25,5.0,47.2
+2019/20,Crewe Alexandra,League Two,2,69,0.25,17.2,ascenso_directo,25,2.5,44.7
+2019/20,Plymouth Argyle,League Two,3,68,0.25,17.0,ascenso_directo,25,2.5,44.5
+2019/20,Cheltenham Town,League Two,4,64,0.25,16.0,playoff_sin_ascenso,25,0.8,41.8
+2019/20,Exeter City,League Two,5,65,0.25,16.2,playoff_sin_ascenso,25,0.8,42.0
+2019/20,Colchester United,League Two,6,58,0.25,14.5,playoff_sin_ascenso,25,0.8,40.3
+2019/20,Northampton Town,League Two,7,58,0.25,14.5,playoff_sin_ascenso,25,0.8,40.3
+2019/20,Port Vale,League Two,8,57,0.25,14.2,-,25,0.0,39.2
+2019/20,Bradford City,League Two,9,54,0.25,13.5,-,25,0.0,38.5
+2019/20,Forest Green Rovers,League Two,10,49,0.25,12.2,-,25,0.0,37.2
+2019/20,Salford City,League Two,11,50,0.25,12.5,-,25,0.0,37.5
+2019/20,Walsall,League Two,12,47,0.25,11.8,-,25,0.0,36.8
+2019/20,Crawley Town,League Two,13,48,0.25,12.0,-,25,0.0,37.0
+2019/20,Newport County,League Two,14,46,0.25,11.5,-,25,0.0,36.5
+2019/20,Grimsby Town,League Two,15,47,0.25,11.8,-,25,0.0,36.8
+2019/20,Cambridge United,League Two,16,45,0.25,11.2,-,25,0.0,36.2
+2019/20,Leyton Orient,League Two,17,42,0.25,10.5,-,25,0.0,35.5
+2019/20,Carlisle United,League Two,18,42,0.25,10.5,-,25,0.0,35.5
+2019/20,Oldham Athletic,League Two,19,41,0.25,10.2,-,25,0.0,35.2
+2019/20,Scunthorpe United,League Two,20,40,0.25,10.0,-,25,0.0,35.0
+2019/20,Mansfield Town,League Two,21,38,0.25,9.5,-,25,0.0,34.5
+2019/20,Morecambe,League Two,22,32,0.25,8.0,descenso,25,-3.8,29.2
+2019/20,Stevenage,League Two,23,22,0.25,5.5,"descenso, ultimo_lugar",25,-6.3,24.2
+2019/20,Barrow,National League,1,70,0.15,10.5,campeon,15,3.0,28.5
+2019/20,Harrogate Town,National League,2,66,0.15,9.9,ascenso_directo,15,1.5,26.4
+2019/20,Notts County,National League,3,63,0.15,9.4,playoff_sin_ascenso,15,0.4,24.8
+2019/20,Yeovil Town,National League,4,60,0.15,9.0,playoff_sin_ascenso,15,0.4,24.4
+2019/20,Boreham Wood,National League,5,60,0.15,9.0,playoff_sin_ascenso,15,0.4,24.4
+2019/20,FC Halifax Town,National League,6,58,0.15,8.7,playoff_sin_ascenso,15,0.4,24.1
+2019/20,Barnet,National League,7,54,0.15,8.1,-,15,0.0,23.1
+2019/20,Stockport County,National League,8,58,0.15,8.7,-,15,0.0,23.7
+2019/20,Solihull Moors,National League,9,55,0.15,8.2,-,15,0.0,23.2
+2019/20,Woking,National League,10,55,0.15,8.2,-,15,0.0,23.2
+2019/20,Dover Athletic,National League,11,54,0.15,8.1,-,15,0.0,23.1
+2019/20,Hartlepool United,National League,12,55,0.15,8.2,-,15,0.0,23.2
+2019/20,Bromley,National League,13,52,0.15,7.8,-,15,0.0,22.8
+2019/20,Torquay United,National League,14,48,0.15,7.2,-,15,0.0,22.2
+2019/20,Sutton United,National League,15,50,0.15,7.5,-,15,0.0,22.5
+2019/20,Eastleigh,National League,16,46,0.15,6.9,-,15,0.0,21.9
+2019/20,Dagenham & Redbridge,National League,17,44,0.15,6.6,-,15,0.0,21.6
+2019/20,Aldershot Town,National League,18,46,0.15,6.9,-,15,0.0,21.9
+2019/20,Wrexham,National League,19,43,0.15,6.5,-,15,0.0,21.5
+2019/20,Chesterfield,National League,20,44,0.15,6.6,-,15,0.0,21.6
+2019/20,Maidenhead United,National League,21,41,0.15,6.1,-,15,0.0,21.1
+2019/20,Ebbsfleet United,National League,22,42,0.15,6.3,descenso,15,-2.2,19.1
+2019/20,AFC Fylde,National League,23,39,0.15,5.8,descenso,15,-2.2,18.6
+2019/20,Chorley,National League,24,26,0.15,3.9,"descenso, ultimo_lugar",15,-3.7,15.2
+2019/20,Barrow,National League North,1,70,0.08,5.6,campeon,8,1.6,15.2
+2019/20,Harrogate Town,National League North,2,66,0.08,5.3,ascenso_directo,8,0.8,14.1
+2019/20,Notts County,National League North,3,63,0.08,5.0,playoff_sin_ascenso,8,0.2,13.2
+2019/20,Yeovil Town,National League North,4,60,0.08,4.8,playoff_sin_ascenso,8,0.2,13.0
+2019/20,Boreham Wood,National League North,5,60,0.08,4.8,playoff_sin_ascenso,8,0.2,13.0
+2019/20,FC Halifax Town,National League North,6,58,0.08,4.6,playoff_sin_ascenso,8,0.2,12.8
+2019/20,Barnet,National League North,7,54,0.08,4.3,-,8,0.0,12.3
+2019/20,Stockport County,National League North,8,58,0.08,4.6,-,8,0.0,12.6
+2019/20,Solihull Moors,National League North,9,55,0.08,4.4,-,8,0.0,12.4
+2019/20,Woking,National League North,10,55,0.08,4.4,-,8,0.0,12.4
+2019/20,Dover Athletic,National League North,11,54,0.08,4.3,-,8,0.0,12.3
+2019/20,Hartlepool United,National League North,12,55,0.08,4.4,-,8,0.0,12.4
+2019/20,Bromley,National League North,13,52,0.08,4.2,-,8,0.0,12.2
+2019/20,Torquay United,National League North,14,48,0.08,3.8,-,8,0.0,11.8
+2019/20,Sutton United,National League North,15,50,0.08,4.0,-,8,0.0,12.0
+2019/20,Eastleigh,National League North,16,46,0.08,3.7,-,8,0.0,11.7
+2019/20,Dagenham & Redbridge,National League North,17,44,0.08,3.5,-,8,0.0,11.5
+2019/20,Aldershot Town,National League North,18,46,0.08,3.7,-,8,0.0,11.7
+2019/20,Wrexham,National League North,19,43,0.08,3.4,-,8,0.0,11.4
+2019/20,Chesterfield,National League North,20,44,0.08,3.5,-,8,0.0,11.5
+2019/20,Maidenhead United,National League North,21,41,0.08,3.3,-,8,0.0,11.3
+2019/20,Ebbsfleet United,National League North,22,42,0.08,3.4,descenso,8,-1.2,10.2
+2019/20,AFC Fylde,National League North,23,39,0.08,3.1,descenso,8,-1.2,9.9
+2019/20,Chorley,National League North,24,26,0.08,2.1,"descenso, ultimo_lugar",8,-2.0,8.1
+2019/20,Barrow,National League South,1,70,0.08,5.6,campeon,8,1.6,15.2
+2019/20,Harrogate Town,National League South,2,66,0.08,5.3,ascenso_directo,8,0.8,14.1
+2019/20,Notts County,National League South,3,63,0.08,5.0,playoff_sin_ascenso,8,0.2,13.2
+2019/20,Yeovil Town,National League South,4,60,0.08,4.8,playoff_sin_ascenso,8,0.2,13.0
+2019/20,Boreham Wood,National League South,5,60,0.08,4.8,playoff_sin_ascenso,8,0.2,13.0
+2019/20,FC Halifax Town,National League South,6,58,0.08,4.6,playoff_sin_ascenso,8,0.2,12.8
+2019/20,Barnet,National League South,7,54,0.08,4.3,-,8,0.0,12.3
+2019/20,Stockport County,National League South,8,58,0.08,4.6,-,8,0.0,12.6
+2019/20,Solihull Moors,National League South,9,55,0.08,4.4,-,8,0.0,12.4
+2019/20,Woking,National League South,10,55,0.08,4.4,-,8,0.0,12.4
+2019/20,Dover Athletic,National League South,11,54,0.08,4.3,-,8,0.0,12.3
+2019/20,Hartlepool United,National League South,12,55,0.08,4.4,-,8,0.0,12.4
+2019/20,Bromley,National League South,13,52,0.08,4.2,-,8,0.0,12.2
+2019/20,Torquay United,National League South,14,48,0.08,3.8,-,8,0.0,11.8
+2019/20,Sutton United,National League South,15,50,0.08,4.0,-,8,0.0,12.0
+2019/20,Eastleigh,National League South,16,46,0.08,3.7,-,8,0.0,11.7
+2019/20,Dagenham & Redbridge,National League South,17,44,0.08,3.5,-,8,0.0,11.5
+2019/20,Aldershot Town,National League South,18,46,0.08,3.7,-,8,0.0,11.7
+2019/20,Wrexham,National League South,19,43,0.08,3.4,-,8,0.0,11.4
+2019/20,Chesterfield,National League South,20,44,0.08,3.5,-,8,0.0,11.5
+2019/20,Maidenhead United,National League South,21,41,0.08,3.3,-,8,0.0,11.3
+2019/20,Ebbsfleet United,National League South,22,42,0.08,3.4,descenso,8,-1.2,10.2
+2019/20,AFC Fylde,National League South,23,39,0.08,3.1,descenso,8,-1.2,9.9
+2019/20,Chorley,National League South,24,26,0.08,2.1,"descenso, ultimo_lugar",8,-2.0,8.1
+2019/20,South Shields,Northern Premier Division,1,69,0.04,2.8,campeon,4,0.8,7.6
+2019/20,FC United of Manchester,Northern Premier Division,2,57,0.04,2.3,ascenso_directo,4,0.4,6.7
+2019/20,Warrington Town,Northern Premier Division,3,55,0.04,2.2,playoff_sin_ascenso,4,0.1,6.3
+2019/20,Basford United,Northern Premier Division,4,55,0.04,2.2,playoff_sin_ascenso,4,0.1,6.3
+2019/20,Lancaster City,Northern Premier Division,5,53,0.04,2.1,playoff_sin_ascenso,4,0.1,6.2
+2019/20,Nantwich Town,Northern Premier Division,6,52,0.04,2.1,playoff_sin_ascenso,4,0.1,6.2
+2019/20,Whitby Town,Northern Premier Division,7,50,0.04,2.0,-,4,0.0,6.0
+2019/20,Scarborough Athletic,Northern Premier Division,8,50,0.04,2.0,-,4,0.0,6.0
+2019/20,Morpeth Town,Northern Premier Division,9,48,0.04,1.9,-,4,0.0,5.9
+2019/20,Hyde United,Northern Premier Division,10,43,0.04,1.7,-,4,0.0,5.7
+2019/20,Gainsborough Trinity,Northern Premier Division,11,42,0.04,1.7,-,4,0.0,5.7
+2019/20,Stalybridge Celtic,Northern Premier Division,12,42,0.04,1.7,-,4,0.0,5.7
+2019/20,Bamber Bridge,Northern Premier Division,13,40,0.04,1.6,-,4,0.0,5.6
+2019/20,Witton Albion,Northern Premier Division,14,39,0.04,1.6,-,4,0.0,5.6
+2019/20,Mickleover Sports,Northern Premier Division,15,38,0.04,1.5,-,4,0.0,5.5
+2019/20,Radcliffe,Northern Premier Division,16,38,0.04,1.5,-,4,0.0,5.5
+2019/20,Buxton,Northern Premier Division,18,35,0.04,1.4,-,4,0.0,5.4
+2019/20,Grantham Town,Northern Premier Division,19,30,0.04,1.2,-,4,0.0,5.2
+2019/20,Matlock Town,Northern Premier Division,20,29,0.04,1.2,descenso,4,-0.6,4.6
+2019/20,Atherton Collieries,Northern Premier Division,21,28,0.04,1.1,descenso,4,-0.6,4.5
+2019/20,Stafford Rangers,Northern Premier Division,22,23,0.04,0.9,"descenso, ultimo_lugar",4,-1.0,3.9
+2019/20,Peterborough Sports,Southern League Premier Central,1,65,0.04,2.6,campeon,4,0.8,7.4
+2019/20,Tamworth,Southern League Premier Central,2,65,0.04,2.6,ascenso_directo,4,0.4,7.0
+2019/20,Royston Town,Southern League Premier Central,3,63,0.04,2.5,playoff_sin_ascenso,4,0.1,6.6
+2019/20,Bromsgrove Sporting,Southern League Premier Central,4,57,0.04,2.3,playoff_sin_ascenso,4,0.1,6.4
+2019/20,Rushall Olympic,Southern League Premier Central,5,53,0.04,2.1,playoff_sin_ascenso,4,0.1,6.2
+2019/20,Stourbridge,Southern League Premier Central,6,53,0.04,2.1,playoff_sin_ascenso,4,0.1,6.2
+2019/20,Banbury United,Southern League Premier Central,7,52,0.04,2.1,-,4,0.0,6.1
+2019/20,Coalville Town,Southern League Premier Central,8,51,0.04,2.0,-,4,0.0,6.0
+2019/20,Nuneaton Borough,Southern League Premier Central,9,50,0.04,2.0,-,4,0.0,6.0
+2019/20,Kings Langley,Southern League Premier Central,10,50,0.04,2.0,-,4,0.0,6.0
+2019/20,AFC Rushden & Diamonds,Southern League Premier Central,11,49,0.04,2.0,-,4,0.0,6.0
+2019/20,Barwell,Southern League Premier Central,12,48,0.04,1.9,-,4,0.0,5.9
+2019/20,Needham Market,Southern League Premier Central,13,48,0.04,1.9,-,4,0.0,5.9
+2019/20,Hednesford Town,Southern League Premier Central,14,47,0.04,1.9,-,4,0.0,5.9
+2019/20,Biggleswade Town,Southern League Premier Central,15,43,0.04,1.7,-,4,0.0,5.7
+2019/20,Lowestoft Town,Southern League Premier Central,16,41,0.04,1.6,-,4,0.0,5.6
+2019/20,Hitchin Town,Southern League Premier Central,17,39,0.04,1.6,-,4,0.0,5.6
+2019/20,Stratford Town,Southern League Premier Central,18,28,0.04,1.1,-,4,0.0,5.1
+2019/20,Leiston,Southern League Premier Central,19,26,0.04,1.0,-,4,0.0,5.0
+2019/20,St Ives Town,Southern League Premier Central,20,23,0.04,0.9,descenso,4,-0.6,4.3
+2019/20,Alvechurch,Southern League Premier Central,21,17,0.04,0.7,descenso,4,-0.6,4.1
+2019/20,Redditch United,Southern League Premier Central,22,12,0.04,0.5,"descenso, ultimo_lugar",4,-1.0,3.5
+2019/20,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2019/20,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2019/20,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2019/20,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2019/20,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2019/20,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2019/20,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2019/20,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2019/20,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2019/20,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2019/20,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2019/20,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2019/20,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2019/20,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2019/20,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2019/20,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2019/20,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2019/20,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2019/20,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2019/20,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2019/20,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2019/20,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2019/20,Worthing,Isthmian League Premier Division,1,71,0.04,2.8,campeon,4,0.8,7.6
+2019/20,Cray Wanderers,Isthmian League Premier Division,2,64,0.04,2.6,ascenso_directo,4,0.4,7.0
+2019/20,Hornchurch,Isthmian League Premier Division,3,62,0.04,2.5,playoff_sin_ascenso,4,0.1,6.6
+2019/20,Folkestone Invicta,Isthmian League Premier Division,4,62,0.04,2.5,playoff_sin_ascenso,4,0.1,6.6
+2019/20,Carshalton Athletic,Isthmian League Premier Division,5,62,0.04,2.5,playoff_sin_ascenso,4,0.1,6.6
+2019/20,Horsham,Isthmian League Premier Division,6,57,0.04,2.3,playoff_sin_ascenso,4,0.1,6.4
+2019/20,Enfield Town,Isthmian League Premier Division,7,56,0.04,2.2,-,4,0.0,6.2
+2019/20,Bognor Regis Town,Isthmian League Premier Division,8,53,0.04,2.1,-,4,0.0,6.1
+2019/20,Leatherhead,Isthmian League Premier Division,9,52,0.04,2.1,-,4,0.0,6.1
+2019/20,Kingstonian,Isthmian League Premier Division,10,47,0.04,1.9,-,4,0.0,5.9
+2019/20,East Thurrock United,Isthmian League Premier Division,11,46,0.04,1.8,-,4,0.0,5.8
+2019/20,Margate,Isthmian League Premier Division,12,43,0.04,1.7,-,4,0.0,5.7
+2019/20,Potters Bar Town,Isthmian League Premier Division,13,41,0.04,1.6,-,4,0.0,5.6
+2019/20,Bowers & Pitsea,Isthmian League Premier Division,14,40,0.04,1.6,-,4,0.0,5.6
+2019/20,Haringey Borough,Isthmian League Premier Division,15,39,0.04,1.6,-,4,0.0,5.6
+2019/20,Lewes,Isthmian League Premier Division,16,31,0.04,1.2,-,4,0.0,5.2
+2019/20,Bishop's Stortford,Isthmian League Premier Division,17,28,0.04,1.1,-,4,0.0,5.1
+2019/20,Cheshunt,Isthmian League Premier Division,18,27,0.04,1.1,-,4,0.0,5.1
+2019/20,Corinthian-Casuals,Isthmian League Premier Division,19,26,0.04,1.0,-,4,0.0,5.0
+2019/20,Wingate & Finchley,Isthmian League Premier Division,20,25,0.04,1.0,descenso,4,-0.6,4.4
+2019/20,Merstham,Isthmian League Premier Division,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2019/20,Brightlingsea Regent,Isthmian League Premier Division,22,24,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2020/21,Manchester City,Premier League,1,86,1.0,86.0,campeon,100,20.0,206.0
+2020/21,Manchester United,Premier League,2,74,1.0,74.0,-,100,0.0,174.0
+2020/21,Liverpool,Premier League,3,69,1.0,69.0,-,100,0.0,169.0
+2020/21,Chelsea,Premier League,4,67,1.0,67.0,-,100,0.0,167.0
+2020/21,Leicester City,Premier League,5,66,1.0,66.0,-,100,0.0,166.0
+2020/21,West Ham United,Premier League,6,65,1.0,65.0,-,100,0.0,165.0
+2020/21,Tottenham Hotspur,Premier League,7,62,1.0,62.0,-,100,0.0,162.0
+2020/21,Arsenal,Premier League,8,61,1.0,61.0,-,100,0.0,161.0
+2020/21,Leeds United,Premier League,9,59,1.0,59.0,-,100,0.0,159.0
+2020/21,Everton,Premier League,10,59,1.0,59.0,-,100,0.0,159.0
+2020/21,Aston Villa,Premier League,11,55,1.0,55.0,-,100,0.0,155.0
+2020/21,Newcastle United,Premier League,12,45,1.0,45.0,-,100,0.0,145.0
+2020/21,Wolverhampton Wanderers,Premier League,13,45,1.0,45.0,-,100,0.0,145.0
+2020/21,Crystal Palace,Premier League,14,44,1.0,44.0,-,100,0.0,144.0
+2020/21,Southampton,Premier League,15,43,1.0,43.0,-,100,0.0,143.0
+2020/21,Brighton & Hove Albion,Premier League,16,41,1.0,41.0,-,100,0.0,141.0
+2020/21,Burnley,Premier League,17,39,1.0,39.0,-,100,0.0,139.0
+2020/21,Fulham,Premier League,18,28,1.0,28.0,descenso,100,-15.0,113.0
+2020/21,West Bromwich Albion,Premier League,19,26,1.0,26.0,descenso,100,-15.0,111.0
+2020/21,Sheffield United,Premier League,20,23,1.0,23.0,"descenso, ultimo_lugar",100,-25.0,98.0
+2020/21,Norwich City,Championship,1,97,0.7,67.9,campeon,70,14.0,151.9
+2020/21,Watford,Championship,2,91,0.7,63.7,ascenso_directo,70,7.0,140.7
+2020/21,Brentford,Championship,3,87,0.7,60.9,playoff_sin_ascenso,70,2.1,133.0
+2020/21,Swansea City,Championship,4,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2020/21,Barnsley,Championship,5,78,0.7,54.6,playoff_sin_ascenso,70,2.1,126.7
+2020/21,Bournemouth,Championship,6,77,0.7,53.9,playoff_sin_ascenso,70,2.1,126.0
+2020/21,Reading,Championship,7,70,0.7,49.0,-,70,0.0,119.0
+2020/21,Cardiff City,Championship,8,68,0.7,47.6,-,70,0.0,117.6
+2020/21,Queens Park Rangers,Championship,9,68,0.7,47.6,-,70,0.0,117.6
+2020/21,Middlesbrough,Championship,10,64,0.7,44.8,-,70,0.0,114.8
+2020/21,Millwall,Championship,11,62,0.7,43.4,-,70,0.0,113.4
+2020/21,Luton Town,Championship,12,62,0.7,43.4,-,70,0.0,113.4
+2020/21,Preston North End,Championship,13,61,0.7,42.7,-,70,0.0,112.7
+2020/21,Stoke City,Championship,14,60,0.7,42.0,-,70,0.0,112.0
+2020/21,Blackburn Rovers,Championship,15,57,0.7,39.9,-,70,0.0,109.9
+2020/21,Coventry City,Championship,16,55,0.7,38.5,-,70,0.0,108.5
+2020/21,Nottingham Forest,Championship,17,52,0.7,36.4,-,70,0.0,106.4
+2020/21,Birmingham City,Championship,18,52,0.7,36.4,-,70,0.0,106.4
+2020/21,Bristol City,Championship,19,51,0.7,35.7,-,70,0.0,105.7
+2020/21,Huddersfield Town,Championship,20,49,0.7,34.3,-,70,0.0,104.3
+2020/21,Derby County,Championship,21,44,0.7,30.8,descenso,70,-10.5,90.3
+2020/21,Wycombe Wanderers,Championship,22,43,0.7,30.1,descenso,70,-10.5,89.6
+2020/21,Rotherham United,Championship,23,42,0.7,29.4,"descenso, ultimo_lugar",70,-17.5,81.9
+2020/21,Hull City,League One,1,89,0.45,40.1,campeon,45,9.0,94.1
+2020/21,Peterborough United,League One,2,87,0.45,39.1,ascenso_directo,45,4.5,88.6
+2020/21,Blackpool,League One,3,80,0.45,36.0,playoff_sin_ascenso,45,1.3,82.3
+2020/21,Sunderland,League One,4,77,0.45,34.6,playoff_sin_ascenso,45,1.3,80.9
+2020/21,Lincoln City,League One,5,77,0.45,34.6,playoff_sin_ascenso,45,1.3,80.9
+2020/21,Oxford United,League One,6,74,0.45,33.3,playoff_sin_ascenso,45,1.3,79.6
+2020/21,Charlton Athletic,League One,7,74,0.45,33.3,-,45,0.0,78.3
+2020/21,Portsmouth,League One,8,72,0.45,32.4,-,45,0.0,77.4
+2020/21,Ipswich Town,League One,9,69,0.45,31.1,-,45,0.0,76.1
+2020/21,Gillingham,League One,10,67,0.45,30.2,-,45,0.0,75.2
+2020/21,Accrington Stanley,League One,11,67,0.45,30.2,-,45,0.0,75.2
+2020/21,Crewe Alexandra,League One,12,66,0.45,29.7,-,45,0.0,74.7
+2020/21,Milton Keynes Dons,League One,13,65,0.45,29.2,-,45,0.0,74.2
+2020/21,Doncaster Rovers,League One,14,64,0.45,28.8,-,45,0.0,73.8
+2020/21,Fleetwood Town,League One,15,60,0.45,27.0,-,45,0.0,72.0
+2020/21,Burton Albion,League One,16,57,0.45,25.7,-,45,0.0,70.7
+2020/21,Shrewsbury Town,League One,17,54,0.45,24.3,-,45,0.0,69.3
+2020/21,Plymouth Argyle,League One,18,53,0.45,23.9,-,45,0.0,68.9
+2020/21,AFC Wimbledon,League One,19,51,0.45,22.9,-,45,0.0,67.9
+2020/21,Wigan Athletic,League One,20,48,0.45,21.6,-,45,0.0,66.6
+2020/21,Rochdale,League One,21,47,0.45,21.2,descenso,45,-6.8,59.4
+2020/21,Northampton Town,League One,22,45,0.45,20.2,descenso,45,-6.8,58.4
+2020/21,Swindon Town,League One,23,43,0.45,19.4,descenso,45,-6.8,57.6
+2020/21,Bristol Rovers,League One,24,38,0.45,17.1,"descenso, ultimo_lugar",45,-11.3,50.8
+2020/21,Cheltenham Town,League Two,1,82,0.25,20.5,campeon,25,5.0,50.5
+2020/21,Cambridge United,League Two,2,80,0.25,20.0,ascenso_directo,25,2.5,47.5
+2020/21,Bolton Wanderers,League Two,3,79,0.25,19.8,ascenso_directo,25,2.5,47.3
+2020/21,Morecambe,League Two,4,78,0.25,19.5,playoff_sin_ascenso,25,0.8,45.3
+2020/21,Newport County,League Two,5,73,0.25,18.2,playoff_sin_ascenso,25,0.8,44.0
+2020/21,Forest Green Rovers,League Two,6,73,0.25,18.2,playoff_sin_ascenso,25,0.8,44.0
+2020/21,Tranmere Rovers,League Two,7,73,0.25,18.2,playoff_sin_ascenso,25,0.8,44.0
+2020/21,Salford City,League Two,8,71,0.25,17.8,-,25,0.0,42.8
+2020/21,Exeter City,League Two,9,70,0.25,17.5,-,25,0.0,42.5
+2020/21,Carlisle United,League Two,10,66,0.25,16.5,-,25,0.0,41.5
+2020/21,Leyton Orient,League Two,11,61,0.25,15.2,-,25,0.0,40.2
+2020/21,Crawley Town,League Two,12,61,0.25,15.2,-,25,0.0,40.2
+2020/21,Port Vale,League Two,13,60,0.25,15.0,-,25,0.0,40.0
+2020/21,Stevenage,League Two,14,60,0.25,15.0,-,25,0.0,40.0
+2020/21,Bradford City,League Two,15,59,0.25,14.8,-,25,0.0,39.8
+2020/21,Mansfield Town,League Two,16,58,0.25,14.5,-,25,0.0,39.5
+2020/21,Harrogate Town,League Two,17,57,0.25,14.2,-,25,0.0,39.2
+2020/21,Oldham Athletic,League Two,18,54,0.25,13.5,-,25,0.0,38.5
+2020/21,Walsall,League Two,19,53,0.25,13.2,-,25,0.0,38.2
+2020/21,Colchester United,League Two,20,51,0.25,12.8,-,25,0.0,37.8
+2020/21,Barrow,League Two,21,50,0.25,12.5,-,25,0.0,37.5
+2020/21,Scunthorpe United,League Two,22,48,0.25,12.0,-,25,0.0,37.0
+2020/21,Southend United,League Two,23,45,0.25,11.2,descenso,25,-3.8,32.4
+2020/21,Grimsby Town,League Two,24,43,0.25,10.8,"descenso, ultimo_lugar",25,-6.3,29.5
+2020/21,Sutton United,National League,1,84,0.15,12.6,campeon,15,3.0,30.6
+2020/21,Torquay United,National League,2,80,0.15,12.0,ascenso_directo,15,1.5,28.5
+2020/21,Stockport County,National League,3,77,0.15,11.5,playoff_sin_ascenso,15,0.4,26.9
+2020/21,Hartlepool United,National League,4,76,0.15,11.4,playoff_sin_ascenso,15,0.4,26.8
+2020/21,Notts County,National League,5,70,0.15,10.5,playoff_sin_ascenso,15,0.4,25.9
+2020/21,Chesterfield,National League,6,69,0.15,10.3,playoff_sin_ascenso,15,0.4,25.7
+2020/21,Bromley,National League,7,69,0.15,10.3,-,15,0.0,25.3
+2020/21,Wrexham,National League,8,68,0.15,10.2,-,15,0.0,25.2
+2020/21,Eastleigh,National League,9,66,0.15,9.9,-,15,0.0,24.9
+2020/21,FC Halifax Town,National League,10,65,0.15,9.8,-,15,0.0,24.8
+2020/21,Solihull Moors,National League,11,64,0.15,9.6,-,15,0.0,24.6
+2020/21,Dagenham & Redbridge,National League,12,60,0.15,9.0,-,15,0.0,24.0
+2020/21,Maidenhead United,National League,13,56,0.15,8.4,-,15,0.0,23.4
+2020/21,Boreham Wood,National League,14,55,0.15,8.2,-,15,0.0,23.2
+2020/21,Aldershot Town,National League,15,52,0.15,7.8,-,15,0.0,22.8
+2020/21,Yeovil Town,National League,16,52,0.15,7.8,-,15,0.0,22.8
+2020/21,Altrincham,National League,17,47,0.15,7.0,-,15,0.0,22.0
+2020/21,Weymouth,National League,18,39,0.15,5.8,-,15,0.0,20.8
+2020/21,Wealdstone,National League,19,37,0.15,5.5,-,15,0.0,20.5
+2020/21,Woking,National League,20,33,0.15,5.0,descenso,15,-2.2,17.8
+2020/21,King's Lynn Town,National League,21,31,0.15,4.6,descenso,15,-2.2,17.4
+2020/21,Barnet,National League,22,31,0.15,4.6,"descenso, ultimo_lugar",15,-3.7,15.9
+2020/21,Sutton United,National League North,1,84,0.08,6.7,campeon,8,1.6,16.3
+2020/21,Torquay United,National League North,2,80,0.08,6.4,ascenso_directo,8,0.8,15.2
+2020/21,Stockport County,National League North,3,77,0.08,6.2,playoff_sin_ascenso,8,0.2,14.4
+2020/21,Hartlepool United,National League North,4,76,0.08,6.1,playoff_sin_ascenso,8,0.2,14.3
+2020/21,Notts County,National League North,5,70,0.08,5.6,playoff_sin_ascenso,8,0.2,13.8
+2020/21,Chesterfield,National League North,6,69,0.08,5.5,playoff_sin_ascenso,8,0.2,13.7
+2020/21,Bromley,National League North,7,69,0.08,5.5,-,8,0.0,13.5
+2020/21,Wrexham,National League North,8,68,0.08,5.4,-,8,0.0,13.4
+2020/21,Eastleigh,National League North,9,66,0.08,5.3,-,8,0.0,13.3
+2020/21,FC Halifax Town,National League North,10,65,0.08,5.2,-,8,0.0,13.2
+2020/21,Solihull Moors,National League North,11,64,0.08,5.1,-,8,0.0,13.1
+2020/21,Dagenham & Redbridge,National League North,12,60,0.08,4.8,-,8,0.0,12.8
+2020/21,Maidenhead United,National League North,13,56,0.08,4.5,-,8,0.0,12.5
+2020/21,Boreham Wood,National League North,14,55,0.08,4.4,-,8,0.0,12.4
+2020/21,Aldershot Town,National League North,15,52,0.08,4.2,-,8,0.0,12.2
+2020/21,Yeovil Town,National League North,16,52,0.08,4.2,-,8,0.0,12.2
+2020/21,Altrincham,National League North,17,47,0.08,3.8,-,8,0.0,11.8
+2020/21,Weymouth,National League North,18,39,0.08,3.1,-,8,0.0,11.1
+2020/21,Wealdstone,National League North,19,37,0.08,3.0,-,8,0.0,11.0
+2020/21,Woking,National League North,20,33,0.08,2.6,descenso,8,-1.2,9.4
+2020/21,King's Lynn Town,National League North,21,31,0.08,2.5,descenso,8,-1.2,9.3
+2020/21,Barnet,National League North,22,31,0.08,2.5,"descenso, ultimo_lugar",8,-2.0,8.5
+2020/21,Sutton United,National League South,1,84,0.08,6.7,campeon,8,1.6,16.3
+2020/21,Torquay United,National League South,2,80,0.08,6.4,ascenso_directo,8,0.8,15.2
+2020/21,Stockport County,National League South,3,77,0.08,6.2,playoff_sin_ascenso,8,0.2,14.4
+2020/21,Hartlepool United,National League South,4,76,0.08,6.1,playoff_sin_ascenso,8,0.2,14.3
+2020/21,Notts County,National League South,5,70,0.08,5.6,playoff_sin_ascenso,8,0.2,13.8
+2020/21,Chesterfield,National League South,6,69,0.08,5.5,playoff_sin_ascenso,8,0.2,13.7
+2020/21,Bromley,National League South,7,69,0.08,5.5,-,8,0.0,13.5
+2020/21,Wrexham,National League South,8,68,0.08,5.4,-,8,0.0,13.4
+2020/21,Eastleigh,National League South,9,66,0.08,5.3,-,8,0.0,13.3
+2020/21,FC Halifax Town,National League South,10,65,0.08,5.2,-,8,0.0,13.2
+2020/21,Solihull Moors,National League South,11,64,0.08,5.1,-,8,0.0,13.1
+2020/21,Dagenham & Redbridge,National League South,12,60,0.08,4.8,-,8,0.0,12.8
+2020/21,Maidenhead United,National League South,13,56,0.08,4.5,-,8,0.0,12.5
+2020/21,Boreham Wood,National League South,14,55,0.08,4.4,-,8,0.0,12.4
+2020/21,Aldershot Town,National League South,15,52,0.08,4.2,-,8,0.0,12.2
+2020/21,Yeovil Town,National League South,16,52,0.08,4.2,-,8,0.0,12.2
+2020/21,Altrincham,National League South,17,47,0.08,3.8,-,8,0.0,11.8
+2020/21,Weymouth,National League South,18,39,0.08,3.1,-,8,0.0,11.1
+2020/21,Wealdstone,National League South,19,37,0.08,3.0,-,8,0.0,11.0
+2020/21,Woking,National League South,20,33,0.08,2.6,descenso,8,-1.2,9.4
+2020/21,King's Lynn Town,National League South,21,31,0.08,2.5,descenso,8,-1.2,9.3
+2020/21,Barnet,National League South,22,31,0.08,2.5,"descenso, ultimo_lugar",8,-2.0,8.5
+2020/21,Mickleover,Northern Premier Division,1,22,0.04,0.9,campeon,4,0.8,5.7
+2020/21,Basford United,Northern Premier Division,2,19,0.04,0.8,ascenso_directo,4,0.4,5.2
+2020/21,Buxton,Northern Premier Division,3,17,0.04,0.7,playoff_sin_ascenso,4,0.1,4.8
+2020/21,Warrington Town,Northern Premier Division,4,16,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,Witton Albion,Northern Premier Division,5,15,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,South Shields,Northern Premier Division,6,15,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,Whitby Town,Northern Premier Division,7,14,0.04,0.6,-,4,0.0,4.6
+2020/21,Matlock Town,Northern Premier Division,8,13,0.04,0.5,-,4,0.0,4.5
+2020/21,Atherton Collieries,Northern Premier Division,9,13,0.04,0.5,-,4,0.0,4.5
+2020/21,Gainsborough Trinity,Northern Premier Division,10,12,0.04,0.5,-,4,0.0,4.5
+2020/21,Scarborough Athletic,Northern Premier Division,11,11,0.04,0.4,-,4,0.0,4.4
+2020/21,Lancaster City,Northern Premier Division,12,10,0.04,0.4,-,4,0.0,4.4
+2020/21,FC United of Manchester,Northern Premier Division,13,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Radcliffe,Northern Premier Division,14,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Nantwich Town,Northern Premier Division,15,9,0.04,0.4,-,4,0.0,4.4
+2020/21,Morpeth Town,Northern Premier Division,16,9,0.04,0.4,-,4,0.0,4.4
+2020/21,Hyde United,Northern Premier Division,17,6,0.04,0.2,-,4,0.0,4.2
+2020/21,Stalybridge Celtic,Northern Premier Division,18,6,0.04,0.2,-,4,0.0,4.2
+2020/21,Ashton United,Northern Premier Division,19,5,0.04,0.2,-,4,0.0,4.2
+2020/21,Bamber Bridge,Northern Premier Division,20,4,0.04,0.2,descenso,4,-0.6,3.6
+2020/21,Grantham Town,Northern Premier Division,21,3,0.04,0.1,descenso,4,-0.6,3.5
+2020/21,Stafford Rangers,Northern Premier Division,22,1,0.04,0.0,"descenso, ultimo_lugar",4,-1.0,3.0
+2020/21,Coalville Town,Southern League Premier Central,1,17,0.04,0.7,campeon,4,0.8,5.5
+2020/21,Needham Market,Southern League Premier Central,2,17,0.04,0.7,ascenso_directo,4,0.4,5.1
+2020/21,Stratford Town,Southern League Premier Central,3,15,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,Rushall Olympic,Southern League Premier Central,4,13,0.04,0.5,playoff_sin_ascenso,4,0.1,4.6
+2020/21,Tamworth,Southern League Premier Central,5,12,0.04,0.5,playoff_sin_ascenso,4,0.1,4.6
+2020/21,Redditch United,Southern League Premier Central,6,12,0.04,0.5,playoff_sin_ascenso,4,0.1,4.6
+2020/21,Stourbridge,Southern League Premier Central,7,11,0.04,0.4,-,4,0.0,4.4
+2020/21,Royston Town,Southern League Premier Central,8,11,0.04,0.4,-,4,0.0,4.4
+2020/21,Kings Langley,Southern League Premier Central,9,11,0.04,0.4,-,4,0.0,4.4
+2020/21,Hitchin Town,Southern League Premier Central,10,10,0.04,0.4,-,4,0.0,4.4
+2020/21,St Ives Town,Southern League Premier Central,11,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Peterborough Sports,Southern League Premier Central,12,9,0.04,0.4,-,4,0.0,4.4
+2020/21,AFC Rushden & Diamonds,Southern League Premier Central,13,9,0.04,0.4,-,4,0.0,4.4
+2020/21,Lowestoft Town,Southern League Premier Central,14,9,0.04,0.4,-,4,0.0,4.4
+2020/21,Nuneaton Borough,Southern League Premier Central,15,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Biggleswade Town,Southern League Premier Central,16,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Alvechurch,Southern League Premier Central,17,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Banbury United,Southern League Premier Central,18,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Bromsgrove Sporting,Southern League Premier Central,19,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Hednesford Town,Southern League Premier Central,20,7,0.04,0.3,descenso,4,-0.6,3.7
+2020/21,Leiston,Southern League Premier Central,21,5,0.04,0.2,descenso,4,-0.6,3.6
+2020/21,Barwell,Southern League Premier Central,22,4,0.04,0.2,"descenso, ultimo_lugar",4,-1.0,3.2
+2020/21,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2020/21,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2020/21,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2020/21,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2020/21,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2020/21,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2020/21,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2020/21,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2020/21,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2020/21,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2020/21,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2020/21,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2020/21,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2020/21,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2020/21,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2020/21,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2020/21,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2020/21,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2020/21,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2020/21,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2020/21,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2020/21,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2020/21,Worthing,Isthmian League Premier Division,1,21,0.04,0.8,campeon,4,0.8,5.6
+2020/21,Cheshunt,Isthmian League Premier Division,2,20,0.04,0.8,ascenso_directo,4,0.4,5.2
+2020/21,Enfield Town,Isthmian League Premier Division,3,18,0.04,0.7,playoff_sin_ascenso,4,0.1,4.8
+2020/21,Carshalton Athletic,Isthmian League Premier Division,4,16,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,Cray Wanderers,Isthmian League Premier Division,5,15,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,Kingstonian,Isthmian League Premier Division,6,15,0.04,0.6,playoff_sin_ascenso,4,0.1,4.7
+2020/21,Bishop's Stortford,Isthmian League Premier Division,7,14,0.04,0.6,-,4,0.0,4.6
+2020/21,Hornchurch,Isthmian League Premier Division,8,14,0.04,0.6,-,4,0.0,4.6
+2020/21,Horsham,Isthmian League Premier Division,9,14,0.04,0.6,-,4,0.0,4.6
+2020/21,Folkestone Invicta,Isthmian League Premier Division,10,13,0.04,0.5,-,4,0.0,4.5
+2020/21,Haringey Borough,Isthmian League Premier Division,11,12,0.04,0.5,-,4,0.0,4.5
+2020/21,Leatherhead,Isthmian League Premier Division,12,12,0.04,0.5,-,4,0.0,4.5
+2020/21,Bowers & Pitsea,Isthmian League Premier Division,13,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Potters Bar Town,Isthmian League Premier Division,15,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Wingate & Finchley,Isthmian League Premier Division,16,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Corinthian-Casuals,Isthmian League Premier Division,17,10,0.04,0.4,-,4,0.0,4.4
+2020/21,Lewes,Isthmian League Premier Division,18,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Brightlingsea Regent,Isthmian League Premier Division,19,8,0.04,0.3,-,4,0.0,4.3
+2020/21,Margate,Isthmian League Premier Division,20,6,0.04,0.2,descenso,4,-0.6,3.6
+2020/21,East Thurrock United,Isthmian League Premier Division,21,5,0.04,0.2,descenso,4,-0.6,3.6
+2020/21,Merstham,Isthmian League Premier Division,22,4,0.04,0.2,"descenso, ultimo_lugar",4,-1.0,3.2
+2021/22,Manchester City,Premier League,1,93,1.0,93.0,campeon,100,20.0,213.0
+2021/22,Liverpool,Premier League,2,92,1.0,92.0,-,100,0.0,192.0
+2021/22,Chelsea,Premier League,3,74,1.0,74.0,-,100,0.0,174.0
+2021/22,Tottenham Hotspur,Premier League,4,71,1.0,71.0,-,100,0.0,171.0
+2021/22,Arsenal,Premier League,5,69,1.0,69.0,-,100,0.0,169.0
+2021/22,Manchester United,Premier League,6,58,1.0,58.0,-,100,0.0,158.0
+2021/22,West Ham United,Premier League,7,56,1.0,56.0,-,100,0.0,156.0
+2021/22,Leicester City,Premier League,8,52,1.0,52.0,-,100,0.0,152.0
+2021/22,Brighton & Hove Albion,Premier League,9,51,1.0,51.0,-,100,0.0,151.0
+2021/22,Wolverhampton Wanderers,Premier League,10,51,1.0,51.0,-,100,0.0,151.0
+2021/22,Newcastle United,Premier League,11,49,1.0,49.0,-,100,0.0,149.0
+2021/22,Crystal Palace,Premier League,12,48,1.0,48.0,-,100,0.0,148.0
+2021/22,Brentford,Premier League,13,46,1.0,46.0,-,100,0.0,146.0
+2021/22,Aston Villa,Premier League,14,45,1.0,45.0,-,100,0.0,145.0
+2021/22,Southampton,Premier League,15,40,1.0,40.0,-,100,0.0,140.0
+2021/22,Everton,Premier League,16,39,1.0,39.0,-,100,0.0,139.0
+2021/22,Leeds United,Premier League,17,38,1.0,38.0,-,100,0.0,138.0
+2021/22,Burnley,Premier League,18,35,1.0,35.0,descenso,100,-15.0,120.0
+2021/22,Watford,Premier League,19,23,1.0,23.0,descenso,100,-15.0,108.0
+2021/22,Norwich City,Premier League,20,22,1.0,22.0,"descenso, ultimo_lugar",100,-25.0,97.0
+2021/22,Fulham,Championship,1,90,0.7,63.0,campeon,70,14.0,147.0
+2021/22,Bournemouth,Championship,2,88,0.7,61.6,ascenso_directo,70,7.0,138.6
+2021/22,Huddersfield Town,Championship,3,82,0.7,57.4,playoff_sin_ascenso,70,2.1,129.5
+2021/22,Nottingham Forest,Championship,4,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2021/22,Sheffield United,Championship,5,75,0.7,52.5,playoff_sin_ascenso,70,2.1,124.6
+2021/22,Luton Town,Championship,6,75,0.7,52.5,playoff_sin_ascenso,70,2.1,124.6
+2021/22,Middlesbrough,Championship,7,70,0.7,49.0,-,70,0.0,119.0
+2021/22,Blackburn Rovers,Championship,8,69,0.7,48.3,-,70,0.0,118.3
+2021/22,Millwall,Championship,9,69,0.7,48.3,-,70,0.0,118.3
+2021/22,West Bromwich Albion,Championship,10,67,0.7,46.9,-,70,0.0,116.9
+2021/22,Queens Park Rangers,Championship,11,66,0.7,46.2,-,70,0.0,116.2
+2021/22,Coventry City,Championship,12,64,0.7,44.8,-,70,0.0,114.8
+2021/22,Preston North End,Championship,13,64,0.7,44.8,-,70,0.0,114.8
+2021/22,Stoke City,Championship,14,62,0.7,43.4,-,70,0.0,113.4
+2021/22,Swansea City,Championship,15,61,0.7,42.7,-,70,0.0,112.7
+2021/22,Blackpool,Championship,16,60,0.7,42.0,-,70,0.0,112.0
+2021/22,Bristol City,Championship,17,55,0.7,38.5,-,70,0.0,108.5
+2021/22,Cardiff City,Championship,18,53,0.7,37.1,-,70,0.0,107.1
+2021/22,Hull City,Championship,19,51,0.7,35.7,-,70,0.0,105.7
+2021/22,Birmingham City,Championship,20,47,0.7,32.9,-,70,0.0,102.9
+2021/22,Peterborough United,Championship,22,37,0.7,25.9,descenso,70,-10.5,85.4
+2021/22,Barnsley,Championship,24,30,0.7,21.0,"descenso, ultimo_lugar",70,-17.5,73.5
+2021/22,Wigan Athletic,League One,1,92,0.45,41.4,campeon,45,9.0,95.4
+2021/22,Rotherham United,League One,2,90,0.45,40.5,ascenso_directo,45,4.5,90.0
+2021/22,Milton Keynes Dons,League One,3,89,0.45,40.1,playoff_sin_ascenso,45,1.3,86.4
+2021/22,Sheffield Wednesday,League One,4,85,0.45,38.2,playoff_sin_ascenso,45,1.3,84.5
+2021/22,Sunderland,League One,5,84,0.45,37.8,playoff_sin_ascenso,45,1.3,84.1
+2021/22,Wycombe Wanderers,League One,6,83,0.45,37.4,playoff_sin_ascenso,45,1.3,83.7
+2021/22,Plymouth Argyle,League One,7,80,0.45,36.0,-,45,0.0,81.0
+2021/22,Oxford United,League One,8,76,0.45,34.2,-,45,0.0,79.2
+2021/22,Bolton Wanderers,League One,9,73,0.45,32.9,-,45,0.0,77.9
+2021/22,Portsmouth,League One,10,73,0.45,32.9,-,45,0.0,77.9
+2021/22,Ipswich Town,League One,11,70,0.45,31.5,-,45,0.0,76.5
+2021/22,Accrington Stanley,League One,12,61,0.45,27.4,-,45,0.0,72.4
+2021/22,Charlton Athletic,League One,13,59,0.45,26.6,-,45,0.0,71.6
+2021/22,Cambridge United,League One,14,58,0.45,26.1,-,45,0.0,71.1
+2021/22,Cheltenham Town,League One,15,56,0.45,25.2,-,45,0.0,70.2
+2021/22,Burton Albion,League One,16,53,0.45,23.9,-,45,0.0,68.9
+2021/22,Lincoln City,League One,17,52,0.45,23.4,-,45,0.0,68.4
+2021/22,Shrewsbury Town,League One,18,50,0.45,22.5,-,45,0.0,67.5
+2021/22,Morecambe,League One,19,42,0.45,18.9,-,45,0.0,63.9
+2021/22,Fleetwood Town,League One,20,40,0.45,18.0,-,45,0.0,63.0
+2021/22,Gillingham,League One,21,40,0.45,18.0,descenso,45,-6.8,56.2
+2021/22,Doncaster Rovers,League One,22,38,0.45,17.1,descenso,45,-6.8,55.3
+2021/22,AFC Wimbledon,League One,23,37,0.45,16.7,descenso,45,-6.8,54.9
+2021/22,Crewe Alexandra,League One,24,29,0.45,13.1,"descenso, ultimo_lugar",45,-11.3,46.8
+2021/22,Forest Green Rovers,League Two,1,84,0.25,21.0,campeon,25,5.0,51.0
+2021/22,Exeter City,League Two,2,84,0.25,21.0,ascenso_directo,25,2.5,48.5
+2021/22,Bristol Rovers,League Two,3,80,0.25,20.0,ascenso_directo,25,2.5,47.5
+2021/22,Northampton Town,League Two,4,80,0.25,20.0,playoff_sin_ascenso,25,0.8,45.8
+2021/22,Port Vale,League Two,5,78,0.25,19.5,playoff_sin_ascenso,25,0.8,45.3
+2021/22,Swindon Town,League Two,6,77,0.25,19.2,playoff_sin_ascenso,25,0.8,45.0
+2021/22,Mansfield Town,League Two,7,77,0.25,19.2,playoff_sin_ascenso,25,0.8,45.0
+2021/22,Sutton United,League Two,8,76,0.25,19.0,-,25,0.0,44.0
+2021/22,Tranmere Rovers,League Two,9,75,0.25,18.8,-,25,0.0,43.8
+2021/22,Salford City,League Two,10,70,0.25,17.5,-,25,0.0,42.5
+2021/22,Newport County,League Two,11,69,0.25,17.2,-,25,0.0,42.2
+2021/22,Crawley Town,League Two,12,61,0.25,15.2,-,25,0.0,40.2
+2021/22,Leyton Orient,League Two,13,58,0.25,14.5,-,25,0.0,39.5
+2021/22,Bradford City,League Two,14,58,0.25,14.5,-,25,0.0,39.5
+2021/22,Colchester United,League Two,15,55,0.25,13.8,-,25,0.0,38.8
+2021/22,Walsall,League Two,16,54,0.25,13.5,-,25,0.0,38.5
+2021/22,Hartlepool United,League Two,17,54,0.25,13.5,-,25,0.0,38.5
+2021/22,Rochdale,League Two,18,53,0.25,13.2,-,25,0.0,38.2
+2021/22,Harrogate Town,League Two,19,53,0.25,13.2,-,25,0.0,38.2
+2021/22,Carlisle United,League Two,20,53,0.25,13.2,-,25,0.0,38.2
+2021/22,Stevenage,League Two,21,47,0.25,11.8,-,25,0.0,36.8
+2021/22,Barrow,League Two,22,44,0.25,11.0,-,25,0.0,36.0
+2021/22,Oldham Athletic,League Two,23,38,0.25,9.5,descenso,25,-3.8,30.7
+2021/22,Scunthorpe United,League Two,24,26,0.25,6.5,"descenso, ultimo_lugar",25,-6.3,25.2
+2021/22,Stockport County,National League,1,94,0.15,14.1,campeon,15,3.0,32.1
+2021/22,Wrexham,National League,2,88,0.15,13.2,ascenso_directo,15,1.5,29.7
+2021/22,Solihull Moors,National League,3,87,0.15,13.0,playoff_sin_ascenso,15,0.4,28.4
+2021/22,FC Halifax Town,National League,4,84,0.15,12.6,playoff_sin_ascenso,15,0.4,28.0
+2021/22,Notts County,National League,5,82,0.15,12.3,playoff_sin_ascenso,15,0.4,27.7
+2021/22,Grimsby Town,National League,6,77,0.15,11.5,playoff_sin_ascenso,15,0.4,26.9
+2021/22,Chesterfield,National League,7,74,0.15,11.1,-,15,0.0,26.1
+2021/22,Dagenham & Redbridge,National League,8,73,0.15,10.9,-,15,0.0,25.9
+2021/22,Boreham Wood,National League,9,67,0.15,10.0,-,15,0.0,25.0
+2021/22,Bromley,National League,10,67,0.15,10.0,-,15,0.0,25.0
+2021/22,Torquay United,National League,11,66,0.15,9.9,-,15,0.0,24.9
+2021/22,Yeovil Town,National League,12,59,0.15,8.8,-,15,0.0,23.8
+2021/22,Southend United,National League,13,58,0.15,8.7,-,15,0.0,23.7
+2021/22,Altrincham,National League,14,55,0.15,8.2,-,15,0.0,23.2
+2021/22,Woking,National League,15,53,0.15,7.9,-,15,0.0,22.9
+2021/22,Wealdstone,National League,16,53,0.15,7.9,-,15,0.0,22.9
+2021/22,Maidenhead United,National League,17,51,0.15,7.6,-,15,0.0,22.6
+2021/22,Barnet,National League,18,50,0.15,7.5,-,15,0.0,22.5
+2021/22,Eastleigh,National League,19,46,0.15,6.9,-,15,0.0,21.9
+2021/22,Aldershot Town,National League,20,43,0.15,6.5,descenso,15,-2.2,19.3
+2021/22,King's Lynn Town,National League,21,34,0.15,5.1,descenso,15,-2.2,17.9
+2021/22,Weymouth,National League,22,28,0.15,4.2,"descenso, ultimo_lugar",15,-3.7,15.5
+2021/22,Stockport County,National League North,1,94,0.08,7.5,campeon,8,1.6,17.1
+2021/22,Wrexham,National League North,2,88,0.08,7.0,ascenso_directo,8,0.8,15.8
+2021/22,Solihull Moors,National League North,3,87,0.08,7.0,playoff_sin_ascenso,8,0.2,15.2
+2021/22,FC Halifax Town,National League North,4,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2021/22,Notts County,National League North,5,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2021/22,Grimsby Town,National League North,6,77,0.08,6.2,playoff_sin_ascenso,8,0.2,14.4
+2021/22,Chesterfield,National League North,7,74,0.08,5.9,-,8,0.0,13.9
+2021/22,Dagenham & Redbridge,National League North,8,73,0.08,5.8,-,8,0.0,13.8
+2021/22,Boreham Wood,National League North,9,67,0.08,5.4,-,8,0.0,13.4
+2021/22,Bromley,National League North,10,67,0.08,5.4,-,8,0.0,13.4
+2021/22,Torquay United,National League North,11,66,0.08,5.3,-,8,0.0,13.3
+2021/22,Yeovil Town,National League North,12,59,0.08,4.7,-,8,0.0,12.7
+2021/22,Southend United,National League North,13,58,0.08,4.6,-,8,0.0,12.6
+2021/22,Altrincham,National League North,14,55,0.08,4.4,-,8,0.0,12.4
+2021/22,Woking,National League North,15,53,0.08,4.2,-,8,0.0,12.2
+2021/22,Wealdstone,National League North,16,53,0.08,4.2,-,8,0.0,12.2
+2021/22,Maidenhead United,National League North,17,51,0.08,4.1,-,8,0.0,12.1
+2021/22,Barnet,National League North,18,50,0.08,4.0,-,8,0.0,12.0
+2021/22,Eastleigh,National League North,19,46,0.08,3.7,-,8,0.0,11.7
+2021/22,Aldershot Town,National League North,20,43,0.08,3.4,descenso,8,-1.2,10.2
+2021/22,King's Lynn Town,National League North,21,34,0.08,2.7,descenso,8,-1.2,9.5
+2021/22,Weymouth,National League North,22,28,0.08,2.2,"descenso, ultimo_lugar",8,-2.0,8.2
+2021/22,Stockport County,National League South,1,94,0.08,7.5,campeon,8,1.6,17.1
+2021/22,Wrexham,National League South,2,88,0.08,7.0,ascenso_directo,8,0.8,15.8
+2021/22,Solihull Moors,National League South,3,87,0.08,7.0,playoff_sin_ascenso,8,0.2,15.2
+2021/22,FC Halifax Town,National League South,4,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2021/22,Notts County,National League South,5,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2021/22,Grimsby Town,National League South,6,77,0.08,6.2,playoff_sin_ascenso,8,0.2,14.4
+2021/22,Chesterfield,National League South,7,74,0.08,5.9,-,8,0.0,13.9
+2021/22,Dagenham & Redbridge,National League South,8,73,0.08,5.8,-,8,0.0,13.8
+2021/22,Boreham Wood,National League South,9,67,0.08,5.4,-,8,0.0,13.4
+2021/22,Bromley,National League South,10,67,0.08,5.4,-,8,0.0,13.4
+2021/22,Torquay United,National League South,11,66,0.08,5.3,-,8,0.0,13.3
+2021/22,Yeovil Town,National League South,12,59,0.08,4.7,-,8,0.0,12.7
+2021/22,Southend United,National League South,13,58,0.08,4.6,-,8,0.0,12.6
+2021/22,Altrincham,National League South,14,55,0.08,4.4,-,8,0.0,12.4
+2021/22,Woking,National League South,15,53,0.08,4.2,-,8,0.0,12.2
+2021/22,Wealdstone,National League South,16,53,0.08,4.2,-,8,0.0,12.2
+2021/22,Maidenhead United,National League South,17,51,0.08,4.1,-,8,0.0,12.1
+2021/22,Barnet,National League South,18,50,0.08,4.0,-,8,0.0,12.0
+2021/22,Eastleigh,National League South,19,46,0.08,3.7,-,8,0.0,11.7
+2021/22,Aldershot Town,National League South,20,43,0.08,3.4,descenso,8,-1.2,10.2
+2021/22,King's Lynn Town,National League South,21,34,0.08,2.7,descenso,8,-1.2,9.5
+2021/22,Weymouth,National League South,22,28,0.08,2.2,"descenso, ultimo_lugar",8,-2.0,8.2
+2021/22,Buxton,Northern Premier Division,1,81,0.04,3.2,campeon,4,0.8,8.0
+2021/22,South Shields,Northern Premier Division,2,78,0.04,3.1,ascenso_directo,4,0.4,7.5
+2021/22,Scarborough Athletic,Northern Premier Division,3,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2021/22,Warrington Town,Northern Premier Division,5,71,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2021/22,Bamber Bridge,Northern Premier Division,6,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2021/22,Whitby Town,Northern Premier Division,7,66,0.04,2.6,-,4,0.0,6.6
+2021/22,Stafford Rangers,Northern Premier Division,8,61,0.04,2.4,-,4,0.0,6.4
+2021/22,FC United of Manchester,Northern Premier Division,9,61,0.04,2.4,-,4,0.0,6.4
+2021/22,Morpeth Town,Northern Premier Division,10,61,0.04,2.4,-,4,0.0,6.4
+2021/22,Lancaster City,Northern Premier Division,11,56,0.04,2.2,-,4,0.0,6.2
+2021/22,Mickleover,Northern Premier Division,12,55,0.04,2.2,-,4,0.0,6.2
+2021/22,Nantwich Town,Northern Premier Division,13,52,0.04,2.1,-,4,0.0,6.1
+2021/22,Ashton United,Northern Premier Division,14,51,0.04,2.0,-,4,0.0,6.0
+2021/22,Radcliffe,Northern Premier Division,15,51,0.04,2.0,-,4,0.0,6.0
+2021/22,Gainsborough Trinity,Northern Premier Division,16,50,0.04,2.0,-,4,0.0,6.0
+2021/22,Hyde United,Northern Premier Division,17,50,0.04,2.0,-,4,0.0,6.0
+2021/22,Atherton Collieries,Northern Premier Division,19,48,0.04,1.9,-,4,0.0,5.9
+2021/22,Basford United,Northern Premier Division,20,45,0.04,1.8,descenso,4,-0.6,5.2
+2021/22,Witton Albion,Northern Premier Division,21,43,0.04,1.7,descenso,4,-0.6,5.1
+2021/22,Grantham Town,Northern Premier Division,22,34,0.04,1.4,"descenso, ultimo_lugar",4,-1.0,4.4
+2021/22,Banbury United,Southern League Premier Central,1,102,0.04,4.1,campeon,4,0.8,8.9
+2021/22,Peterborough Sports,Southern League Premier Central,2,79,0.04,3.2,ascenso_directo,4,0.4,7.6
+2021/22,Coalville Town,Southern League Premier Central,3,78,0.04,3.1,playoff_sin_ascenso,4,0.1,7.2
+2021/22,Rushall Olympic,Southern League Premier Central,4,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2021/22,Alvechurch,Southern League Premier Central,5,65,0.04,2.6,playoff_sin_ascenso,4,0.1,6.7
+2021/22,AFC Rushden & Diamonds,Southern League Premier Central,6,65,0.04,2.6,playoff_sin_ascenso,4,0.1,6.7
+2021/22,Leiston,Southern League Premier Central,7,60,0.04,2.4,-,4,0.0,6.4
+2021/22,Royston Town,Southern League Premier Central,8,59,0.04,2.4,-,4,0.0,6.4
+2021/22,Hednesford Town,Southern League Premier Central,9,54,0.04,2.2,-,4,0.0,6.2
+2021/22,Tamworth,Southern League Premier Central,10,54,0.04,2.2,-,4,0.0,6.2
+2021/22,Stourbridge,Southern League Premier Central,11,53,0.04,2.1,-,4,0.0,6.1
+2021/22,Needham Market,Southern League Premier Central,12,49,0.04,2.0,-,4,0.0,6.0
+2021/22,Stratford Town,Southern League Premier Central,13,47,0.04,1.9,-,4,0.0,5.9
+2021/22,St Ives Town,Southern League Premier Central,14,47,0.04,1.9,-,4,0.0,5.9
+2021/22,Redditch United,Southern League Premier Central,15,45,0.04,1.8,-,4,0.0,5.8
+2021/22,Hitchin Town,Southern League Premier Central,17,42,0.04,1.7,-,4,0.0,5.7
+2021/22,Bromsgrove Sporting,Southern League Premier Central,18,42,0.04,1.7,-,4,0.0,5.7
+2021/22,Barwell,Southern League Premier Central,19,41,0.04,1.6,descenso,4,-0.6,5.0
+2021/22,Biggleswade Town,Southern League Premier Central,20,34,0.04,1.4,descenso,4,-0.6,4.8
+2021/22,Lowestoft Town,Southern League Premier Central,21,33,0.04,1.3,"descenso, ultimo_lugar",4,-1.0,4.3
+2021/22,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2021/22,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2021/22,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2021/22,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2021/22,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2021/22,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2021/22,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2021/22,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2021/22,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2021/22,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2021/22,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2021/22,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2021/22,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2021/22,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2021/22,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2021/22,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2021/22,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2021/22,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2021/22,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2021/22,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2021/22,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2021/22,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2021/22,Worthing,Isthmian League Premier Division,1,97,0.04,3.9,campeon,4,0.8,8.7
+2021/22,Bishop's Stortford,Isthmian League Premier Division,2,87,0.04,3.5,ascenso_directo,4,0.4,7.9
+2021/22,Enfield Town,Isthmian League Premier Division,3,84,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2021/22,Hornchurch,Isthmian League Premier Division,4,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2021/22,Cheshunt,Isthmian League Premier Division,5,76,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2021/22,Folkestone Invicta,Isthmian League Premier Division,6,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2021/22,Lewes,Isthmian League Premier Division,7,70,0.04,2.8,-,4,0.0,6.8
+2021/22,Margate,Isthmian League Premier Division,8,65,0.04,2.6,-,4,0.0,6.6
+2021/22,Bognor Regis Town,Isthmian League Premier Division,9,59,0.04,2.4,-,4,0.0,6.4
+2021/22,Kingstonian,Isthmian League Premier Division,10,59,0.04,2.4,-,4,0.0,6.4
+2021/22,Horsham,Isthmian League Premier Division,11,57,0.04,2.3,-,4,0.0,6.3
+2021/22,Carshalton Athletic,Isthmian League Premier Division,12,57,0.04,2.3,-,4,0.0,6.3
+2021/22,Potters Bar Town,Isthmian League Premier Division,13,53,0.04,2.1,-,4,0.0,6.1
+2021/22,Corinthian-Casuals,Isthmian League Premier Division,14,52,0.04,2.1,-,4,0.0,6.1
+2021/22,Wingate & Finchley,Isthmian League Premier Division,15,49,0.04,2.0,-,4,0.0,6.0
+2021/22,Bowers & Pitsea,Isthmian League Premier Division,16,45,0.04,1.8,-,4,0.0,5.8
+2021/22,Haringey Borough,Isthmian League Premier Division,17,42,0.04,1.7,-,4,0.0,5.7
+2021/22,Brightlingsea Regent,Isthmian League Premier Division,18,39,0.04,1.6,-,4,0.0,5.6
+2021/22,Leatherhead,Isthmian League Premier Division,20,36,0.04,1.4,descenso,4,-0.6,4.8
+2021/22,East Thurrock United,Isthmian League Premier Division,21,35,0.04,1.4,descenso,4,-0.6,4.8
+2021/22,Merstham,Isthmian League Premier Division,22,33,0.04,1.3,"descenso, ultimo_lugar",4,-1.0,4.3
+2022/23,Manchester City,Premier League,1,89,1.0,89.0,campeon,100,20.0,209.0
+2022/23,Arsenal,Premier League,2,84,1.0,84.0,-,100,0.0,184.0
+2022/23,Manchester United,Premier League,3,75,1.0,75.0,-,100,0.0,175.0
+2022/23,Newcastle United,Premier League,4,71,1.0,71.0,-,100,0.0,171.0
+2022/23,Liverpool,Premier League,5,67,1.0,67.0,-,100,0.0,167.0
+2022/23,Brighton & Hove Albion,Premier League,6,62,1.0,62.0,-,100,0.0,162.0
+2022/23,Aston Villa,Premier League,7,61,1.0,61.0,-,100,0.0,161.0
+2022/23,Tottenham Hotspur,Premier League,8,60,1.0,60.0,-,100,0.0,160.0
+2022/23,Brentford,Premier League,9,59,1.0,59.0,-,100,0.0,159.0
+2022/23,Fulham,Premier League,10,52,1.0,52.0,-,100,0.0,152.0
+2022/23,Crystal Palace,Premier League,11,45,1.0,45.0,-,100,0.0,145.0
+2022/23,Chelsea,Premier League,12,44,1.0,44.0,-,100,0.0,144.0
+2022/23,Wolverhampton Wanderers,Premier League,13,41,1.0,41.0,-,100,0.0,141.0
+2022/23,West Ham United,Premier League,14,40,1.0,40.0,-,100,0.0,140.0
+2022/23,Bournemouth,Premier League,15,39,1.0,39.0,-,100,0.0,139.0
+2022/23,Nottingham Forest,Premier League,16,38,1.0,38.0,-,100,0.0,138.0
+2022/23,Everton,Premier League,17,36,1.0,36.0,-,100,0.0,136.0
+2022/23,Leicester City,Premier League,18,34,1.0,34.0,descenso,100,-15.0,119.0
+2022/23,Leeds United,Premier League,19,31,1.0,31.0,descenso,100,-15.0,116.0
+2022/23,Southampton,Premier League,20,25,1.0,25.0,"descenso, ultimo_lugar",100,-25.0,100.0
+2022/23,Burnley,Championship,1,101,0.7,70.7,campeon,70,14.0,154.7
+2022/23,Sheffield United,Championship,2,91,0.7,63.7,ascenso_directo,70,7.0,140.7
+2022/23,Luton Town,Championship,3,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2022/23,Middlesbrough,Championship,4,75,0.7,52.5,playoff_sin_ascenso,70,2.1,124.6
+2022/23,Coventry City,Championship,5,70,0.7,49.0,playoff_sin_ascenso,70,2.1,121.1
+2022/23,Sunderland,Championship,6,69,0.7,48.3,playoff_sin_ascenso,70,2.1,120.4
+2022/23,Blackburn Rovers,Championship,7,69,0.7,48.3,-,70,0.0,118.3
+2022/23,Millwall,Championship,8,68,0.7,47.6,-,70,0.0,117.6
+2022/23,West Bromwich Albion,Championship,9,66,0.7,46.2,-,70,0.0,116.2
+2022/23,Swansea City,Championship,10,66,0.7,46.2,-,70,0.0,116.2
+2022/23,Watford,Championship,11,63,0.7,44.1,-,70,0.0,114.1
+2022/23,Preston North End,Championship,12,63,0.7,44.1,-,70,0.0,114.1
+2022/23,Norwich City,Championship,13,62,0.7,43.4,-,70,0.0,113.4
+2022/23,Bristol City,Championship,14,59,0.7,41.3,-,70,0.0,111.3
+2022/23,Hull City,Championship,15,58,0.7,40.6,-,70,0.0,110.6
+2022/23,Stoke City,Championship,16,53,0.7,37.1,-,70,0.0,107.1
+2022/23,Birmingham City,Championship,17,53,0.7,37.1,-,70,0.0,107.1
+2022/23,Huddersfield Town,Championship,18,53,0.7,37.1,-,70,0.0,107.1
+2022/23,Rotherham United,Championship,19,50,0.7,35.0,-,70,0.0,105.0
+2022/23,Queens Park Rangers,Championship,20,50,0.7,35.0,-,70,0.0,105.0
+2022/23,Cardiff City,Championship,21,49,0.7,34.3,descenso,70,-10.5,93.8
+2022/23,Blackpool,Championship,23,44,0.7,30.8,"descenso, ultimo_lugar",70,-17.5,83.3
+2022/23,Plymouth Argyle,League One,1,101,0.45,45.5,campeon,45,9.0,99.5
+2022/23,Ipswich Town,League One,2,98,0.45,44.1,ascenso_directo,45,4.5,93.6
+2022/23,Sheffield Wednesday,League One,3,96,0.45,43.2,playoff_sin_ascenso,45,1.3,89.5
+2022/23,Barnsley,League One,4,86,0.45,38.7,playoff_sin_ascenso,45,1.3,85.0
+2022/23,Bolton Wanderers,League One,5,81,0.45,36.5,playoff_sin_ascenso,45,1.3,82.8
+2022/23,Peterborough United,League One,6,77,0.45,34.6,playoff_sin_ascenso,45,1.3,80.9
+2022/23,Derby County,League One,7,76,0.45,34.2,-,45,0.0,79.2
+2022/23,Portsmouth,League One,8,70,0.45,31.5,-,45,0.0,76.5
+2022/23,Wycombe Wanderers,League One,9,69,0.45,31.1,-,45,0.0,76.1
+2022/23,Charlton Athletic,League One,10,62,0.45,27.9,-,45,0.0,72.9
+2022/23,Lincoln City,League One,11,62,0.45,27.9,-,45,0.0,72.9
+2022/23,Shrewsbury Town,League One,12,59,0.45,26.6,-,45,0.0,71.6
+2022/23,Fleetwood Town,League One,13,58,0.45,26.1,-,45,0.0,71.1
+2022/23,Exeter City,League One,14,56,0.45,25.2,-,45,0.0,70.2
+2022/23,Burton Albion,League One,15,56,0.45,25.2,-,45,0.0,70.2
+2022/23,Cheltenham Town,League One,16,54,0.45,24.3,-,45,0.0,69.3
+2022/23,Bristol Rovers,League One,17,53,0.45,23.9,-,45,0.0,68.9
+2022/23,Port Vale,League One,18,49,0.45,22.1,-,45,0.0,67.1
+2022/23,Oxford United,League One,19,47,0.45,21.2,-,45,0.0,66.2
+2022/23,Cambridge United,League One,20,46,0.45,20.7,-,45,0.0,65.7
+2022/23,Milton Keynes Dons,League One,21,45,0.45,20.2,descenso,45,-6.8,58.4
+2022/23,Morecambe,League One,22,44,0.45,19.8,descenso,45,-6.8,58.0
+2022/23,Accrington Stanley,League One,23,44,0.45,19.8,descenso,45,-6.8,58.0
+2022/23,Forest Green Rovers,League One,24,27,0.45,12.2,"descenso, ultimo_lugar",45,-11.3,45.9
+2022/23,Leyton Orient,League Two,1,91,0.25,22.8,campeon,25,5.0,52.8
+2022/23,Stevenage,League Two,2,85,0.25,21.2,ascenso_directo,25,2.5,48.7
+2022/23,Northampton Town,League Two,3,83,0.25,20.8,ascenso_directo,25,2.5,48.3
+2022/23,Stockport County,League Two,4,79,0.25,19.8,playoff_sin_ascenso,25,0.8,45.6
+2022/23,Carlisle United,League Two,5,76,0.25,19.0,playoff_sin_ascenso,25,0.8,44.8
+2022/23,Bradford City,League Two,6,76,0.25,19.0,playoff_sin_ascenso,25,0.8,44.8
+2022/23,Salford City,League Two,7,75,0.25,18.8,playoff_sin_ascenso,25,0.8,44.6
+2022/23,Mansfield Town,League Two,8,75,0.25,18.8,-,25,0.0,43.8
+2022/23,Barrow,League Two,9,62,0.25,15.5,-,25,0.0,40.5
+2022/23,Swindon Town,League Two,10,61,0.25,15.2,-,25,0.0,40.2
+2022/23,Grimsby Town,League Two,11,61,0.25,15.2,-,25,0.0,40.2
+2022/23,Tranmere Rovers,League Two,12,58,0.25,14.5,-,25,0.0,39.5
+2022/23,Crewe Alexandra,League Two,13,58,0.25,14.5,-,25,0.0,39.5
+2022/23,Sutton United,League Two,14,58,0.25,14.5,-,25,0.0,39.5
+2022/23,Newport County,League Two,15,57,0.25,14.2,-,25,0.0,39.2
+2022/23,Walsall,League Two,16,55,0.25,13.8,-,25,0.0,38.8
+2022/23,Gillingham,League Two,17,55,0.25,13.8,-,25,0.0,38.8
+2022/23,Doncaster Rovers,League Two,18,55,0.25,13.8,-,25,0.0,38.8
+2022/23,Harrogate Town,League Two,19,52,0.25,13.0,-,25,0.0,38.0
+2022/23,Colchester United,League Two,20,49,0.25,12.2,-,25,0.0,37.2
+2022/23,AFC Wimbledon,League Two,21,48,0.25,12.0,-,25,0.0,37.0
+2022/23,Crawley Town,League Two,22,46,0.25,11.5,-,25,0.0,36.5
+2022/23,Hartlepool United,League Two,23,43,0.25,10.8,descenso,25,-3.8,32.0
+2022/23,Rochdale,League Two,24,38,0.25,9.5,"descenso, ultimo_lugar",25,-6.3,28.2
+2022/23,Wrexham,National League,1,111,0.15,16.6,campeon,15,3.0,34.6
+2022/23,Notts County,National League,2,107,0.15,16.1,ascenso_directo,15,1.5,32.6
+2022/23,Chesterfield,National League,3,84,0.15,12.6,playoff_sin_ascenso,15,0.4,28.0
+2022/23,Woking,National League,4,82,0.15,12.3,playoff_sin_ascenso,15,0.4,27.7
+2022/23,Barnet,National League,5,74,0.15,11.1,playoff_sin_ascenso,15,0.4,26.5
+2022/23,Boreham Wood,National League,6,72,0.15,10.8,playoff_sin_ascenso,15,0.4,26.2
+2022/23,Bromley,National League,7,71,0.15,10.7,-,15,0.0,25.7
+2022/23,Southend United,National League,8,69,0.15,10.3,-,15,0.0,25.3
+2022/23,Eastleigh,National League,9,67,0.15,10.0,-,15,0.0,25.0
+2022/23,Dagenham & Redbridge,National League,10,63,0.15,9.4,-,15,0.0,24.4
+2022/23,FC Halifax Town,National League,11,61,0.15,9.2,-,15,0.0,24.2
+2022/23,Oldham Athletic,National League,12,61,0.15,9.2,-,15,0.0,24.2
+2022/23,Wealdstone,National League,13,60,0.15,9.0,-,15,0.0,24.0
+2022/23,Solihull Moors,National League,15,58,0.15,8.7,-,15,0.0,23.7
+2022/23,Dorking Wanderers,National League,16,57,0.15,8.5,-,15,0.0,23.5
+2022/23,Altrincham,National League,17,56,0.15,8.4,-,15,0.0,23.4
+2022/23,Aldershot Town,National League,18,53,0.15,7.9,-,15,0.0,22.9
+2022/23,York City,National League,19,51,0.15,7.6,-,15,0.0,22.6
+2022/23,Maidenhead United,National League,20,50,0.15,7.5,-,15,0.0,22.5
+2022/23,Torquay United,National League,21,48,0.15,7.2,-,15,0.0,22.2
+2022/23,Yeovil Town,National League,22,40,0.15,6.0,descenso,15,-2.2,18.8
+2022/23,Scunthorpe United,National League,23,34,0.15,5.1,descenso,15,-2.2,17.9
+2022/23,Maidstone United,National League,24,25,0.15,3.8,"descenso, ultimo_lugar",15,-3.7,15.1
+2022/23,Wrexham,National League North,1,111,0.08,8.9,campeon,8,1.6,18.5
+2022/23,Notts County,National League North,2,107,0.08,8.6,ascenso_directo,8,0.8,17.4
+2022/23,Chesterfield,National League North,3,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2022/23,Woking,National League North,4,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2022/23,Barnet,National League North,5,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2022/23,Boreham Wood,National League North,6,72,0.08,5.8,playoff_sin_ascenso,8,0.2,14.0
+2022/23,Bromley,National League North,7,71,0.08,5.7,-,8,0.0,13.7
+2022/23,Southend United,National League North,8,69,0.08,5.5,-,8,0.0,13.5
+2022/23,Eastleigh,National League North,9,67,0.08,5.4,-,8,0.0,13.4
+2022/23,Dagenham & Redbridge,National League North,10,63,0.08,5.0,-,8,0.0,13.0
+2022/23,FC Halifax Town,National League North,11,61,0.08,4.9,-,8,0.0,12.9
+2022/23,Oldham Athletic,National League North,12,61,0.08,4.9,-,8,0.0,12.9
+2022/23,Wealdstone,National League North,13,60,0.08,4.8,-,8,0.0,12.8
+2022/23,Solihull Moors,National League North,15,58,0.08,4.6,-,8,0.0,12.6
+2022/23,Dorking Wanderers,National League North,16,57,0.08,4.6,-,8,0.0,12.6
+2022/23,Altrincham,National League North,17,56,0.08,4.5,-,8,0.0,12.5
+2022/23,Aldershot Town,National League North,18,53,0.08,4.2,-,8,0.0,12.2
+2022/23,York City,National League North,19,51,0.08,4.1,-,8,0.0,12.1
+2022/23,Maidenhead United,National League North,20,50,0.08,4.0,-,8,0.0,12.0
+2022/23,Torquay United,National League North,21,48,0.08,3.8,-,8,0.0,11.8
+2022/23,Yeovil Town,National League North,22,40,0.08,3.2,descenso,8,-1.2,10.0
+2022/23,Scunthorpe United,National League North,23,34,0.08,2.7,descenso,8,-1.2,9.5
+2022/23,Maidstone United,National League North,24,25,0.08,2.0,"descenso, ultimo_lugar",8,-2.0,8.0
+2022/23,Wrexham,National League South,1,111,0.08,8.9,campeon,8,1.6,18.5
+2022/23,Notts County,National League South,2,107,0.08,8.6,ascenso_directo,8,0.8,17.4
+2022/23,Chesterfield,National League South,3,84,0.08,6.7,playoff_sin_ascenso,8,0.2,14.9
+2022/23,Woking,National League South,4,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2022/23,Barnet,National League South,5,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2022/23,Boreham Wood,National League South,6,72,0.08,5.8,playoff_sin_ascenso,8,0.2,14.0
+2022/23,Bromley,National League South,7,71,0.08,5.7,-,8,0.0,13.7
+2022/23,Southend United,National League South,8,69,0.08,5.5,-,8,0.0,13.5
+2022/23,Eastleigh,National League South,9,67,0.08,5.4,-,8,0.0,13.4
+2022/23,Dagenham & Redbridge,National League South,10,63,0.08,5.0,-,8,0.0,13.0
+2022/23,FC Halifax Town,National League South,11,61,0.08,4.9,-,8,0.0,12.9
+2022/23,Oldham Athletic,National League South,12,61,0.08,4.9,-,8,0.0,12.9
+2022/23,Wealdstone,National League South,13,60,0.08,4.8,-,8,0.0,12.8
+2022/23,Solihull Moors,National League South,15,58,0.08,4.6,-,8,0.0,12.6
+2022/23,Dorking Wanderers,National League South,16,57,0.08,4.6,-,8,0.0,12.6
+2022/23,Altrincham,National League South,17,56,0.08,4.5,-,8,0.0,12.5
+2022/23,Aldershot Town,National League South,18,53,0.08,4.2,-,8,0.0,12.2
+2022/23,York City,National League South,19,51,0.08,4.1,-,8,0.0,12.1
+2022/23,Maidenhead United,National League South,20,50,0.08,4.0,-,8,0.0,12.0
+2022/23,Torquay United,National League South,21,48,0.08,3.8,-,8,0.0,11.8
+2022/23,Yeovil Town,National League South,22,40,0.08,3.2,descenso,8,-1.2,10.0
+2022/23,Scunthorpe United,National League South,23,34,0.08,2.7,descenso,8,-1.2,9.5
+2022/23,Maidstone United,National League South,24,25,0.08,2.0,"descenso, ultimo_lugar",8,-2.0,8.0
+2022/23,South Shields,Northern Premier Division,1,85,0.04,3.4,campeon,4,0.8,8.2
+2022/23,Warrington Town,Northern Premier Division,2,77,0.04,3.1,ascenso_directo,4,0.4,7.5
+2022/23,Bamber Bridge,Northern Premier Division,3,73,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2022/23,Gainsborough Trinity,Northern Premier Division,4,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2022/23,Matlock Town,Northern Premier Division,5,68,0.04,2.7,playoff_sin_ascenso,4,0.1,6.8
+2022/23,Hyde United,Northern Premier Division,6,66,0.04,2.6,playoff_sin_ascenso,4,0.1,6.7
+2022/23,Radcliffe,Northern Premier Division,7,66,0.04,2.6,-,4,0.0,6.6
+2022/23,Marine,Northern Premier Division,9,61,0.04,2.4,-,4,0.0,6.4
+2022/23,Warrington Rylands 1906,Northern Premier Division,10,60,0.04,2.4,-,4,0.0,6.4
+2022/23,Lancaster City,Northern Premier Division,11,58,0.04,2.3,-,4,0.0,6.3
+2022/23,Stafford Rangers,Northern Premier Division,12,57,0.04,2.3,-,4,0.0,6.3
+2022/23,Guiseley,Northern Premier Division,13,55,0.04,2.2,-,4,0.0,6.2
+2022/23,Whitby Town,Northern Premier Division,15,52,0.04,2.1,-,4,0.0,6.1
+2022/23,Marske United,Northern Premier Division,16,50,0.04,2.0,-,4,0.0,6.0
+2022/23,Morpeth Town,Northern Premier Division,17,49,0.04,2.0,-,4,0.0,6.0
+2022/23,Atherton Collieries,Northern Premier Division,18,47,0.04,1.9,-,4,0.0,5.9
+2022/23,Nantwich Town,Northern Premier Division,19,46,0.04,1.8,-,4,0.0,5.8
+2022/23,Stalybridge Celtic,Northern Premier Division,20,42,0.04,1.7,descenso,4,-0.6,5.1
+2022/23,Liversedge,Northern Premier Division,21,40,0.04,1.6,descenso,4,-0.6,5.0
+2022/23,Belper Town,Northern Premier Division,22,30,0.04,1.2,"descenso, ultimo_lugar",4,-1.0,4.2
+2022/23,Tamworth,Southern League Premier Central,1,89,0.04,3.6,campeon,4,0.8,8.4
+2022/23,Coalville Town,Southern League Premier Central,2,89,0.04,3.6,ascenso_directo,4,0.4,8.0
+2022/23,Leiston,Southern League Premier Central,3,85,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2022/23,Nuneaton Borough,Southern League Premier Central,4,79,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2022/23,Rushall Olympic,Southern League Premier Central,5,73,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2022/23,Mickleover,Southern League Premier Central,6,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2022/23,Ilkeston Town,Southern League Premier Central,7,61,0.04,2.4,-,4,0.0,6.4
+2022/23,Barwell,Southern League Premier Central,8,61,0.04,2.4,-,4,0.0,6.4
+2022/23,Redditch United,Southern League Premier Central,9,61,0.04,2.4,-,4,0.0,6.4
+2022/23,Stourbridge,Southern League Premier Central,10,59,0.04,2.4,-,4,0.0,6.4
+2022/23,Alvechurch,Southern League Premier Central,11,59,0.04,2.4,-,4,0.0,6.4
+2022/23,Hitchin Town,Southern League Premier Central,12,59,0.04,2.4,-,4,0.0,6.4
+2022/23,Royston Town,Southern League Premier Central,13,55,0.04,2.2,-,4,0.0,6.2
+2022/23,Stratford Town,Southern League Premier Central,14,52,0.04,2.1,-,4,0.0,6.1
+2022/23,Basford United,Southern League Premier Central,15,52,0.04,2.1,-,4,0.0,6.1
+2022/23,St Ives Town,Southern League Premier Central,16,50,0.04,2.0,-,4,0.0,6.0
+2022/23,Needham Market,Southern League Premier Central,17,48,0.04,1.9,-,4,0.0,5.9
+2022/23,Bromsgrove Sporting,Southern League Premier Central,18,48,0.04,1.9,-,4,0.0,5.9
+2022/23,Kings Langley,Southern League Premier Central,19,39,0.04,1.6,-,4,0.0,5.6
+2022/23,Hednesford Town,Southern League Premier Central,20,31,0.04,1.2,descenso,4,-0.6,4.6
+2022/23,AFC Rushden & Diamonds,Southern League Premier Central,21,31,0.04,1.2,descenso,4,-0.6,4.6
+2022/23,Bedford Town,Southern League Premier Central,22,30,0.04,1.2,"descenso, ultimo_lugar",4,-1.0,4.2
+2022/23,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2022/23,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2022/23,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2022/23,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2022/23,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2022/23,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2022/23,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2022/23,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2022/23,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2022/23,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2022/23,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2022/23,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2022/23,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2022/23,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2022/23,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2022/23,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2022/23,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2022/23,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2022/23,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2022/23,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2022/23,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2022/23,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2022/23,Bishop's Stortford,Isthmian League Premier Division,1,88,0.04,3.5,campeon,4,0.8,8.3
+2022/23,Hornchurch,Isthmian League Premier Division,2,84,0.04,3.4,ascenso_directo,4,0.4,7.8
+2022/23,Canvey Island,Isthmian League Premier Division,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2022/23,Aveley,Isthmian League Premier Division,4,78,0.04,3.1,playoff_sin_ascenso,4,0.1,7.2
+2022/23,Cray Wanderers,Isthmian League Premier Division,5,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2022/23,Lewes,Isthmian League Premier Division,6,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2022/23,Horsham,Isthmian League Premier Division,7,72,0.04,2.9,-,4,0.0,6.9
+2022/23,Hastings United,Isthmian League Premier Division,8,71,0.04,2.8,-,4,0.0,6.8
+2022/23,Enfield Town,Isthmian League Premier Division,9,69,0.04,2.8,-,4,0.0,6.8
+2022/23,Billericay Town,Isthmian League Premier Division,10,65,0.04,2.6,-,4,0.0,6.6
+2022/23,Carshalton Athletic,Isthmian League Premier Division,11,64,0.04,2.6,-,4,0.0,6.6
+2022/23,Folkestone Invicta,Isthmian League Premier Division,12,59,0.04,2.4,-,4,0.0,6.4
+2022/23,Potters Bar Town,Isthmian League Premier Division,13,53,0.04,2.1,-,4,0.0,6.1
+2022/23,Bognor Regis Town,Isthmian League Premier Division,14,52,0.04,2.1,-,4,0.0,6.1
+2022/23,Haringey Borough,Isthmian League Premier Division,15,51,0.04,2.0,-,4,0.0,6.0
+2022/23,Wingate & Finchley,Isthmian League Premier Division,16,48,0.04,1.9,-,4,0.0,5.9
+2022/23,Margate,Isthmian League Premier Division,17,44,0.04,1.8,-,4,0.0,5.8
+2022/23,Kingstonian,Isthmian League Premier Division,18,39,0.04,1.6,-,4,0.0,5.6
+2022/23,Bowers & Pitsea,Isthmian League Premier Division,19,33,0.04,1.3,-,4,0.0,5.3
+2022/23,Herne Bay,Isthmian League Premier Division,20,33,0.04,1.3,descenso,4,-0.6,4.7
+2022/23,Corinthian-Casuals,Isthmian League Premier Division,21,26,0.04,1.0,descenso,4,-0.6,4.4
+2022/23,Brightlingsea Regent,Isthmian League Premier Division,22,24,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2023/24,Manchester City,Premier League,1,91,1.0,91.0,campeon,100,20.0,211.0
+2023/24,Arsenal,Premier League,2,89,1.0,89.0,-,100,0.0,189.0
+2023/24,Liverpool,Premier League,3,82,1.0,82.0,-,100,0.0,182.0
+2023/24,Aston Villa,Premier League,4,68,1.0,68.0,-,100,0.0,168.0
+2023/24,Tottenham Hotspur,Premier League,5,66,1.0,66.0,-,100,0.0,166.0
+2023/24,Chelsea,Premier League,6,63,1.0,63.0,-,100,0.0,163.0
+2023/24,Newcastle United,Premier League,7,60,1.0,60.0,-,100,0.0,160.0
+2023/24,Manchester United,Premier League,8,60,1.0,60.0,-,100,0.0,160.0
+2023/24,West Ham United,Premier League,9,52,1.0,52.0,-,100,0.0,152.0
+2023/24,Crystal Palace,Premier League,10,49,1.0,49.0,-,100,0.0,149.0
+2023/24,Brighton & Hove Albion,Premier League,11,48,1.0,48.0,-,100,0.0,148.0
+2023/24,Bournemouth,Premier League,12,48,1.0,48.0,-,100,0.0,148.0
+2023/24,Fulham,Premier League,13,47,1.0,47.0,-,100,0.0,147.0
+2023/24,Wolverhampton Wanderers,Premier League,14,46,1.0,46.0,-,100,0.0,146.0
+2023/24,Brentford,Premier League,16,39,1.0,39.0,-,100,0.0,139.0
+2023/24,Luton Town,Premier League,18,26,1.0,26.0,descenso,100,-15.0,111.0
+2023/24,Burnley,Premier League,19,24,1.0,24.0,descenso,100,-15.0,109.0
+2023/24,Sheffield United,Premier League,20,16,1.0,16.0,"descenso, ultimo_lugar",100,-25.0,91.0
+2023/24,Leicester City,Championship,1,97,0.7,67.9,campeon,70,14.0,151.9
+2023/24,Ipswich Town,Championship,2,96,0.7,67.2,ascenso_directo,70,7.0,144.2
+2023/24,Leeds United,Championship,3,90,0.7,63.0,playoff_sin_ascenso,70,2.1,135.1
+2023/24,Southampton,Championship,4,87,0.7,60.9,playoff_sin_ascenso,70,2.1,133.0
+2023/24,West Bromwich Albion,Championship,5,75,0.7,52.5,playoff_sin_ascenso,70,2.1,124.6
+2023/24,Norwich City,Championship,6,73,0.7,51.1,playoff_sin_ascenso,70,2.1,123.2
+2023/24,Hull City,Championship,7,70,0.7,49.0,-,70,0.0,119.0
+2023/24,Middlesbrough,Championship,8,69,0.7,48.3,-,70,0.0,118.3
+2023/24,Coventry City,Championship,9,64,0.7,44.8,-,70,0.0,114.8
+2023/24,Preston North End,Championship,10,63,0.7,44.1,-,70,0.0,114.1
+2023/24,Bristol City,Championship,11,62,0.7,43.4,-,70,0.0,113.4
+2023/24,Cardiff City,Championship,12,62,0.7,43.4,-,70,0.0,113.4
+2023/24,Millwall,Championship,13,59,0.7,41.3,-,70,0.0,111.3
+2023/24,Swansea City,Championship,14,57,0.7,39.9,-,70,0.0,109.9
+2023/24,Watford,Championship,15,56,0.7,39.2,-,70,0.0,109.2
+2023/24,Sunderland,Championship,16,56,0.7,39.2,-,70,0.0,109.2
+2023/24,Stoke City,Championship,17,56,0.7,39.2,-,70,0.0,109.2
+2023/24,Queens Park Rangers,Championship,18,56,0.7,39.2,-,70,0.0,109.2
+2023/24,Blackburn Rovers,Championship,19,53,0.7,37.1,-,70,0.0,107.1
+2023/24,Sheffield Wednesday,Championship,20,53,0.7,37.1,-,70,0.0,107.1
+2023/24,Plymouth Argyle,Championship,21,51,0.7,35.7,-,70,0.0,105.7
+2023/24,Birmingham City,Championship,22,50,0.7,35.0,descenso,70,-10.5,94.5
+2023/24,Huddersfield Town,Championship,23,45,0.7,31.5,descenso,70,-10.5,91.0
+2023/24,Rotherham United,Championship,24,27,0.7,18.9,"descenso, ultimo_lugar",70,-17.5,71.4
+2023/24,Portsmouth,League One,1,97,0.45,43.6,campeon,45,9.0,97.6
+2023/24,Derby County,League One,2,92,0.45,41.4,ascenso_directo,45,4.5,90.9
+2023/24,Bolton Wanderers,League One,3,87,0.45,39.1,playoff_sin_ascenso,45,1.3,85.4
+2023/24,Peterborough United,League One,4,84,0.45,37.8,playoff_sin_ascenso,45,1.3,84.1
+2023/24,Oxford United,League One,5,77,0.45,34.6,playoff_sin_ascenso,45,1.3,80.9
+2023/24,Barnsley,League One,6,76,0.45,34.2,playoff_sin_ascenso,45,1.3,80.5
+2023/24,Lincoln City,League One,7,74,0.45,33.3,-,45,0.0,78.3
+2023/24,Blackpool,League One,8,73,0.45,32.9,-,45,0.0,77.9
+2023/24,Stevenage,League One,9,71,0.45,31.9,-,45,0.0,76.9
+2023/24,Wycombe Wanderers,League One,10,65,0.45,29.2,-,45,0.0,74.2
+2023/24,Leyton Orient,League One,11,65,0.45,29.2,-,45,0.0,74.2
+2023/24,Exeter City,League One,13,61,0.45,27.4,-,45,0.0,72.4
+2023/24,Northampton Town,League One,14,60,0.45,27.0,-,45,0.0,72.0
+2023/24,Bristol Rovers,League One,15,57,0.45,25.7,-,45,0.0,70.7
+2023/24,Charlton Athletic,League One,16,53,0.45,23.9,-,45,0.0,68.9
+2023/24,Cambridge United,League One,18,48,0.45,21.6,-,45,0.0,66.6
+2023/24,Shrewsbury Town,League One,19,48,0.45,21.6,-,45,0.0,66.6
+2023/24,Burton Albion,League One,20,46,0.45,20.7,-,45,0.0,65.7
+2023/24,Cheltenham Town,League One,21,44,0.45,19.8,descenso,45,-6.8,58.0
+2023/24,Fleetwood Town,League One,22,43,0.45,19.4,descenso,45,-6.8,57.6
+2023/24,Port Vale,League One,23,41,0.45,18.4,descenso,45,-6.8,56.6
+2023/24,Carlisle United,League One,24,30,0.45,13.5,"descenso, ultimo_lugar",45,-11.3,47.2
+2023/24,Stockport County,League Two,1,92,0.25,23.0,campeon,25,5.0,53.0
+2023/24,Wrexham,League Two,2,88,0.25,22.0,ascenso_directo,25,2.5,49.5
+2023/24,Mansfield Town,League Two,3,86,0.25,21.5,ascenso_directo,25,2.5,49.0
+2023/24,Milton Keynes Dons,League Two,4,78,0.25,19.5,playoff_sin_ascenso,25,0.8,45.3
+2023/24,Doncaster Rovers,League Two,5,71,0.25,17.8,playoff_sin_ascenso,25,0.8,43.6
+2023/24,Crewe Alexandra,League Two,6,71,0.25,17.8,playoff_sin_ascenso,25,0.8,43.6
+2023/24,Crawley Town,League Two,7,70,0.25,17.5,playoff_sin_ascenso,25,0.8,43.3
+2023/24,Barrow,League Two,8,69,0.25,17.2,-,25,0.0,42.2
+2023/24,Bradford City,League Two,9,69,0.25,17.2,-,25,0.0,42.2
+2023/24,AFC Wimbledon,League Two,10,65,0.25,16.2,-,25,0.0,41.2
+2023/24,Walsall,League Two,11,65,0.25,16.2,-,25,0.0,41.2
+2023/24,Gillingham,League Two,12,64,0.25,16.0,-,25,0.0,41.0
+2023/24,Harrogate Town,League Two,13,63,0.25,15.8,-,25,0.0,40.8
+2023/24,Notts County,League Two,14,61,0.25,15.2,-,25,0.0,40.2
+2023/24,Tranmere Rovers,League Two,16,57,0.25,14.2,-,25,0.0,39.2
+2023/24,Accrington Stanley,League Two,17,57,0.25,14.2,-,25,0.0,39.2
+2023/24,Newport County,League Two,18,55,0.25,13.8,-,25,0.0,38.8
+2023/24,Swindon Town,League Two,19,54,0.25,13.5,-,25,0.0,38.5
+2023/24,Salford City,League Two,20,51,0.25,12.8,-,25,0.0,37.8
+2023/24,Grimsby Town,League Two,21,49,0.25,12.2,-,25,0.0,37.2
+2023/24,Colchester United,League Two,22,45,0.25,11.2,-,25,0.0,36.2
+2023/24,Sutton United,League Two,23,42,0.25,10.5,descenso,25,-3.8,31.7
+2023/24,Forest Green Rovers,League Two,24,42,0.25,10.5,"descenso, ultimo_lugar",25,-6.3,29.2
+2023/24,Chesterfield,National League,1,98,0.15,14.7,campeon,15,3.0,32.7
+2023/24,Barnet,National League,2,86,0.15,12.9,ascenso_directo,15,1.5,29.4
+2023/24,Bromley,National League,3,81,0.15,12.2,playoff_sin_ascenso,15,0.4,27.6
+2023/24,Solihull Moors,National League,5,76,0.15,11.4,playoff_sin_ascenso,15,0.4,26.8
+2023/24,Gateshead,National League,6,75,0.15,11.2,playoff_sin_ascenso,15,0.4,26.6
+2023/24,FC Halifax Town,National League,7,71,0.15,10.7,-,15,0.0,25.7
+2023/24,Aldershot Town,National League,8,69,0.15,10.3,-,15,0.0,25.3
+2023/24,Oldham Athletic,National League,10,63,0.15,9.4,-,15,0.0,24.4
+2023/24,Rochdale,National League,11,62,0.15,9.3,-,15,0.0,24.3
+2023/24,Hartlepool United,National League,12,60,0.15,9.0,-,15,0.0,24.0
+2023/24,Eastleigh,National League,13,59,0.15,8.8,-,15,0.0,23.8
+2023/24,Maidenhead United,National League,14,58,0.15,8.7,-,15,0.0,23.7
+2023/24,Dagenham & Redbridge,National League,15,56,0.15,8.4,-,15,0.0,23.4
+2023/24,Wealdstone,National League,16,56,0.15,8.4,-,15,0.0,23.4
+2023/24,Woking,National League,17,55,0.15,8.2,-,15,0.0,23.2
+2023/24,AFC Fylde,National League,18,55,0.15,8.2,-,15,0.0,23.2
+2023/24,Ebbsfleet United,National League,19,54,0.15,8.1,-,15,0.0,23.1
+2023/24,York City,National League,20,53,0.15,7.9,-,15,0.0,22.9
+2023/24,Boreham Wood,National League,21,52,0.15,7.8,-,15,0.0,22.8
+2023/24,Kidderminster Harriers,National League,22,46,0.15,6.9,descenso,15,-2.2,19.7
+2023/24,Dorking Wanderers,National League,23,45,0.15,6.8,descenso,15,-2.2,19.6
+2023/24,Oxford City,National League,24,33,0.15,5.0,"descenso, ultimo_lugar",15,-3.7,16.3
+2023/24,Chesterfield,National League North,1,98,0.08,7.8,campeon,8,1.6,17.4
+2023/24,Barnet,National League North,2,86,0.08,6.9,ascenso_directo,8,0.8,15.7
+2023/24,Bromley,National League North,3,81,0.08,6.5,playoff_sin_ascenso,8,0.2,14.7
+2023/24,Solihull Moors,National League North,5,76,0.08,6.1,playoff_sin_ascenso,8,0.2,14.3
+2023/24,Gateshead,National League North,6,75,0.08,6.0,playoff_sin_ascenso,8,0.2,14.2
+2023/24,FC Halifax Town,National League North,7,71,0.08,5.7,-,8,0.0,13.7
+2023/24,Aldershot Town,National League North,8,69,0.08,5.5,-,8,0.0,13.5
+2023/24,Oldham Athletic,National League North,10,63,0.08,5.0,-,8,0.0,13.0
+2023/24,Rochdale,National League North,11,62,0.08,5.0,-,8,0.0,13.0
+2023/24,Hartlepool United,National League North,12,60,0.08,4.8,-,8,0.0,12.8
+2023/24,Eastleigh,National League North,13,59,0.08,4.7,-,8,0.0,12.7
+2023/24,Maidenhead United,National League North,14,58,0.08,4.6,-,8,0.0,12.6
+2023/24,Dagenham & Redbridge,National League North,15,56,0.08,4.5,-,8,0.0,12.5
+2023/24,Wealdstone,National League North,16,56,0.08,4.5,-,8,0.0,12.5
+2023/24,Woking,National League North,17,55,0.08,4.4,-,8,0.0,12.4
+2023/24,AFC Fylde,National League North,18,55,0.08,4.4,-,8,0.0,12.4
+2023/24,Ebbsfleet United,National League North,19,54,0.08,4.3,-,8,0.0,12.3
+2023/24,York City,National League North,20,53,0.08,4.2,-,8,0.0,12.2
+2023/24,Boreham Wood,National League North,21,52,0.08,4.2,-,8,0.0,12.2
+2023/24,Kidderminster Harriers,National League North,22,46,0.08,3.7,descenso,8,-1.2,10.5
+2023/24,Dorking Wanderers,National League North,23,45,0.08,3.6,descenso,8,-1.2,10.4
+2023/24,Oxford City,National League North,24,33,0.08,2.6,"descenso, ultimo_lugar",8,-2.0,8.6
+2023/24,Chesterfield,National League South,1,98,0.08,7.8,campeon,8,1.6,17.4
+2023/24,Barnet,National League South,2,86,0.08,6.9,ascenso_directo,8,0.8,15.7
+2023/24,Bromley,National League South,3,81,0.08,6.5,playoff_sin_ascenso,8,0.2,14.7
+2023/24,Solihull Moors,National League South,5,76,0.08,6.1,playoff_sin_ascenso,8,0.2,14.3
+2023/24,Gateshead,National League South,6,75,0.08,6.0,playoff_sin_ascenso,8,0.2,14.2
+2023/24,FC Halifax Town,National League South,7,71,0.08,5.7,-,8,0.0,13.7
+2023/24,Aldershot Town,National League South,8,69,0.08,5.5,-,8,0.0,13.5
+2023/24,Oldham Athletic,National League South,10,63,0.08,5.0,-,8,0.0,13.0
+2023/24,Rochdale,National League South,11,62,0.08,5.0,-,8,0.0,13.0
+2023/24,Hartlepool United,National League South,12,60,0.08,4.8,-,8,0.0,12.8
+2023/24,Eastleigh,National League South,13,59,0.08,4.7,-,8,0.0,12.7
+2023/24,Maidenhead United,National League South,14,58,0.08,4.6,-,8,0.0,12.6
+2023/24,Dagenham & Redbridge,National League South,15,56,0.08,4.5,-,8,0.0,12.5
+2023/24,Wealdstone,National League South,16,56,0.08,4.5,-,8,0.0,12.5
+2023/24,Woking,National League South,17,55,0.08,4.4,-,8,0.0,12.4
+2023/24,AFC Fylde,National League South,18,55,0.08,4.4,-,8,0.0,12.4
+2023/24,Ebbsfleet United,National League South,19,54,0.08,4.3,-,8,0.0,12.3
+2023/24,York City,National League South,20,53,0.08,4.2,-,8,0.0,12.2
+2023/24,Boreham Wood,National League South,21,52,0.08,4.2,-,8,0.0,12.2
+2023/24,Kidderminster Harriers,National League South,22,46,0.08,3.7,descenso,8,-1.2,10.5
+2023/24,Dorking Wanderers,National League South,23,45,0.08,3.6,descenso,8,-1.2,10.4
+2023/24,Oxford City,National League South,24,33,0.08,2.6,"descenso, ultimo_lugar",8,-2.0,8.6
+2023/24,Radcliffe,Northern Premier Division,1,87,0.04,3.5,campeon,4,0.8,8.3
+2023/24,Macclesfield,Northern Premier Division,2,77,0.04,3.1,ascenso_directo,4,0.4,7.5
+2023/24,Marine,Northern Premier Division,3,76,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2023/24,Warrington Rylands 1906,Northern Premier Division,4,75,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2023/24,Worksop Town,Northern Premier Division,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2023/24,Hyde United,Northern Premier Division,6,67,0.04,2.7,playoff_sin_ascenso,4,0.1,6.8
+2023/24,Ashton United,Northern Premier Division,7,67,0.04,2.7,-,4,0.0,6.7
+2023/24,Gainsborough Trinity,Northern Premier Division,8,63,0.04,2.5,-,4,0.0,6.5
+2023/24,Lancaster City,Northern Premier Division,9,62,0.04,2.5,-,4,0.0,6.5
+2023/24,Guiseley,Northern Premier Division,10,61,0.04,2.4,-,4,0.0,6.4
+2023/24,Ilkeston Town,Northern Premier Division,11,60,0.04,2.4,-,4,0.0,6.4
+2023/24,Morpeth Town,Northern Premier Division,13,50,0.04,2.0,-,4,0.0,6.0
+2023/24,Matlock Town,Northern Premier Division,15,47,0.04,1.9,-,4,0.0,5.9
+2023/24,Bamber Bridge,Northern Premier Division,16,47,0.04,1.9,-,4,0.0,5.9
+2023/24,Workington,Northern Premier Division,17,44,0.04,1.8,-,4,0.0,5.8
+2023/24,Basford United,Northern Premier Division,18,37,0.04,1.5,-,4,0.0,5.5
+2023/24,Bradford,Northern Premier Division,19,30,0.04,1.2,-,4,0.0,5.2
+2023/24,Stafford Rangers,Northern Premier Division,20,30,0.04,1.2,descenso,4,-0.6,4.6
+2023/24,Atherton Collieries,Northern Premier Division,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2023/24,Marske United,Northern Premier Division,22,0,0.04,0.0,"descenso, ultimo_lugar",4,-1.0,3.0
+2023/24,Needham Market,Southern League Premier Central,1,85,0.04,3.4,campeon,4,0.8,8.2
+2023/24,AFC Telford United,Southern League Premier Central,2,82,0.04,3.3,ascenso_directo,4,0.4,7.7
+2023/24,Leamington,Southern League Premier Central,3,71,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2023/24,Redditch United,Southern League Premier Central,4,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2023/24,Stratford Town,Southern League Premier Central,6,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2023/24,Stamford,Southern League Premier Central,7,66,0.04,2.6,-,4,0.0,6.6
+2023/24,Halesowen Town,Southern League Premier Central,8,62,0.04,2.5,-,4,0.0,6.5
+2023/24,St Ives Town,Southern League Premier Central,9,58,0.04,2.3,-,4,0.0,6.3
+2023/24,Royston Town,Southern League Premier Central,10,57,0.04,2.3,-,4,0.0,6.3
+2023/24,Coalville Town,Southern League Premier Central,11,55,0.04,2.2,-,4,0.0,6.2
+2023/24,Stourbridge,Southern League Premier Central,12,52,0.04,2.1,-,4,0.0,6.1
+2023/24,Leiston,Southern League Premier Central,13,52,0.04,2.1,-,4,0.0,6.1
+2023/24,Barwell,Southern League Premier Central,14,51,0.04,2.0,-,4,0.0,6.0
+2023/24,Kettering Town,Southern League Premier Central,15,48,0.04,1.9,-,4,0.0,5.9
+2023/24,Alvechurch,Southern League Premier Central,16,45,0.04,1.8,-,4,0.0,5.8
+2023/24,Bromsgrove Sporting,Southern League Premier Central,17,44,0.04,1.8,-,4,0.0,5.8
+2023/24,AFC Sudbury,Southern League Premier Central,18,40,0.04,1.6,-,4,0.0,5.6
+2023/24,Hitchin Town,Southern League Premier Central,19,39,0.04,1.6,-,4,0.0,5.6
+2023/24,Long Eaton United,Southern League Premier Central,20,22,0.04,0.9,descenso,4,-0.6,4.3
+2023/24,Berkhamsted,Southern League Premier Central,21,21,0.04,0.8,descenso,4,-0.6,4.2
+2023/24,Nuneaton Borough,Southern League Premier Central,22,0,0.04,0.0,"descenso, ultimo_lugar",4,-1.0,3.0
+2023/24,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2023/24,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2023/24,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2023/24,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2023/24,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2023/24,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2023/24,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2023/24,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2023/24,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2023/24,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2023/24,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2023/24,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2023/24,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2023/24,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2023/24,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2023/24,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2023/24,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2023/24,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2023/24,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2023/24,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2023/24,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2023/24,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2023/24,Hornchurch,Isthmian League Premier Division,1,100,0.04,4.0,campeon,4,0.8,8.8
+2023/24,Chatham Town,Isthmian League Premier Division,2,79,0.04,3.2,ascenso_directo,4,0.4,7.6
+2023/24,Enfield Town,Isthmian League Premier Division,3,77,0.04,3.1,playoff_sin_ascenso,4,0.1,7.2
+2023/24,Wingate & Finchley,Isthmian League Premier Division,4,76,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2023/24,Horsham,Isthmian League Premier Division,5,76,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2023/24,Billericay Town,Isthmian League Premier Division,6,73,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2023/24,Hastings United,Isthmian League Premier Division,7,67,0.04,2.7,-,4,0.0,6.7
+2023/24,Lewes,Isthmian League Premier Division,8,67,0.04,2.7,-,4,0.0,6.7
+2023/24,Whitehawk,Isthmian League Premier Division,9,65,0.04,2.6,-,4,0.0,6.6
+2023/24,Bognor Regis Town,Isthmian League Premier Division,10,62,0.04,2.5,-,4,0.0,6.5
+2023/24,Carshalton Athletic,Isthmian League Premier Division,11,62,0.04,2.5,-,4,0.0,6.5
+2023/24,Dulwich Hamlet,Isthmian League Premier Division,12,62,0.04,2.5,-,4,0.0,6.5
+2023/24,Hashtag United,Isthmian League Premier Division,13,59,0.04,2.4,-,4,0.0,6.4
+2023/24,Canvey Island,Isthmian League Premier Division,14,54,0.04,2.2,-,4,0.0,6.2
+2023/24,Potters Bar Town,Isthmian League Premier Division,15,51,0.04,2.0,-,4,0.0,6.0
+2023/24,Folkestone Invicta,Isthmian League Premier Division,16,50,0.04,2.0,-,4,0.0,6.0
+2023/24,Cray Wanderers,Isthmian League Premier Division,17,50,0.04,2.0,-,4,0.0,6.0
+2023/24,Cheshunt,Isthmian League Premier Division,18,43,0.04,1.7,-,4,0.0,5.7
+2023/24,Margate,Isthmian League Premier Division,19,39,0.04,1.6,-,4,0.0,5.6
+2023/24,Haringey Borough,Isthmian League Premier Division,20,27,0.04,1.1,descenso,4,-0.6,4.5
+2023/24,Concord Rangers,Isthmian League Premier Division,21,26,0.04,1.0,descenso,4,-0.6,4.4
+2023/24,Kingstonian,Isthmian League Premier Division,22,21,0.04,0.8,"descenso, ultimo_lugar",4,-1.0,3.8
+2024/25,Liverpool,Premier League,1,84,1.0,84.0,campeon,100,20.0,204.0
+2024/25,Arsenal,Premier League,2,74,1.0,74.0,-,100,0.0,174.0
+2024/25,Manchester City,Premier League,3,71,1.0,71.0,-,100,0.0,171.0
+2024/25,Chelsea,Premier League,4,69,1.0,69.0,-,100,0.0,169.0
+2024/25,Newcastle United,Premier League,5,66,1.0,66.0,-,100,0.0,166.0
+2024/25,Aston Villa,Premier League,6,66,1.0,66.0,-,100,0.0,166.0
+2024/25,Nottingham Forest,Premier League,7,65,1.0,65.0,-,100,0.0,165.0
+2024/25,Brighton & Hove Albion,Premier League,8,61,1.0,61.0,-,100,0.0,161.0
+2024/25,Bournemouth,Premier League,9,56,1.0,56.0,-,100,0.0,156.0
+2024/25,Brentford,Premier League,10,56,1.0,56.0,-,100,0.0,156.0
+2024/25,Fulham,Premier League,11,54,1.0,54.0,-,100,0.0,154.0
+2024/25,Crystal Palace,Premier League,12,53,1.0,53.0,-,100,0.0,153.0
+2024/25,Everton,Premier League,13,48,1.0,48.0,-,100,0.0,148.0
+2024/25,West Ham United,Premier League,14,43,1.0,43.0,-,100,0.0,143.0
+2024/25,Manchester United,Premier League,15,42,1.0,42.0,-,100,0.0,142.0
+2024/25,Wolverhampton Wanderers,Premier League,16,42,1.0,42.0,-,100,0.0,142.0
+2024/25,Tottenham Hotspur,Premier League,17,38,1.0,38.0,-,100,0.0,138.0
+2024/25,Leicester City,Premier League,18,25,1.0,25.0,descenso,100,-15.0,110.0
+2024/25,Ipswich Town,Premier League,19,22,1.0,22.0,descenso,100,-15.0,107.0
+2024/25,Southampton,Premier League,20,12,1.0,12.0,"descenso, ultimo_lugar",100,-25.0,87.0
+2024/25,Leeds United,Championship,1,100,0.7,70.0,campeon,70,14.0,154.0
+2024/25,Burnley,Championship,2,100,0.7,70.0,ascenso_directo,70,7.0,147.0
+2024/25,Sunderland,Championship,4,76,0.7,53.2,playoff_sin_ascenso,70,2.1,125.3
+2024/25,Coventry City,Championship,5,69,0.7,48.3,playoff_sin_ascenso,70,2.1,120.4
+2024/25,Bristol City,Championship,6,68,0.7,47.6,playoff_sin_ascenso,70,2.1,119.7
+2024/25,Blackburn Rovers,Championship,7,66,0.7,46.2,-,70,0.0,116.2
+2024/25,Millwall,Championship,8,66,0.7,46.2,-,70,0.0,116.2
+2024/25,West Bromwich Albion,Championship,9,64,0.7,44.8,-,70,0.0,114.8
+2024/25,Middlesbrough,Championship,10,64,0.7,44.8,-,70,0.0,114.8
+2024/25,Swansea City,Championship,11,61,0.7,42.7,-,70,0.0,112.7
+2024/25,Sheffield Wednesday,Championship,12,58,0.7,40.6,-,70,0.0,110.6
+2024/25,Norwich City,Championship,13,57,0.7,39.9,-,70,0.0,109.9
+2024/25,Watford,Championship,14,57,0.7,39.9,-,70,0.0,109.9
+2024/25,Queens Park Rangers,Championship,15,56,0.7,39.2,-,70,0.0,109.2
+2024/25,Portsmouth,Championship,16,54,0.7,37.8,-,70,0.0,107.8
+2024/25,Oxford United,Championship,17,53,0.7,37.1,-,70,0.0,107.1
+2024/25,Stoke City,Championship,18,51,0.7,35.7,-,70,0.0,105.7
+2024/25,Derby County,Championship,19,50,0.7,35.0,-,70,0.0,105.0
+2024/25,Preston North End,Championship,20,50,0.7,35.0,-,70,0.0,105.0
+2024/25,Hull City,Championship,21,49,0.7,34.3,-,70,0.0,104.3
+2024/25,Luton Town,Championship,22,49,0.7,34.3,descenso,70,-10.5,93.8
+2024/25,Plymouth Argyle,Championship,23,46,0.7,32.2,descenso,70,-10.5,91.7
+2024/25,Cardiff City,Championship,24,44,0.7,30.8,"descenso, ultimo_lugar",70,-17.5,83.3
+2024/25,Birmingham City,League One,1,111,0.45,50.0,campeon,45,9.0,104.0
+2024/25,Wrexham,League One,2,92,0.45,41.4,ascenso_directo,45,4.5,90.9
+2024/25,Stockport County,League One,3,87,0.45,39.1,playoff_sin_ascenso,45,1.3,85.4
+2024/25,Charlton Athletic,League One,4,85,0.45,38.2,playoff_sin_ascenso,45,1.3,84.5
+2024/25,Wycombe Wanderers,League One,5,84,0.45,37.8,playoff_sin_ascenso,45,1.3,84.1
+2024/25,Leyton Orient,League One,6,78,0.45,35.1,playoff_sin_ascenso,45,1.3,81.4
+2024/25,Reading,League One,7,75,0.45,33.8,-,45,0.0,78.8
+2024/25,Bolton Wanderers,League One,8,68,0.45,30.6,-,45,0.0,75.6
+2024/25,Blackpool,League One,9,67,0.45,30.2,-,45,0.0,75.2
+2024/25,Huddersfield Town,League One,10,64,0.45,28.8,-,45,0.0,73.8
+2024/25,Lincoln City,League One,11,61,0.45,27.4,-,45,0.0,72.4
+2024/25,Barnsley,League One,12,61,0.45,27.4,-,45,0.0,72.4
+2024/25,Rotherham United,League One,13,59,0.45,26.6,-,45,0.0,71.6
+2024/25,Stevenage,League One,14,57,0.45,25.7,-,45,0.0,70.7
+2024/25,Wigan Athletic,League One,15,56,0.45,25.2,-,45,0.0,70.2
+2024/25,Exeter City,League One,16,56,0.45,25.2,-,45,0.0,70.2
+2024/25,Mansfield Town,League One,17,54,0.45,24.3,-,45,0.0,69.3
+2024/25,Peterborough United,League One,18,51,0.45,22.9,-,45,0.0,67.9
+2024/25,Northampton Town,League One,19,51,0.45,22.9,-,45,0.0,67.9
+2024/25,Burton Albion,League One,20,47,0.45,21.2,-,45,0.0,66.2
+2024/25,Crawley Town,League One,21,46,0.45,20.7,descenso,45,-6.8,58.9
+2024/25,Bristol Rovers,League One,22,43,0.45,19.4,descenso,45,-6.8,57.6
+2024/25,Cambridge United,League One,23,38,0.45,17.1,descenso,45,-6.8,55.3
+2024/25,Shrewsbury Town,League One,24,33,0.45,14.8,"descenso, ultimo_lugar",45,-11.3,48.5
+2024/25,Doncaster Rovers,League Two,1,84,0.25,21.0,campeon,25,5.0,51.0
+2024/25,Port Vale,League Two,2,80,0.25,20.0,ascenso_directo,25,2.5,47.5
+2024/25,Bradford City,League Two,3,78,0.25,19.5,ascenso_directo,25,2.5,47.0
+2024/25,Walsall,League Two,4,77,0.25,19.2,playoff_sin_ascenso,25,0.8,45.0
+2024/25,AFC Wimbledon,League Two,5,73,0.25,18.2,playoff_sin_ascenso,25,0.8,44.0
+2024/25,Notts County,League Two,6,72,0.25,18.0,playoff_sin_ascenso,25,0.8,43.8
+2024/25,Chesterfield,League Two,7,70,0.25,17.5,playoff_sin_ascenso,25,0.8,43.3
+2024/25,Salford City,League Two,8,69,0.25,17.2,-,25,0.0,42.2
+2024/25,Grimsby Town,League Two,9,68,0.25,17.0,-,25,0.0,42.0
+2024/25,Colchester United,League Two,10,67,0.25,16.8,-,25,0.0,41.8
+2024/25,Bromley,League Two,11,66,0.25,16.5,-,25,0.0,41.5
+2024/25,Swindon Town,League Two,12,62,0.25,15.5,-,25,0.0,40.5
+2024/25,Crewe Alexandra,League Two,13,62,0.25,15.5,-,25,0.0,40.5
+2024/25,Fleetwood Town,League Two,14,60,0.25,15.0,-,25,0.0,40.0
+2024/25,Cheltenham Town,League Two,15,60,0.25,15.0,-,25,0.0,40.0
+2024/25,Barrow,League Two,16,59,0.25,14.8,-,25,0.0,39.8
+2024/25,Gillingham,League Two,17,58,0.25,14.5,-,25,0.0,39.5
+2024/25,Harrogate Town,League Two,18,53,0.25,13.2,-,25,0.0,38.2
+2024/25,Milton Keynes Dons,League Two,19,52,0.25,13.0,-,25,0.0,38.0
+2024/25,Tranmere Rovers,League Two,20,51,0.25,12.8,-,25,0.0,37.8
+2024/25,Accrington Stanley,League Two,21,50,0.25,12.5,-,25,0.0,37.5
+2024/25,Newport County,League Two,22,49,0.25,12.2,-,25,0.0,37.2
+2024/25,Carlisle United,League Two,23,42,0.25,10.5,descenso,25,-3.8,31.7
+2024/25,Morecambe,League Two,24,36,0.25,9.0,"descenso, ultimo_lugar",25,-6.3,27.7
+2024/25,Barnet,National League,1,102,0.15,15.3,campeon,15,3.0,33.3
+2024/25,York City,National League,2,96,0.15,14.4,ascenso_directo,15,1.5,30.9
+2024/25,Forest Green Rovers,National League,3,83,0.15,12.4,playoff_sin_ascenso,15,0.4,27.8
+2024/25,Rochdale,National League,4,74,0.15,11.1,playoff_sin_ascenso,15,0.4,26.5
+2024/25,Oldham Athletic,National League,5,73,0.15,10.9,playoff_sin_ascenso,15,0.4,26.3
+2024/25,FC Halifax Town,National League,6,70,0.15,10.5,playoff_sin_ascenso,15,0.4,25.9
+2024/25,Southend United,National League,7,68,0.15,10.2,-,15,0.0,25.2
+2024/25,Gateshead,National League,8,67,0.15,10.0,-,15,0.0,25.0
+2024/25,Altrincham,National League,9,64,0.15,9.6,-,15,0.0,24.6
+2024/25,Tamworth,National League,10,64,0.15,9.6,-,15,0.0,24.6
+2024/25,Hartlepool United,National League,11,60,0.15,9.0,-,15,0.0,24.0
+2024/25,Sutton United,National League,12,60,0.15,9.0,-,15,0.0,24.0
+2024/25,Eastleigh,National League,13,59,0.15,8.8,-,15,0.0,23.8
+2024/25,Solihull Moors,National League,14,58,0.15,8.7,-,15,0.0,23.7
+2024/25,Woking,National League,15,58,0.15,8.7,-,15,0.0,23.7
+2024/25,Aldershot Town,National League,16,57,0.15,8.5,-,15,0.0,23.5
+2024/25,Braintree Town,National League,17,56,0.15,8.4,-,15,0.0,23.4
+2024/25,Yeovil Town,National League,18,56,0.15,8.4,-,15,0.0,23.4
+2024/25,Boston United,National League,19,55,0.15,8.2,-,15,0.0,23.2
+2024/25,Wealdstone,National League,20,53,0.15,7.9,-,15,0.0,22.9
+2024/25,Dagenham & Redbridge,National League,21,52,0.15,7.8,-,15,0.0,22.8
+2024/25,Maidenhead United,National League,22,52,0.15,7.8,descenso,15,-2.2,20.6
+2024/25,AFC Fylde,National League,23,40,0.15,6.0,descenso,15,-2.2,18.8
+2024/25,Ebbsfleet United,National League,24,22,0.15,3.3,"descenso, ultimo_lugar",15,-3.7,14.6
+2024/25,Barnet,National League North,1,102,0.08,8.2,campeon,8,1.6,17.8
+2024/25,York City,National League North,2,96,0.08,7.7,ascenso_directo,8,0.8,16.5
+2024/25,Forest Green Rovers,National League North,3,83,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2024/25,Rochdale,National League North,4,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2024/25,Oldham Athletic,National League North,5,73,0.08,5.8,playoff_sin_ascenso,8,0.2,14.0
+2024/25,FC Halifax Town,National League North,6,70,0.08,5.6,playoff_sin_ascenso,8,0.2,13.8
+2024/25,Southend United,National League North,7,68,0.08,5.4,-,8,0.0,13.4
+2024/25,Gateshead,National League North,8,67,0.08,5.4,-,8,0.0,13.4
+2024/25,Altrincham,National League North,9,64,0.08,5.1,-,8,0.0,13.1
+2024/25,Tamworth,National League North,10,64,0.08,5.1,-,8,0.0,13.1
+2024/25,Hartlepool United,National League North,11,60,0.08,4.8,-,8,0.0,12.8
+2024/25,Sutton United,National League North,12,60,0.08,4.8,-,8,0.0,12.8
+2024/25,Eastleigh,National League North,13,59,0.08,4.7,-,8,0.0,12.7
+2024/25,Solihull Moors,National League North,14,58,0.08,4.6,-,8,0.0,12.6
+2024/25,Woking,National League North,15,58,0.08,4.6,-,8,0.0,12.6
+2024/25,Aldershot Town,National League North,16,57,0.08,4.6,-,8,0.0,12.6
+2024/25,Braintree Town,National League North,17,56,0.08,4.5,-,8,0.0,12.5
+2024/25,Yeovil Town,National League North,18,56,0.08,4.5,-,8,0.0,12.5
+2024/25,Boston United,National League North,19,55,0.08,4.4,-,8,0.0,12.4
+2024/25,Wealdstone,National League North,20,53,0.08,4.2,-,8,0.0,12.2
+2024/25,Dagenham & Redbridge,National League North,21,52,0.08,4.2,-,8,0.0,12.2
+2024/25,Maidenhead United,National League North,22,52,0.08,4.2,descenso,8,-1.2,11.0
+2024/25,AFC Fylde,National League North,23,40,0.08,3.2,descenso,8,-1.2,10.0
+2024/25,Ebbsfleet United,National League North,24,22,0.08,1.8,"descenso, ultimo_lugar",8,-2.0,7.8
+2024/25,Barnet,National League South,1,102,0.08,8.2,campeon,8,1.6,17.8
+2024/25,York City,National League South,2,96,0.08,7.7,ascenso_directo,8,0.8,16.5
+2024/25,Forest Green Rovers,National League South,3,83,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2024/25,Rochdale,National League South,4,74,0.08,5.9,playoff_sin_ascenso,8,0.2,14.1
+2024/25,Oldham Athletic,National League South,5,73,0.08,5.8,playoff_sin_ascenso,8,0.2,14.0
+2024/25,FC Halifax Town,National League South,6,70,0.08,5.6,playoff_sin_ascenso,8,0.2,13.8
+2024/25,Southend United,National League South,7,68,0.08,5.4,-,8,0.0,13.4
+2024/25,Gateshead,National League South,8,67,0.08,5.4,-,8,0.0,13.4
+2024/25,Altrincham,National League South,9,64,0.08,5.1,-,8,0.0,13.1
+2024/25,Tamworth,National League South,10,64,0.08,5.1,-,8,0.0,13.1
+2024/25,Hartlepool United,National League South,11,60,0.08,4.8,-,8,0.0,12.8
+2024/25,Sutton United,National League South,12,60,0.08,4.8,-,8,0.0,12.8
+2024/25,Eastleigh,National League South,13,59,0.08,4.7,-,8,0.0,12.7
+2024/25,Solihull Moors,National League South,14,58,0.08,4.6,-,8,0.0,12.6
+2024/25,Woking,National League South,15,58,0.08,4.6,-,8,0.0,12.6
+2024/25,Aldershot Town,National League South,16,57,0.08,4.6,-,8,0.0,12.6
+2024/25,Braintree Town,National League South,17,56,0.08,4.5,-,8,0.0,12.5
+2024/25,Yeovil Town,National League South,18,56,0.08,4.5,-,8,0.0,12.5
+2024/25,Boston United,National League South,19,55,0.08,4.4,-,8,0.0,12.4
+2024/25,Wealdstone,National League South,20,53,0.08,4.2,-,8,0.0,12.2
+2024/25,Dagenham & Redbridge,National League South,21,52,0.08,4.2,-,8,0.0,12.2
+2024/25,Maidenhead United,National League South,22,52,0.08,4.2,descenso,8,-1.2,11.0
+2024/25,AFC Fylde,National League South,23,40,0.08,3.2,descenso,8,-1.2,10.0
+2024/25,Ebbsfleet United,National League South,24,22,0.08,1.8,"descenso, ultimo_lugar",8,-2.0,7.8
+2024/25,Macclesfield,Northern Premier Division,1,109,0.04,4.4,campeon,4,0.8,9.2
+2024/25,Worksop Town,Northern Premier Division,2,83,0.04,3.3,ascenso_directo,4,0.4,7.7
+2024/25,Guiseley,Northern Premier Division,4,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2024/25,Ashton United,Northern Premier Division,5,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2024/25,Ilkeston Town,Northern Premier Division,6,66,0.04,2.6,playoff_sin_ascenso,4,0.1,6.7
+2024/25,Gainsborough Trinity,Northern Premier Division,7,64,0.04,2.6,-,4,0.0,6.6
+2024/25,Morpeth Town,Northern Premier Division,8,62,0.04,2.5,-,4,0.0,6.5
+2024/25,Hyde United,Northern Premier Division,9,57,0.04,2.3,-,4,0.0,6.3
+2024/25,Prescot Cables,Northern Premier Division,10,57,0.04,2.3,-,4,0.0,6.3
+2024/25,Warrington Rylands 1906,Northern Premier Division,11,56,0.04,2.2,-,4,0.0,6.2
+2024/25,Workington,Northern Premier Division,12,52,0.04,2.1,-,4,0.0,6.1
+2024/25,Bamber Bridge,Northern Premier Division,13,52,0.04,2.1,-,4,0.0,6.1
+2024/25,Hebburn Town,Northern Premier Division,14,52,0.04,2.1,-,4,0.0,6.1
+2024/25,Leek Town,Northern Premier Division,15,52,0.04,2.1,-,4,0.0,6.1
+2024/25,Whitby Town,Northern Premier Division,16,52,0.04,2.1,-,4,0.0,6.1
+2024/25,FC United of Manchester,Northern Premier Division,17,51,0.04,2.0,-,4,0.0,6.0
+2024/25,Lancaster City,Northern Premier Division,18,51,0.04,2.0,-,4,0.0,6.0
+2024/25,Mickleover,Northern Premier Division,20,39,0.04,1.6,descenso,4,-0.6,5.0
+2024/25,Basford United,Northern Premier Division,21,37,0.04,1.5,descenso,4,-0.6,4.9
+2024/25,Blyth Spartans,Northern Premier Division,22,18,0.04,0.7,"descenso, ultimo_lugar",4,-1.0,3.7
+2024/25,Bedford Town,Southern League Premier Central,1,82,0.04,3.3,campeon,4,0.8,8.1
+2024/25,Kettering Town,Southern League Premier Central,2,77,0.04,3.1,ascenso_directo,4,0.4,7.5
+2024/25,AFC Telford United,Southern League Premier Central,3,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2024/25,Halesowen Town,Southern League Premier Central,4,74,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2024/25,Harborough Town,Southern League Premier Central,5,71,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2024/25,Stamford,Southern League Premier Central,6,69,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2024/25,Spalding United,Southern League Premier Central,7,68,0.04,2.7,-,4,0.0,6.7
+2024/25,Stratford Town,Southern League Premier Central,8,67,0.04,2.7,-,4,0.0,6.7
+2024/25,Stourbridge,Southern League Premier Central,9,63,0.04,2.5,-,4,0.0,6.5
+2024/25,Leiston,Southern League Premier Central,10,60,0.04,2.4,-,4,0.0,6.4
+2024/25,Royston Town,Southern League Premier Central,11,57,0.04,2.3,-,4,0.0,6.3
+2024/25,Banbury United,Southern League Premier Central,12,57,0.04,2.3,-,4,0.0,6.3
+2024/25,Alvechurch,Southern League Premier Central,13,56,0.04,2.2,-,4,0.0,6.2
+2024/25,Bromsgrove Sporting,Southern League Premier Central,14,51,0.04,2.0,-,4,0.0,6.0
+2024/25,Bishop's Stortford,Southern League Premier Central,15,51,0.04,2.0,-,4,0.0,6.0
+2024/25,St Ives Town,Southern League Premier Central,16,50,0.04,2.0,-,4,0.0,6.0
+2024/25,AFC Sudbury,Southern League Premier Central,17,50,0.04,2.0,-,4,0.0,6.0
+2024/25,Redditch United,Southern League Premier Central,18,49,0.04,2.0,-,4,0.0,6.0
+2024/25,Barwell,Southern League Premier Central,19,46,0.04,1.8,-,4,0.0,5.8
+2024/25,Lowestoft Town,Southern League Premier Central,20,37,0.04,1.5,descenso,4,-0.6,4.9
+2024/25,Hitchin Town,Southern League Premier Central,21,34,0.04,1.4,descenso,4,-0.6,4.8
+2024/25,Biggleswade Town,Southern League Premier Central,22,28,0.04,1.1,"descenso, ultimo_lugar",4,-1.0,4.1
+2024/25,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2024/25,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2024/25,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2024/25,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2024/25,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2024/25,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2024/25,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2024/25,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2024/25,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2024/25,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2024/25,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2024/25,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2024/25,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2024/25,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2024/25,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2024/25,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2024/25,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2024/25,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2024/25,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2024/25,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2024/25,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2024/25,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2024/25,Horsham,Isthmian League Premier Division,1,87,0.04,3.5,campeon,4,0.8,8.3
+2024/25,Billericay Town,Isthmian League Premier Division,2,87,0.04,3.5,ascenso_directo,4,0.4,7.9
+2024/25,Dartford,Isthmian League Premier Division,3,84,0.04,3.4,playoff_sin_ascenso,4,0.1,7.5
+2024/25,Dover Athletic,Isthmian League Premier Division,5,76,0.04,3.0,playoff_sin_ascenso,4,0.1,7.1
+2024/25,Chichester City,Isthmian League Premier Division,6,73,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2024/25,Carshalton Athletic,Isthmian League Premier Division,7,70,0.04,2.8,-,4,0.0,6.8
+2024/25,Hashtag United,Isthmian League Premier Division,8,64,0.04,2.6,-,4,0.0,6.6
+2024/25,Chatham Town,Isthmian League Premier Division,9,63,0.04,2.5,-,4,0.0,6.5
+2024/25,Cray Wanderers,Isthmian League Premier Division,10,61,0.04,2.4,-,4,0.0,6.4
+2024/25,Wingate & Finchley,Isthmian League Premier Division,11,60,0.04,2.4,-,4,0.0,6.4
+2024/25,Folkestone Invicta,Isthmian League Premier Division,12,58,0.04,2.3,-,4,0.0,6.3
+2024/25,Lewes,Isthmian League Premier Division,13,58,0.04,2.3,-,4,0.0,6.3
+2024/25,Potters Bar Town,Isthmian League Premier Division,14,57,0.04,2.3,-,4,0.0,6.3
+2024/25,Cheshunt,Isthmian League Premier Division,15,49,0.04,2.0,-,4,0.0,6.0
+2024/25,Whitehawk,Isthmian League Premier Division,16,49,0.04,2.0,-,4,0.0,6.0
+2024/25,Canvey Island,Isthmian League Premier Division,17,44,0.04,1.8,-,4,0.0,5.8
+2024/25,Dulwich Hamlet,Isthmian League Premier Division,18,44,0.04,1.8,-,4,0.0,5.8
+2024/25,Hendon,Isthmian League Premier Division,19,39,0.04,1.6,-,4,0.0,5.6
+2024/25,Hastings United,Isthmian League Premier Division,20,34,0.04,1.4,descenso,4,-0.6,4.8
+2024/25,Bognor Regis Town,Isthmian League Premier Division,21,32,0.04,1.3,descenso,4,-0.6,4.7
+2024/25,Bowers & Pitsea,Isthmian League Premier Division,22,26,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2025/26,Arsenal,Premier League,1,85,1.0,85.0,campeon,100,20.0,205.0
+2025/26,Manchester City,Premier League,2,78,1.0,78.0,-,100,0.0,178.0
+2025/26,Manchester United,Premier League,3,71,1.0,71.0,-,100,0.0,171.0
+2025/26,Aston Villa,Premier League,4,65,1.0,65.0,-,100,0.0,165.0
+2025/26,Liverpool,Premier League,5,60,1.0,60.0,-,100,0.0,160.0
+2025/26,Bournemouth,Premier League,6,57,1.0,57.0,-,100,0.0,157.0
+2025/26,Sunderland,Premier League,7,54,1.0,54.0,-,100,0.0,154.0
+2025/26,Brighton & Hove Albion,Premier League,8,53,1.0,53.0,-,100,0.0,153.0
+2025/26,Brentford,Premier League,9,53,1.0,53.0,-,100,0.0,153.0
+2025/26,Chelsea,Premier League,10,52,1.0,52.0,-,100,0.0,152.0
+2025/26,Fulham,Premier League,11,52,1.0,52.0,-,100,0.0,152.0
+2025/26,Newcastle United,Premier League,12,49,1.0,49.0,-,100,0.0,149.0
+2025/26,Everton,Premier League,13,49,1.0,49.0,-,100,0.0,149.0
+2025/26,Leeds United,Premier League,14,47,1.0,47.0,-,100,0.0,147.0
+2025/26,Crystal Palace,Premier League,15,45,1.0,45.0,-,100,0.0,145.0
+2025/26,Nottingham Forest,Premier League,16,44,1.0,44.0,-,100,0.0,144.0
+2025/26,Tottenham Hotspur,Premier League,17,41,1.0,41.0,-,100,0.0,141.0
+2025/26,West Ham United,Premier League,18,39,1.0,39.0,descenso,100,-15.0,124.0
+2025/26,Burnley,Premier League,19,22,1.0,22.0,descenso,100,-15.0,107.0
+2025/26,Wolverhampton Wanderers,Premier League,20,20,1.0,20.0,"descenso, ultimo_lugar",100,-25.0,95.0
+2025/26,Coventry City,Championship,1,95,0.7,66.5,campeon,70,14.0,150.5
+2025/26,Ipswich Town,Championship,2,84,0.7,58.8,ascenso_directo,70,7.0,135.8
+2025/26,Millwall,Championship,3,83,0.7,58.1,playoff_sin_ascenso,70,2.1,130.2
+2025/26,Southampton,Championship,4,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2025/26,Middlesbrough,Championship,5,80,0.7,56.0,playoff_sin_ascenso,70,2.1,128.1
+2025/26,Hull City,Championship,6,73,0.7,51.1,playoff_sin_ascenso,70,2.1,123.2
+2025/26,Wrexham,Championship,7,71,0.7,49.7,-,70,0.0,119.7
+2025/26,Derby County,Championship,8,69,0.7,48.3,-,70,0.0,118.3
+2025/26,Norwich City,Championship,9,65,0.7,45.5,-,70,0.0,115.5
+2025/26,Birmingham City,Championship,10,64,0.7,44.8,-,70,0.0,114.8
+2025/26,Swansea City,Championship,11,64,0.7,44.8,-,70,0.0,114.8
+2025/26,Bristol City,Championship,12,62,0.7,43.4,-,70,0.0,113.4
+2025/26,Sheffield United,Championship,13,60,0.7,42.0,-,70,0.0,112.0
+2025/26,Preston North End,Championship,14,60,0.7,42.0,-,70,0.0,112.0
+2025/26,Queens Park Rangers,Championship,15,58,0.7,40.6,-,70,0.0,110.6
+2025/26,Watford,Championship,16,57,0.7,39.9,-,70,0.0,109.9
+2025/26,Stoke City,Championship,17,55,0.7,38.5,-,70,0.0,108.5
+2025/26,Portsmouth,Championship,18,55,0.7,38.5,-,70,0.0,108.5
+2025/26,Charlton Athletic,Championship,19,53,0.7,37.1,-,70,0.0,107.1
+2025/26,Blackburn Rovers,Championship,20,52,0.7,36.4,descenso,70,-10.5,95.9
+2025/26,Oxford United,Championship,22,47,0.7,32.9,"descenso, ultimo_lugar",70,-17.5,85.4
+2025/26,Lincoln City,League One,1,103,0.45,46.4,campeon,45,9.0,100.4
+2025/26,Cardiff City,League One,2,91,0.45,41.0,ascenso_directo,45,4.5,90.5
+2025/26,Stockport County,League One,3,77,0.45,34.6,playoff_sin_ascenso,45,1.3,80.9
+2025/26,Bradford City,League One,4,77,0.45,34.6,playoff_sin_ascenso,45,1.3,80.9
+2025/26,Bolton Wanderers,League One,5,75,0.45,33.8,playoff_sin_ascenso,45,1.3,80.1
+2025/26,Stevenage,League One,6,75,0.45,33.8,playoff_sin_ascenso,45,1.3,80.1
+2025/26,Luton Town,League One,7,74,0.45,33.3,-,45,0.0,78.3
+2025/26,Plymouth Argyle,League One,8,73,0.45,32.9,-,45,0.0,77.9
+2025/26,Huddersfield Town,League One,9,67,0.45,30.2,-,45,0.0,75.2
+2025/26,Mansfield Town,League One,10,65,0.45,29.2,-,45,0.0,74.2
+2025/26,Wycombe Wanderers,League One,11,63,0.45,28.4,-,45,0.0,73.4
+2025/26,Reading,League One,12,63,0.45,28.4,-,45,0.0,73.4
+2025/26,Blackpool,League One,13,60,0.45,27.0,-,45,0.0,72.0
+2025/26,Doncaster Rovers,League One,14,60,0.45,27.0,-,45,0.0,72.0
+2025/26,Barnsley,League One,15,59,0.45,26.6,-,45,0.0,71.6
+2025/26,Wigan Athletic,League One,16,56,0.45,25.2,-,45,0.0,70.2
+2025/26,Burton Albion,League One,17,54,0.45,24.3,-,45,0.0,69.3
+2025/26,Peterborough United,League One,18,53,0.45,23.9,-,45,0.0,68.9
+2025/26,AFC Wimbledon,League One,19,53,0.45,23.9,-,45,0.0,68.9
+2025/26,Leyton Orient,League One,20,52,0.45,23.4,-,45,0.0,68.4
+2025/26,Exeter City,League One,21,49,0.45,22.1,descenso,45,-6.8,60.3
+2025/26,Port Vale,League One,22,42,0.45,18.9,descenso,45,-6.8,57.1
+2025/26,Rotherham United,League One,23,41,0.45,18.4,descenso,45,-6.8,56.6
+2025/26,Northampton Town,League One,24,35,0.45,15.8,"descenso, ultimo_lugar",45,-11.3,49.5
+2025/26,Bromley,League Two,1,87,0.25,21.8,campeon,25,5.0,51.8
+2025/26,Milton Keynes Dons,League Two,2,86,0.25,21.5,ascenso_directo,25,2.5,49.0
+2025/26,Cambridge United,League Two,3,82,0.25,20.5,ascenso_directo,25,2.5,48.0
+2025/26,Salford City,League Two,4,81,0.25,20.2,playoff_sin_ascenso,25,0.8,46.0
+2025/26,Notts County,League Two,5,80,0.25,20.0,playoff_sin_ascenso,25,0.8,45.8
+2025/26,Chesterfield,League Two,6,79,0.25,19.8,playoff_sin_ascenso,25,0.8,45.6
+2025/26,Grimsby Town,League Two,7,78,0.25,19.5,playoff_sin_ascenso,25,0.8,45.3
+2025/26,Barnet,League Two,8,76,0.25,19.0,-,25,0.0,44.0
+2025/26,Swindon Town,League Two,9,75,0.25,18.8,-,25,0.0,43.8
+2025/26,Oldham Athletic,League Two,10,68,0.25,17.0,-,25,0.0,42.0
+2025/26,Crewe Alexandra,League Two,11,67,0.25,16.8,-,25,0.0,41.8
+2025/26,Colchester United,League Two,12,66,0.25,16.5,-,25,0.0,41.5
+2025/26,Walsall,League Two,13,65,0.25,16.2,-,25,0.0,41.2
+2025/26,Bristol Rovers,League Two,14,62,0.25,15.5,-,25,0.0,40.5
+2025/26,Fleetwood Town,League Two,15,61,0.25,15.2,-,25,0.0,40.2
+2025/26,Accrington Stanley,League Two,16,53,0.25,13.2,-,25,0.0,38.2
+2025/26,Gillingham,League Two,17,53,0.25,13.2,-,25,0.0,38.2
+2025/26,Cheltenham Town,League Two,18,52,0.25,13.0,-,25,0.0,38.0
+2025/26,Shrewsbury Town,League Two,19,49,0.25,12.2,-,25,0.0,37.2
+2025/26,Newport County,League Two,20,43,0.25,10.8,-,25,0.0,35.8
+2025/26,Tranmere Rovers,League Two,21,41,0.25,10.2,-,25,0.0,35.2
+2025/26,Crawley Town,League Two,22,40,0.25,10.0,-,25,0.0,35.0
+2025/26,Harrogate Town,League Two,23,39,0.25,9.8,descenso,25,-3.8,31.0
+2025/26,Barrow,League Two,24,36,0.25,9.0,"descenso, ultimo_lugar",25,-6.3,27.7
+2025/26,York City,National League,1,108,0.15,16.2,campeon,15,3.0,34.2
+2025/26,Rochdale,National League,2,106,0.15,15.9,ascenso_directo,15,1.5,32.4
+2025/26,Carlisle United,National League,3,95,0.15,14.2,playoff_sin_ascenso,15,0.4,29.6
+2025/26,Boreham Wood,National League,4,90,0.15,13.5,playoff_sin_ascenso,15,0.4,28.9
+2025/26,Scunthorpe United,National League,5,82,0.15,12.3,playoff_sin_ascenso,15,0.4,27.7
+2025/26,Southend United,National League,6,81,0.15,12.2,playoff_sin_ascenso,15,0.4,27.6
+2025/26,Forest Green Rovers,National League,7,81,0.15,12.2,-,15,0.0,27.2
+2025/26,FC Halifax Town,National League,8,70,0.15,10.5,-,15,0.0,25.5
+2025/26,Hartlepool United,National League,9,68,0.15,10.2,-,15,0.0,25.2
+2025/26,Woking,National League,10,63,0.15,9.4,-,15,0.0,24.4
+2025/26,Tamworth,National League,11,62,0.15,9.3,-,15,0.0,24.3
+2025/26,Boston United,National League,12,59,0.15,8.8,-,15,0.0,23.8
+2025/26,Altrincham,National League,13,57,0.15,8.5,-,15,0.0,23.5
+2025/26,Solihull Moors,National League,14,56,0.15,8.4,-,15,0.0,23.4
+2025/26,Wealdstone,National League,15,56,0.15,8.4,-,15,0.0,23.4
+2025/26,Yeovil Town,National League,16,51,0.15,7.6,-,15,0.0,22.6
+2025/26,Eastleigh,National League,17,50,0.15,7.5,-,15,0.0,22.5
+2025/26,Gateshead,National League,18,50,0.15,7.5,-,15,0.0,22.5
+2025/26,Sutton United,National League,19,47,0.15,7.0,-,15,0.0,22.0
+2025/26,Aldershot Town,National League,20,46,0.15,6.9,-,15,0.0,21.9
+2025/26,Brackley Town,National League,21,42,0.15,6.3,-,15,0.0,21.3
+2025/26,Morecambe,National League,22,38,0.15,5.7,descenso,15,-2.2,18.5
+2025/26,Braintree Town,National League,23,36,0.15,5.4,descenso,15,-2.2,18.2
+2025/26,Truro City,National League,24,34,0.15,5.1,"descenso, ultimo_lugar",15,-3.7,16.4
+2025/26,York City,National League North,1,108,0.08,8.6,campeon,8,1.6,18.2
+2025/26,Rochdale,National League North,2,106,0.08,8.5,ascenso_directo,8,0.8,17.3
+2025/26,Carlisle United,National League North,3,95,0.08,7.6,playoff_sin_ascenso,8,0.2,15.8
+2025/26,Boreham Wood,National League North,4,90,0.08,7.2,playoff_sin_ascenso,8,0.2,15.4
+2025/26,Scunthorpe United,National League North,5,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2025/26,Southend United,National League North,6,81,0.08,6.5,playoff_sin_ascenso,8,0.2,14.7
+2025/26,Forest Green Rovers,National League North,7,81,0.08,6.5,-,8,0.0,14.5
+2025/26,FC Halifax Town,National League North,8,70,0.08,5.6,-,8,0.0,13.6
+2025/26,Hartlepool United,National League North,9,68,0.08,5.4,-,8,0.0,13.4
+2025/26,Woking,National League North,10,63,0.08,5.0,-,8,0.0,13.0
+2025/26,Tamworth,National League North,11,62,0.08,5.0,-,8,0.0,13.0
+2025/26,Boston United,National League North,12,59,0.08,4.7,-,8,0.0,12.7
+2025/26,Altrincham,National League North,13,57,0.08,4.6,-,8,0.0,12.6
+2025/26,Solihull Moors,National League North,14,56,0.08,4.5,-,8,0.0,12.5
+2025/26,Wealdstone,National League North,15,56,0.08,4.5,-,8,0.0,12.5
+2025/26,Yeovil Town,National League North,16,51,0.08,4.1,-,8,0.0,12.1
+2025/26,Eastleigh,National League North,17,50,0.08,4.0,-,8,0.0,12.0
+2025/26,Gateshead,National League North,18,50,0.08,4.0,-,8,0.0,12.0
+2025/26,Sutton United,National League North,19,47,0.08,3.8,-,8,0.0,11.8
+2025/26,Aldershot Town,National League North,20,46,0.08,3.7,-,8,0.0,11.7
+2025/26,Brackley Town,National League North,21,42,0.08,3.4,-,8,0.0,11.4
+2025/26,Morecambe,National League North,22,38,0.08,3.0,descenso,8,-1.2,9.8
+2025/26,Braintree Town,National League North,23,36,0.08,2.9,descenso,8,-1.2,9.7
+2025/26,Truro City,National League North,24,34,0.08,2.7,"descenso, ultimo_lugar",8,-2.0,8.7
+2025/26,York City,National League South,1,108,0.08,8.6,campeon,8,1.6,18.2
+2025/26,Rochdale,National League South,2,106,0.08,8.5,ascenso_directo,8,0.8,17.3
+2025/26,Carlisle United,National League South,3,95,0.08,7.6,playoff_sin_ascenso,8,0.2,15.8
+2025/26,Boreham Wood,National League South,4,90,0.08,7.2,playoff_sin_ascenso,8,0.2,15.4
+2025/26,Scunthorpe United,National League South,5,82,0.08,6.6,playoff_sin_ascenso,8,0.2,14.8
+2025/26,Southend United,National League South,6,81,0.08,6.5,playoff_sin_ascenso,8,0.2,14.7
+2025/26,Forest Green Rovers,National League South,7,81,0.08,6.5,-,8,0.0,14.5
+2025/26,FC Halifax Town,National League South,8,70,0.08,5.6,-,8,0.0,13.6
+2025/26,Hartlepool United,National League South,9,68,0.08,5.4,-,8,0.0,13.4
+2025/26,Woking,National League South,10,63,0.08,5.0,-,8,0.0,13.0
+2025/26,Tamworth,National League South,11,62,0.08,5.0,-,8,0.0,13.0
+2025/26,Boston United,National League South,12,59,0.08,4.7,-,8,0.0,12.7
+2025/26,Altrincham,National League South,13,57,0.08,4.6,-,8,0.0,12.6
+2025/26,Solihull Moors,National League South,14,56,0.08,4.5,-,8,0.0,12.5
+2025/26,Wealdstone,National League South,15,56,0.08,4.5,-,8,0.0,12.5
+2025/26,Yeovil Town,National League South,16,51,0.08,4.1,-,8,0.0,12.1
+2025/26,Eastleigh,National League South,17,50,0.08,4.0,-,8,0.0,12.0
+2025/26,Gateshead,National League South,18,50,0.08,4.0,-,8,0.0,12.0
+2025/26,Sutton United,National League South,19,47,0.08,3.8,-,8,0.0,11.8
+2025/26,Aldershot Town,National League South,20,46,0.08,3.7,-,8,0.0,11.7
+2025/26,Brackley Town,National League South,21,42,0.08,3.4,-,8,0.0,11.4
+2025/26,Morecambe,National League South,22,38,0.08,3.0,descenso,8,-1.2,9.8
+2025/26,Braintree Town,National League South,23,36,0.08,2.9,descenso,8,-1.2,9.7
+2025/26,Truro City,National League South,24,34,0.08,2.7,"descenso, ultimo_lugar",8,-2.0,8.7
+2025/26,Hebburn Town,Northern Premier Division,1,79,0.04,3.2,campeon,4,0.8,8.0
+2025/26,Hednesford Town,Northern Premier Division,2,77,0.04,3.1,ascenso_directo,4,0.4,7.5
+2025/26,FC United of Manchester,Northern Premier Division,3,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2025/26,Warrington Rylands 1906,Northern Premier Division,4,67,0.04,2.7,playoff_sin_ascenso,4,0.1,6.8
+2025/26,Lancaster City,Northern Premier Division,6,62,0.04,2.5,playoff_sin_ascenso,4,0.1,6.6
+2025/26,Gainsborough Trinity,Northern Premier Division,7,59,0.04,2.4,-,4,0.0,6.4
+2025/26,Leek Town,Northern Premier Division,8,58,0.04,2.3,-,4,0.0,6.3
+2025/26,Cleethorpes Town,Northern Premier Division,9,55,0.04,2.2,-,4,0.0,6.2
+2025/26,Ashton United,Northern Premier Division,10,53,0.04,2.1,-,4,0.0,6.1
+2025/26,Ilkeston Town,Northern Premier Division,11,52,0.04,2.1,-,4,0.0,6.1
+2025/26,Bamber Bridge,Northern Premier Division,12,50,0.04,2.0,-,4,0.0,6.0
+2025/26,Guiseley,Northern Premier Division,13,48,0.04,1.9,-,4,0.0,5.9
+2025/26,Warrington Town,Northern Premier Division,14,48,0.04,1.9,-,4,0.0,5.9
+2025/26,Hyde United,Northern Premier Division,15,47,0.04,1.9,-,4,0.0,5.9
+2025/26,Rushall Olympic,Northern Premier Division,16,47,0.04,1.9,-,4,0.0,5.9
+2025/26,Whitby Town,Northern Premier Division,17,43,0.04,1.7,-,4,0.0,5.7
+2025/26,Workington,Northern Premier Division,18,43,0.04,1.7,-,4,0.0,5.7
+2025/26,Prescot Cables,Northern Premier Division,19,42,0.04,1.7,-,4,0.0,5.7
+2025/26,Morpeth Town,Northern Premier Division,20,42,0.04,1.7,descenso,4,-0.6,5.1
+2025/26,Stocksbridge Park Steels,Northern Premier Division,21,36,0.04,1.4,descenso,4,-0.6,4.8
+2025/26,Widnes,Northern Premier Division,22,0,0.04,0.0,"descenso, ultimo_lugar",4,-1.0,3.0
+2025/26,Harborough Town,Southern League Premier Central,1,95,0.04,3.8,campeon,4,0.8,8.6
+2025/26,Spalding United,Southern League Premier Central,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2025/26,Real Bedford,Southern League Premier Central,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2025/26,Kettering Town,Southern League Premier Central,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2025/26,Halesowen Town,Southern League Premier Central,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2025/26,Needham Market,Southern League Premier Central,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2025/26,Redditch United,Southern League Premier Central,7,70,0.04,2.8,-,4,0.0,6.8
+2025/26,Quorn,Southern League Premier Central,8,65,0.04,2.6,-,4,0.0,6.6
+2025/26,Worcester City,Southern League Premier Central,9,63,0.04,2.5,-,4,0.0,6.5
+2025/26,Leiston,Southern League Premier Central,10,63,0.04,2.5,-,4,0.0,6.5
+2025/26,Stratford Town,Southern League Premier Central,11,61,0.04,2.4,-,4,0.0,6.4
+2025/26,Banbury United,Southern League Premier Central,12,60,0.04,2.4,-,4,0.0,6.4
+2025/26,Bury Town,Southern League Premier Central,13,58,0.04,2.3,-,4,0.0,6.3
+2025/26,Alvechurch,Southern League Premier Central,14,50,0.04,2.0,-,4,0.0,6.0
+2025/26,Stourbridge,Southern League Premier Central,15,50,0.04,2.0,-,4,0.0,6.0
+2025/26,Bishop's Stortford,Southern League Premier Central,16,49,0.04,2.0,-,4,0.0,6.0
+2025/26,Stamford,Southern League Premier Central,17,47,0.04,1.9,-,4,0.0,5.9
+2025/26,Bromsgrove Sporting,Southern League Premier Central,18,44,0.04,1.8,-,4,0.0,5.8
+2025/26,St Ives Town,Southern League Premier Central,19,39,0.04,1.6,-,4,0.0,5.6
+2025/26,Barwell,Southern League Premier Central,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2025/26,Royston Town,Southern League Premier Central,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2025/26,AFC Sudbury,Southern League Premier Central,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2025/26,Harborough Town,Southern League Premier South,1,95,0.04,3.8,campeon,4,0.8,8.6
+2025/26,Spalding United,Southern League Premier South,2,85,0.04,3.4,ascenso_directo,4,0.4,7.8
+2025/26,Real Bedford,Southern League Premier South,3,81,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2025/26,Kettering Town,Southern League Premier South,4,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2025/26,Halesowen Town,Southern League Premier South,5,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2025/26,Needham Market,Southern League Premier South,6,70,0.04,2.8,playoff_sin_ascenso,4,0.1,6.9
+2025/26,Redditch United,Southern League Premier South,7,70,0.04,2.8,-,4,0.0,6.8
+2025/26,Quorn,Southern League Premier South,8,65,0.04,2.6,-,4,0.0,6.6
+2025/26,Worcester City,Southern League Premier South,9,63,0.04,2.5,-,4,0.0,6.5
+2025/26,Leiston,Southern League Premier South,10,63,0.04,2.5,-,4,0.0,6.5
+2025/26,Stratford Town,Southern League Premier South,11,61,0.04,2.4,-,4,0.0,6.4
+2025/26,Banbury United,Southern League Premier South,12,60,0.04,2.4,-,4,0.0,6.4
+2025/26,Bury Town,Southern League Premier South,13,58,0.04,2.3,-,4,0.0,6.3
+2025/26,Alvechurch,Southern League Premier South,14,50,0.04,2.0,-,4,0.0,6.0
+2025/26,Stourbridge,Southern League Premier South,15,50,0.04,2.0,-,4,0.0,6.0
+2025/26,Bishop's Stortford,Southern League Premier South,16,49,0.04,2.0,-,4,0.0,6.0
+2025/26,Stamford,Southern League Premier South,17,47,0.04,1.9,-,4,0.0,5.9
+2025/26,Bromsgrove Sporting,Southern League Premier South,18,44,0.04,1.8,-,4,0.0,5.8
+2025/26,St Ives Town,Southern League Premier South,19,39,0.04,1.6,-,4,0.0,5.6
+2025/26,Barwell,Southern League Premier South,20,35,0.04,1.4,descenso,4,-0.6,4.8
+2025/26,Royston Town,Southern League Premier South,21,25,0.04,1.0,descenso,4,-0.6,4.4
+2025/26,AFC Sudbury,Southern League Premier South,22,25,0.04,1.0,"descenso, ultimo_lugar",4,-1.0,4.0
+2025/26,Folkestone Invicta,Isthmian League Premier Division,1,96,0.04,3.8,campeon,4,0.8,8.6
+2025/26,Aveley,Isthmian League Premier Division,2,84,0.04,3.4,ascenso_directo,4,0.4,7.8
+2025/26,Billericay Town,Isthmian League Premier Division,3,82,0.04,3.3,playoff_sin_ascenso,4,0.1,7.4
+2025/26,Chatham Town,Isthmian League Premier Division,4,79,0.04,3.2,playoff_sin_ascenso,4,0.1,7.3
+2025/26,Brentwood Town,Isthmian League Premier Division,5,78,0.04,3.1,playoff_sin_ascenso,4,0.1,7.2
+2025/26,Dartford,Isthmian League Premier Division,6,72,0.04,2.9,playoff_sin_ascenso,4,0.1,7.0
+2025/26,Cray Wanderers,Isthmian League Premier Division,7,67,0.04,2.7,-,4,0.0,6.7
+2025/26,Burgess Hill Town,Isthmian League Premier Division,8,67,0.04,2.7,-,4,0.0,6.7
+2025/26,Dulwich Hamlet,Isthmian League Premier Division,9,62,0.04,2.5,-,4,0.0,6.5
+2025/26,Ramsgate,Isthmian League Premier Division,10,57,0.04,2.3,-,4,0.0,6.3
+2025/26,St Albans City,Isthmian League Premier Division,11,56,0.04,2.2,-,4,0.0,6.2
+2025/26,Chichester City,Isthmian League Premier Division,12,55,0.04,2.2,-,4,0.0,6.2
+2025/26,Cheshunt,Isthmian League Premier Division,13,50,0.04,2.0,-,4,0.0,6.0
+2025/26,Whitehawk,Isthmian League Premier Division,14,49,0.04,2.0,-,4,0.0,6.0
+2025/26,Welling United,Isthmian League Premier Division,15,48,0.04,1.9,-,4,0.0,5.9
+2025/26,Wingate & Finchley,Isthmian League Premier Division,16,46,0.04,1.8,-,4,0.0,5.8
+2025/26,Lewes,Isthmian League Premier Division,17,46,0.04,1.8,-,4,0.0,5.8
+2025/26,Carshalton Athletic,Isthmian League Premier Division,18,44,0.04,1.8,-,4,0.0,5.8
+2025/26,Cray Valley Paper Mills,Isthmian League Premier Division,19,42,0.04,1.7,-,4,0.0,5.7
+2025/26,Hashtag United,Isthmian League Premier Division,20,42,0.04,1.7,descenso,4,-0.6,5.1
+2025/26,Potters Bar Town,Isthmian League Premier Division,21,30,0.04,1.2,descenso,4,-0.6,4.6
+2025/26,Canvey Island,Isthmian League Premier Division,22,27,0.04,1.1,"descenso, ultimo_lugar",4,-1.0,4.1

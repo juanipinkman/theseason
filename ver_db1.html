@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DB1 — Historial de equipos</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #f5f5f5; color: #222; }
+    header { background: #1a1a2e; color: white; padding: 1.5rem 2rem; }
+    header h1 { font-size: 1.4rem; font-weight: 600; }
+    header p { font-size: 0.85rem; opacity: 0.6; margin-top: 4px; }
+    .container { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+    .filters { display: flex; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+    input, select { padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; background: white; }
+    input { flex: 1; min-width: 200px; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); font-size: 0.85rem; }
+    th { background: #1a1a2e; color: white; padding: 10px 14px; text-align: left; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; cursor: pointer; user-select: none; white-space: nowrap; }
+    th:hover { background: #16213e; }
+    td { padding: 9px 14px; border-bottom: 1px solid #f0f0f0; white-space: nowrap; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #fafafa; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 99px; font-size: 0.72rem; font-weight: 500; }
+    .badge-pl { background: #e8f5e9; color: #2e7d32; }
+    .badge-ch { background: #e3f2fd; color: #1565c0; }
+    .badge-l1 { background: #fff3e0; color: #e65100; }
+    .badge-l2 { background: #fce4ec; color: #c62828; }
+    .badge-nl { background: #f3e5f5; color: #6a1b9a; }
+    .badge-nln { background: #ede7f6; color: #4527a0; }
+    .badge-nls { background: #e8eaf6; color: #283593; }
+    .badge-other { background: #f5f5f5; color: #555; }
+    .badge-nodata { background: #fff8e1; color: #f57f17; }
+    .value-bar { display: flex; align-items: center; gap: 8px; }
+    .bar { height: 6px; border-radius: 3px; background: #e94560; min-width: 2px; }
+    .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+    .stat { background: white; border-radius: 8px; padding: 1rem 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .stat-val { font-size: 1.8rem; font-weight: 600; color: #1a1a2e; }
+    .stat-label { font-size: 0.8rem; color: #888; margin-top: 2px; }
+    .rank-num { color: #aaa; font-size: 0.8rem; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Season — Base de datos de equipos</h1>
+  <p>Valor calculado por historial y performance</p>
+</header>
+
+<div class="container">
+  <div class="stats-row" id="stats-valores"></div>
+  <div class="filters">
+    <input type="text" id="search-valores" placeholder="Buscar equipo..." oninput="renderValores()">
+    <select id="filter-division" onchange="renderValores()">
+      <option value="">Todas las divisiones</option>
+    </select>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th onclick="sortValores('rank')">#</th>
+        <th onclick="sortValores('equipo')">Equipo</th>
+        <th onclick="sortValores('division')">División actual</th>
+        <th onclick="sortValores('valor_promedio')">Valor</th>
+        <th>Barra</th>
+      </tr>
+    </thead>
+    <tbody id="tbody-valores"></tbody>
+  </table>
+</div>
+
+<script>
+let dataValores = [];
+let dataHistorial = [];
+let sortColV = 'valor_promedio', sortDirV = -1;
+
+function divBadge(div) {
+  const map = {
+    "Premier League": "badge-pl",
+    "Championship": "badge-ch",
+    "League One": "badge-l1",
+    "League Two": "badge-l2",
+    "National League": "badge-nl",
+    "National League North": "badge-nln",
+    "National League South": "badge-nls",
+  };
+  const short = {
+    "Premier League": "Premier League",
+    "Championship": "Championship",
+    "League One": "League One",
+    "League Two": "League Two",
+    "National League": "National League",
+    "National League North": "NL North",
+    "National League South": "NL South",
+    "Northern Premier Division": "Northern Premier",
+    "Southern League Premier Central": "Southern Premier C",
+    "Southern League Premier South": "Southern Premier S",
+    "Isthmian League Premier Division": "Isthmian Premier",
+  };
+  if (!div || div === 'Sin datos') return `<span class="badge badge-nodata">Sin datos</span>`;
+  const cls = map[div] || "badge-other";
+  const label = short[div] || div;
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n');
+  const headers = lines[0].split(',').map(h => h.trim());
+  return lines.slice(1).map(line => {
+    const vals = [];
+    let cur = '', inQ = false;
+    for (let c of line) {
+      if (c === '"') inQ = !inQ;
+      else if (c === ',' && !inQ) { vals.push(cur.trim()); cur = ''; }
+      else cur += c;
+    }
+    vals.push(cur.trim());
+    const obj = {};
+    headers.forEach((h, i) => obj[h] = (vals[i] || '').trim());
+    return obj;
+  });
+}
+
+async function loadData() {
+  try {
+    const [r1, r2, r3] = await Promise.all([fetch('data/db1_valores.csv'), fetch('data/db1_historial.csv'), fetch('data/division_actual.csv')]);
+const [t1, t2, t3] = await Promise.all([r1.text(), r2.text(), r3.text()]);
+
+const divActualData = parseCSV(t3);
+const divActualMap = {};
+divActualData.forEach(d => { divActualMap[d.equipo] = d.division_actual; });
+
+    dataHistorial = parseCSV(t2).map(d => ({ ...d, posicion: parseInt(d.posicion) || 0 }));
+
+    // División actual = la más reciente disponible para cada equipo
+    const divPorEquipo = {};
+    const tempOrdenadas = [...new Set(dataHistorial.map(d => d.temporada))].sort();
+    tempOrdenadas.forEach(temp => {
+      dataHistorial.filter(d => d.temporada === temp).forEach(d => {
+        divPorEquipo[d.equipo] = d.division;
+      });
+    });
+
+    dataValores = parseCSV(t1).map((d, i) => ({
+      ...d,
+      rank: i + 1,
+      valor_promedio: parseFloat(d.valor_promedio) || 0,
+      division: divActualMap[d.equipo] || divPorEquipo[d.equipo] || 'Sin datos',
+    }));
+
+    const divs = [...new Set(Object.values(divPorEquipo))].sort();
+    const selDiv = document.getElementById('filter-division');
+    selDiv.innerHTML = '<option value="">Todas las divisiones</option>';
+    divs.forEach(d => selDiv.innerHTML += `<option value="${d}">${d}</option>`);
+
+    const maxVal = Math.max(...dataValores.map(d => d.valor_promedio));
+    const temps = [...new Set(dataHistorial.map(d => d.temporada))];
+    document.getElementById('stats-valores').innerHTML = `
+      <div class="stat"><div class="stat-val">${dataValores.length}</div><div class="stat-label">Equipos</div></div>
+      <div class="stat"><div class="stat-val">${maxVal.toFixed(1)}</div><div class="stat-label">Valor más alto</div></div>
+      <div class="stat"><div class="stat-val">${temps.length}</div><div class="stat-label">Temporadas</div></div>
+      <div class="stat"><div class="stat-val">${dataHistorial.length}</div><div class="stat-label">Registros históricos</div></div>
+    `;
+
+    renderValores();
+  } catch(e) {
+    console.error(e);
+    document.querySelector('.container').innerHTML = '<p style="color:red;padding:2rem">Error cargando los CSV. Corré: python -m http.server 8080</p>';
+  }
+}
+
+function renderValores() {
+  const search = document.getElementById('search-valores').value.toLowerCase();
+  const div = document.getElementById('filter-division').value;
+  const maxVal = Math.max(...dataValores.map(d => d.valor_promedio));
+
+  let data = dataValores.filter(d =>
+    (!search || d.equipo.toLowerCase().includes(search)) &&
+    (!div || d.division === div)
+  );
+  data.sort((a, b) => (a[sortColV] > b[sortColV] ? 1 : -1) * sortDirV);
+
+  document.getElementById('tbody-valores').innerHTML = data.map((d, i) => `
+    <tr>
+      <td><span class="rank-num">${i + 1}</span></td>
+      <td><strong>${d.equipo}</strong></td>
+      <td>${divBadge(d.division)}</td>
+      <td><strong>${d.valor_promedio.toFixed(1)}</strong></td>
+      <td><div class="value-bar"><div class="bar" style="width:${Math.round(d.valor_promedio / maxVal * 160)}px"></div></div></td>
+    </tr>
+  `).join('');
+}
+
+function sortValores(col) {
+  if (sortColV === col) sortDirV *= -1;
+  else { sortColV = col; sortDirV = -1; }
+  renderValores();
+}
+
+loadData();
+</script>
+</body>
+</html>
