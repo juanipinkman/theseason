@@ -1,5 +1,12 @@
 {
   "version": 2,
-  "builds": [{"src": "app.py", "use": "@vercel/python"}],
-  "routes": [{"src": "/(.*)", "dest": "app.py"}]
+  "builds": [
+    {"src": "ver_db1.html", "use": "@vercel/static"},
+    {"src": "data/**", "use": "@vercel/static"}
+  ],
+  "routes": [
+    {"src": "/", "dest": "/ver_db1.html"},
+    {"src": "/data/(.*)", "dest": "/data/$1"},
+    {"src": "/(.*)", "dest": "/$1"}
+  ]
 }
