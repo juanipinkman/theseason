@@ -73,7 +73,19 @@ def detect_modifiers(position, total_teams, division_name, factor):
     return mods, round(total_points, 1)
 
 print("Cargando historial...")
+print("Cargando historial...")
 df = pd.read_csv("data/db1_historial.csv")
+
+# Aplicar correcciones
+if os.path.exists("data/correcciones.csv"):
+    corr = pd.read_csv("data/correcciones.csv")
+    for _, c in corr.iterrows():
+        existe = ((df["temporada"] == c["temporada"]) & 
+                  (df["equipo"] == c["equipo"])).any()
+        if not existe:
+            df = pd.concat([df, pd.DataFrame([c])], ignore_index=True)
+            print(f"  Agregado: {c['equipo']} {c['temporada']}")
+    df = df.sort_values(["temporada", "division", "posicion"]).reset_index(drop=True)
 
 print("Recalculando valores...")
 nuevos_registros = []

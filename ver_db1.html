@@ -10,7 +10,10 @@
     header { background: #1a1a2e; color: white; padding: 1.5rem 2rem; }
     header h1 { font-size: 1.4rem; font-weight: 600; }
     header p { font-size: 0.85rem; opacity: 0.6; margin-top: 4px; }
-    .container { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+    .tabs { display: flex; background: #16213e; padding: 0 2rem; }
+    .tab { padding: 0.75rem 1.5rem; cursor: pointer; color: rgba(255,255,255,0.5); font-size: 0.9rem; border-bottom: 2px solid transparent; }
+    .tab.active { color: white; border-bottom-color: #e94560; }
+    .container { padding: 1.5rem; width: 100%; max-width: 100%; margin: 0 auto; }
     .filters { display: flex; gap: 12px; margin-bottom: 1.5rem; flex-wrap: wrap; }
     input, select { padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; background: white; }
     input { flex: 1; min-width: 200px; }
@@ -37,6 +40,13 @@
     .stat-val { font-size: 1.8rem; font-weight: 600; color: #1a1a2e; }
     .stat-label { font-size: 0.8rem; color: #888; margin-top: 2px; }
     .rank-num { color: #aaa; font-size: 0.8rem; font-weight: 500; }
+    .hidden { display: none; }
+    .pivot-wrap { overflow-x: auto; width: 100%; }
+    .pivot-wrap table { min-width: 100%; width: max-content; }
+    .pivot-wrap td:first-child { position: sticky; left: 0; background: white; z-index: 1; min-width: 160px; max-width: 160px; }
+    .pivot-wrap td:nth-child(2) { position: sticky; left: 160px; background: white; z-index: 1; min-width: 100px; }
+    .pivot-wrap th:first-child { position: sticky; left: 0; background: #1a1a2e; z-index: 2; min-width: 160px; max-width: 160px; }
+    .pivot-wrap th:nth-child(2) { position: sticky; left: 160px; background: #1a1a2e; z-index: 2; min-width: 100px; }
   </style>
 </head>
 <body>
@@ -46,26 +56,50 @@
   <p>Valor calculado por historial y performance</p>
 </header>
 
+<div class="tabs">
+  <div class="tab active" onclick="showTab('valores')">Valor actual</div>
+  <div class="tab" onclick="showTab('historial')">Historial por temporada</div>
+</div>
+
 <div class="container">
-  <div class="stats-row" id="stats-valores"></div>
-  <div class="filters">
-    <input type="text" id="search-valores" placeholder="Buscar equipo..." oninput="renderValores()">
-    <select id="filter-division" onchange="renderValores()">
-      <option value="">Todas las divisiones</option>
-    </select>
+
+  <div id="tab-valores">
+    <div class="stats-row" id="stats-valores"></div>
+    <div class="filters">
+      <input type="text" id="search-valores" placeholder="Buscar equipo..." oninput="renderValores()">
+      <select id="filter-division" onchange="renderValores()">
+        <option value="">Todas las divisiones</option>
+      </select>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th onclick="sortValores('rank')">#</th>
+          <th onclick="sortValores('equipo')">Equipo</th>
+          <th onclick="sortValores('division')">División actual</th>
+          <th onclick="sortValores('valor_promedio')">Valor</th>
+          <th>Barra</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-valores"></tbody>
+    </table>
   </div>
-  <table>
-    <thead>
-      <tr>
-        <th onclick="sortValores('rank')">#</th>
-        <th onclick="sortValores('equipo')">Equipo</th>
-        <th onclick="sortValores('division')">División actual</th>
-        <th onclick="sortValores('valor_promedio')">Valor</th>
-        <th>Barra</th>
-      </tr>
-    </thead>
-    <tbody id="tbody-valores"></tbody>
-  </table>
+
+  <div id="tab-historial" class="hidden">
+    <div class="filters">
+      <input type="text" id="search-historial" placeholder="Buscar equipo..." oninput="renderHistorial()">
+      <select id="filter-division-h" onchange="renderHistorial()">
+        <option value="">Todas las divisiones</option>
+      </select>
+    </div>
+    <div class="pivot-wrap">
+      <table>
+        <thead><tr id="pivot-header"></tr></thead>
+        <tbody id="tbody-historial"></tbody>
+      </table>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -73,33 +107,36 @@ let dataValores = [];
 let dataHistorial = [];
 let sortColV = 'valor_promedio', sortDirV = -1;
 
+const DIVISION_ORDER = [
+  { label: "1 — Premier League", value: "Premier League" },
+  { label: "2 — Championship", value: "Championship" },
+  { label: "3 — League One", value: "League One" },
+  { label: "4 — League Two", value: "League Two" },
+  { label: "5 — National League", value: "National League" },
+  { label: "6 — National League North", value: "National League North" },
+  { label: "6 — National League South", value: "National League South" },
+  { label: "7 — Northern Premier Division", value: "Northern Premier Division" },
+  { label: "7 — Southern League Premier Central", value: "Southern League Premier Central" },
+  { label: "7 — Southern League Premier South", value: "Southern League Premier South" },
+  { label: "7 — Isthmian League Premier Division", value: "Isthmian League Premier Division" },
+];
+
 function divBadge(div) {
   const map = {
-    "Premier League": "badge-pl",
-    "Championship": "badge-ch",
-    "League One": "badge-l1",
-    "League Two": "badge-l2",
-    "National League": "badge-nl",
-    "National League North": "badge-nln",
+    "Premier League": "badge-pl", "Championship": "badge-ch",
+    "League One": "badge-l1", "League Two": "badge-l2",
+    "National League": "badge-nl", "National League North": "badge-nln",
     "National League South": "badge-nls",
   };
   const short = {
-    "Premier League": "Premier League",
-    "Championship": "Championship",
-    "League One": "League One",
-    "League Two": "League Two",
-    "National League": "National League",
-    "National League North": "NL North",
-    "National League South": "NL South",
-    "Northern Premier Division": "Northern Premier",
-    "Southern League Premier Central": "Southern Premier C",
-    "Southern League Premier South": "Southern Premier S",
-    "Isthmian League Premier Division": "Isthmian Premier",
+    "Premier League": "PL", "Championship": "Champ", "League One": "L1",
+    "League Two": "L2", "National League": "NL", "National League North": "NL North",
+    "National League South": "NL South", "Northern Premier Division": "Northern",
+    "Southern League Premier Central": "Southern C", "Southern League Premier South": "Southern S",
+    "Isthmian League Premier Division": "Isthmian",
   };
-  if (!div || div === 'Sin datos') return `<span class="badge badge-nodata">Sin datos</span>`;
-  const cls = map[div] || "badge-other";
-  const label = short[div] || div;
-  return `<span class="badge ${cls}">${label}</span>`;
+  if (!div || div === 'Sin datos') return `<span class="badge badge-nodata">—</span>`;
+  return `<span class="badge ${map[div] || 'badge-other'}">${short[div] || div}</span>`;
 }
 
 function parseCSV(text) {
@@ -122,7 +159,11 @@ function parseCSV(text) {
 
 async function loadData() {
   try {
-    const [r1, r2, r3] = await Promise.all([fetch('data/db1_valores.csv'), fetch('data/db1_historial.csv'), fetch('data/division_actual.csv')]);
+    const [r1, r2, r3] = await Promise.all([
+      fetch('data/db1_valores.csv'),
+      fetch('data/db1_historial.csv'),
+      fetch('data/division_actual.csv')
+    ]);
     const [t1, t2, t3] = await Promise.all([r1.text(), r2.text(), r3.text()]);
 
     dataHistorial = parseCSV(t2).map(d => ({ ...d, posicion: parseInt(d.posicion) || 0 }));
@@ -137,37 +178,30 @@ async function loadData() {
       rank: i + 1,
     }));
 
-    const DIVISION_ORDER = [
-      { label: "1- Premier League", value: "Premier League" },
-      { label: "2- Championship", value: "Championship" },
-      { label: "3- League One", value: "League One" },
-      { label: "4- League Two", value: "League Two" },
-      { label: "5- National League", value: "National League" },
-      { label: "6- National League North", value: "National League North" },
-      { label: "6- National League South", value: "National League South" },
-      { label: "7- Northern Premier Division", value: "Northern Premier Division" },
-      { label: "7- Southern League Premier Central", value: "Southern League Premier Central" },
-      { label: "7- Southern League Premier South", value: "Southern League Premier South" },
-      { label: "7- Isthmian League Premier Division", value: "Isthmian League Premier Division" },
-    ];
-
     const divsEnTabla = new Set(dataValores.map(d => d.division).filter(Boolean));
-const selDiv = document.getElementById('filter-division');
-selDiv.innerHTML = '<option value="">Todas las divisiones</option>';
-DIVISION_ORDER.filter(d => divsEnTabla.has(d.value)).forEach(d => {
-  selDiv.innerHTML += `<option value="${d.value}">${d.label}</option>`;
-});
+    const selDiv = document.getElementById('filter-division');
+    selDiv.innerHTML = '<option value="">Todas las divisiones</option>';
+    DIVISION_ORDER.filter(d => divsEnTabla.has(d.value)).forEach(d => {
+      selDiv.innerHTML += `<option value="${d.value}">${d.label}</option>`;
+    });
+
+    const divsh = [...new Set(dataValores.map(d => d.division))].filter(Boolean);
+    const selDivH = document.getElementById('filter-division-h');
+    selDivH.innerHTML = '<option value="">Todas las divisiones</option>';
+    DIVISION_ORDER.filter(d => divsh.includes(d.value)).forEach(d => {
+      selDivH.innerHTML += `<option value="${d.value}">${d.label}</option>`;
+    });
 
     const maxVal = Math.max(...dataValores.map(d => d.valor_promedio));
-    const temps = [...new Set(dataHistorial.map(d => d.temporada))];
     document.getElementById('stats-valores').innerHTML = `
       <div class="stat"><div class="stat-val">${dataValores.length}</div><div class="stat-label">Equipos</div></div>
       <div class="stat"><div class="stat-val">${maxVal.toFixed(1)}</div><div class="stat-label">Valor más alto</div></div>
-      <div class="stat"><div class="stat-val">${temps.length}</div><div class="stat-label">Temporadas</div></div>
+      <div class="stat"><div class="stat-val">${[...new Set(dataHistorial.map(d => d.temporada))].length}</div><div class="stat-label">Temporadas</div></div>
       <div class="stat"><div class="stat-val">${dataHistorial.length}</div><div class="stat-label">Registros históricos</div></div>
     `;
 
     renderValores();
+    renderHistorial();
   } catch(e) {
     console.error(e);
     document.querySelector('.container').innerHTML = '<p style="color:red;padding:2rem">Error cargando los CSV. Corré: python -m http.server 8080</p>';
@@ -196,10 +230,54 @@ function renderValores() {
   `).join('');
 }
 
+function renderHistorial() {
+  const search = document.getElementById('search-historial').value.toLowerCase();
+  const div = document.getElementById('filter-division-h').value;
+
+  const temporadas = [...new Set(dataHistorial.map(d => d.temporada))].sort();
+
+  let equipos = dataValores.map(d => d.equipo);
+  if (search) equipos = equipos.filter(e => e.toLowerCase().includes(search));
+  if (div) equipos = equipos.filter(e => dataValores.find(d => d.equipo === e && d.division === div));
+
+  const idx = {};
+  dataHistorial.forEach(d => { idx[`${d.equipo}__${d.temporada}`] = d; });
+
+  document.getElementById('pivot-header').innerHTML =
+    `<th>Equipo</th><th>División actual</th>` +
+    temporadas.map(t => `<th style="text-align:center">${t}</th>`).join('');
+
+  document.getElementById('tbody-historial').innerHTML = equipos.map(equipo => {
+    const divActual = dataValores.find(d => d.equipo === equipo)?.division || '';
+    const celdas = temporadas.map(t => {
+      const d = idx[`${equipo}__${t}`];
+      if (!d) return `<td style="text-align:center;color:#ddd">—</td>`;
+      const modVal = parseFloat(d.puntos_modificadores) || 0;
+      let modTag = '';
+      if (modVal > 0) modTag = `<div style="font-size:0.7rem;color:#2e7d32;font-weight:600">▲ +${modVal.toFixed(1)}</div>`;
+      else if (modVal < 0) modTag = `<div style="font-size:0.7rem;color:#c62828;font-weight:600">▼ ${modVal.toFixed(1)}</div>`;
+      else modTag = `<div style="font-size:0.7rem;color:#ccc">—</div>`;
+      return `<td style="text-align:center">
+        <div style="font-weight:500;font-size:0.85rem">${parseFloat(d.valor_temporada).toFixed(1)}</div>
+        <div style="font-size:0.7rem">${divBadge(d.division)}</div>
+        ${modTag}
+      </td>`;
+    }).join('');
+    return `<tr><td><strong>${equipo}</strong></td><td>${divBadge(divActual)}</td>${celdas}</tr>`;
+  }).join('');
+}
+
 function sortValores(col) {
   if (sortColV === col) sortDirV *= -1;
   else { sortColV = col; sortDirV = -1; }
   renderValores();
+}
+
+function showTab(tab) {
+  document.getElementById('tab-valores').classList.toggle('hidden', tab !== 'valores');
+  document.getElementById('tab-historial').classList.toggle('hidden', tab !== 'historial');
+  document.querySelectorAll('.tab').forEach((t, i) =>
+    t.classList.toggle('active', (i === 0) === (tab === 'valores')));
 }
 
 loadData();

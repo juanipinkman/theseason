@@ -26,45 +26,78 @@ DIVISION_FACTORS = {
 }
 
 def get_standings_wikipedia(url):
+    anchor = None
+    if '#' in url:
+        url_clean, anchor = url.split('#', 1)
+    else:
+        url_clean = url
+
     try:
-        r = requests.get(url, headers=HEADERS, timeout=10)
+        r = requests.get(url_clean, headers=HEADERS, timeout=10)
         if r.status_code != 200:
-            print(f"    Error {r.status_code} - {url}")
+            print(f"    Error {r.status_code} - {url_clean}")
             return None
     except Exception as e:
         print(f"    Excepcion: {e}")
         return None
 
     soup = BeautifulSoup(r.text, "html.parser")
-    tables = soup.find_all("table", {"class": "wikitable"})
 
-    for table in tables:
-        headers = [th.get_text(strip=True) for th in table.find_all("th")]
-        if "Pos" in headers and any("Team" in h for h in headers):
-            pos_idx = headers.index("Pos")
-            team_idx = next(i for i, h in enumerate(headers) if "Team" in h)
-            pts_idx = headers.index("Pts") if "Pts" in headers else None
+    if anchor:
+        anchor_tag = soup.find(id=anchor)
+        if not anchor_tag:
+            anchor_tag = soup.find("span", {"id": anchor})
+        if anchor_tag:
+            anchor_tag = anchor_tag.find_parent(["h2", "h3", "h4"]) or anchor_tag
+        if not anchor_tag:
+            anchor_clean = anchor.replace('_', ' ')
+            anchor_tag = soup.find(lambda tag: tag.name in ['h2', 'h3', 'h4'] and anchor_clean.lower() in tag.get_text().lower())
+        if anchor_tag:
+            anchor_level = anchor_tag.name
+            for sibling in anchor_tag.find_all_next():
+                if sibling.name == anchor_level and sibling.get('id') != anchor:
+                    break
+                if sibling.name == 'table' and 'wikitable' in sibling.get('class', []):
+                    result = extract_teams_from_table(sibling)
+                    if result:
+                        return result
+        print(f"    No se encontro anchor '{anchor}'")
+        return None
+    else:
+        tables = soup.find_all("table", {"class": "wikitable"})
+        for table in tables:
+            result = extract_teams_from_table(table)
+            if result:
+                return result
+        print(f"    No se encontro tabla en {url_clean}")
+        return None
 
-            rows = table.find_all("tr")[1:]
-            standings = []
-            for row in rows:
-                cols = row.find_all(["td", "th"])
-                if len(cols) < 3:
-                    continue
-                try:
-                    pos = int(cols[pos_idx].get_text(strip=True))
-                    team = cols[team_idx].get_text(strip=True)
-                    team = re.sub(r'\s*\(.*?\)', '', team).strip()
-                    team = re.sub(r'\s*\[.*?\]', '', team).strip()
-                    pts = int(cols[pts_idx].get_text(strip=True)) if pts_idx is not None else 0
-                    standings.append({"position": pos, "team": team, "pts": pts})
-                except (ValueError, IndexError):
-                    continue
-            if standings:
-                return standings
+def extract_teams_from_table(table):
+    headers = [th.get_text(strip=True) for th in table.find_all("th")]
+    if "Pos" not in headers or not any("Team" in h for h in headers):
+        return None
 
-    print(f"    No se encontro tabla en {url}")
-    return None
+    pos_idx = headers.index("Pos")
+    team_idx = next(i for i, h in enumerate(headers) if "Team" in h)
+    pts_idx = headers.index("Pts") if "Pts" in headers else None
+
+    rows = table.find_all("tr")[1:]
+    standings = []
+    for row in rows:
+        cols = row.find_all(["td", "th"])
+        if len(cols) < 3:
+            continue
+        try:
+            pos = int(cols[pos_idx].get_text(strip=True))
+            team = cols[team_idx].get_text(strip=True)
+            team = re.sub(r'\s*\(.*?\)', '', team).strip()
+            team = re.sub(r'\s*\[.*?\]', '', team).strip()
+            pts = int(cols[pts_idx].get_text(strip=True)) if pts_idx is not None else 0
+            standings.append({"position": pos, "team": team, "pts": pts})
+        except (ValueError, IndexError):
+            continue
+
+    return standings if standings else None
 
 def detect_modifiers(position, total_teams, division_name, base_points):
     mods = []
@@ -185,7 +218,26 @@ def build_db1():
     avg_df = avg_df.sort_values("valor_promedio", ascending=False)
 
     os.makedirs("data", exist_ok=True)
+    # No sobreescribir — solo agregar temporadas nuevas
+if os.path.exists("data/db1_historial.csv"):
+    df_existente = pd.read_csv("data/db1_historial.csv")
+    temporadas_existentes = set(df_existente["temporada"].unique())
+    temporadas_nuevas = set(df["temporada"].unique())
+    temporadas_a_agregar = temporadas_nuevas - temporadas_existentes
+    
+    if not temporadas_a_agregar:
+        print("\nNo hay temporadas nuevas para agregar.")
+        return
+    
+    df_nuevo = df[df["temporada"].isin(temporadas_a_agregar)]
+    df_final = pd.concat([df_existente, df_nuevo], ignore_index=True)
+    df_final = df_final.sort_values(["temporada", "division", "posicion"]).reset_index(drop=True)
+    df_final.to_csv("data/db1_historial.csv", index=False, encoding="utf-8")
+    print(f"\nAgregadas temporadas: {temporadas_a_agregar}")
+    print(f"Total registros: {len(df_final)}")
+else:
     df.to_csv("data/db1_historial.csv", index=False, encoding="utf-8")
+    print(f"\nHistorial creado con {len(df)} registros.")
     avg_df.to_csv("data/db1_valores.csv", index=False, encoding="utf-8")
 
     print("\nListo.")
