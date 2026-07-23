@@ -123,34 +123,40 @@ function parseCSV(text) {
 async function loadData() {
   try {
     const [r1, r2, r3] = await Promise.all([fetch('data/db1_valores.csv'), fetch('data/db1_historial.csv'), fetch('data/division_actual.csv')]);
-const [t1, t2, t3] = await Promise.all([r1.text(), r2.text(), r3.text()]);
-
-const divActualData = parseCSV(t3);
-const divActualMap = {};
-divActualData.forEach(d => { divActualMap[d.equipo] = d.division_actual; });
+    const [t1, t2, t3] = await Promise.all([r1.text(), r2.text(), r3.text()]);
 
     dataHistorial = parseCSV(t2).map(d => ({ ...d, posicion: parseInt(d.posicion) || 0 }));
 
-    // División actual = la más reciente disponible para cada equipo
-    const divPorEquipo = {};
-    const tempOrdenadas = [...new Set(dataHistorial.map(d => d.temporada))].sort();
-    tempOrdenadas.forEach(temp => {
-      dataHistorial.filter(d => d.temporada === temp).forEach(d => {
-        divPorEquipo[d.equipo] = d.division;
-      });
-    });
+    const valoresMap = {};
+    parseCSV(t1).forEach(d => { valoresMap[d.equipo] = parseFloat(d.valor_promedio) || 0; });
 
-    dataValores = parseCSV(t1).map((d, i) => ({
-      ...d,
+    dataValores = parseCSV(t3).map((d, i) => ({
+      equipo: d.equipo,
+      division: d.division_actual,
+      valor_promedio: valoresMap[d.equipo] || 0,
       rank: i + 1,
-      valor_promedio: parseFloat(d.valor_promedio) || 0,
-      division: divActualMap[d.equipo] || divPorEquipo[d.equipo] || 'Sin datos',
     }));
 
-    const divs = [...new Set(Object.values(divPorEquipo))].sort();
-    const selDiv = document.getElementById('filter-division');
-    selDiv.innerHTML = '<option value="">Todas las divisiones</option>';
-    divs.forEach(d => selDiv.innerHTML += `<option value="${d}">${d}</option>`);
+    const DIVISION_ORDER = [
+      { label: "1- Premier League", value: "Premier League" },
+      { label: "2- Championship", value: "Championship" },
+      { label: "3- League One", value: "League One" },
+      { label: "4- League Two", value: "League Two" },
+      { label: "5- National League", value: "National League" },
+      { label: "6- National League North", value: "National League North" },
+      { label: "6- National League South", value: "National League South" },
+      { label: "7- Northern Premier Division", value: "Northern Premier Division" },
+      { label: "7- Southern League Premier Central", value: "Southern League Premier Central" },
+      { label: "7- Southern League Premier South", value: "Southern League Premier South" },
+      { label: "7- Isthmian League Premier Division", value: "Isthmian League Premier Division" },
+    ];
+
+    const divsEnTabla = new Set(dataValores.map(d => d.division).filter(Boolean));
+const selDiv = document.getElementById('filter-division');
+selDiv.innerHTML = '<option value="">Todas las divisiones</option>';
+DIVISION_ORDER.filter(d => divsEnTabla.has(d.value)).forEach(d => {
+  selDiv.innerHTML += `<option value="${d.value}">${d.label}</option>`;
+});
 
     const maxVal = Math.max(...dataValores.map(d => d.valor_promedio));
     const temps = [...new Set(dataHistorial.map(d => d.temporada))];

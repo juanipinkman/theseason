@@ -1,249 +1,253 @@
-equipo,division_25_26,modificadores,movimiento,division_actual
-Arsenal,Premier League,campeon,↑ ascenso,Premier League
-Manchester City,Premier League,-,= sin cambio,Premier League
-Manchester United,Premier League,-,= sin cambio,Premier League
-Aston Villa,Premier League,-,= sin cambio,Premier League
-Liverpool,Premier League,-,= sin cambio,Premier League
-Bournemouth,Premier League,-,= sin cambio,Premier League
-Sunderland,Premier League,-,= sin cambio,Premier League
-Brighton & Hove Albion,Premier League,-,= sin cambio,Premier League
-Brentford,Premier League,-,= sin cambio,Premier League
-Chelsea,Premier League,-,= sin cambio,Premier League
-Fulham,Premier League,-,= sin cambio,Premier League
-Newcastle United,Premier League,-,= sin cambio,Premier League
-Everton,Premier League,-,= sin cambio,Premier League
-Leeds United,Premier League,-,= sin cambio,Premier League
-Crystal Palace,Premier League,-,= sin cambio,Premier League
-Nottingham Forest,Premier League,-,= sin cambio,Premier League
-Tottenham Hotspur,Premier League,-,= sin cambio,Premier League
-West Ham United,Premier League,descenso,↓ descenso,Championship
-Burnley,Premier League,descenso,↓ descenso,Championship
-Wolverhampton Wanderers,Premier League,"descenso, ultimo_lugar",↓ descenso,Championship
-Coventry City,Championship,campeon,↑ ascenso,Premier League
-Ipswich Town,Championship,ascenso_directo,↑ ascenso,Premier League
-Millwall,Championship,playoff_sin_ascenso,= sin cambio,Championship
-Southampton,Championship,playoff_sin_ascenso,= sin cambio,Championship
-Middlesbrough,Championship,playoff_sin_ascenso,= sin cambio,Championship
-Hull City,Championship,playoff_sin_ascenso,= sin cambio,Championship
-Wrexham,Championship,-,= sin cambio,Championship
-Derby County,Championship,-,= sin cambio,Championship
-Norwich City,Championship,-,= sin cambio,Championship
-Birmingham City,Championship,-,= sin cambio,Championship
-Swansea City,Championship,-,= sin cambio,Championship
-Bristol City,Championship,-,= sin cambio,Championship
-Sheffield United,Championship,-,= sin cambio,Championship
-Preston North End,Championship,-,= sin cambio,Championship
-Queens Park Rangers,Championship,-,= sin cambio,Championship
-Watford,Championship,-,= sin cambio,Championship
-Stoke City,Championship,-,= sin cambio,Championship
-Portsmouth,Championship,-,= sin cambio,Championship
-Charlton Athletic,Championship,-,= sin cambio,Championship
-Blackburn Rovers,Championship,descenso,↓ descenso,League One
-Oxford United,Championship,"descenso, ultimo_lugar",↓ descenso,League One
-Lincoln City,League One,campeon,↑ ascenso,Championship
-Cardiff City,League One,ascenso_directo,↑ ascenso,Championship
-Stockport County,League One,playoff_sin_ascenso,= sin cambio,League One
-Bradford City,League One,playoff_sin_ascenso,= sin cambio,League One
-Bolton Wanderers,League One,playoff_sin_ascenso,= sin cambio,League One
-Stevenage,League One,playoff_sin_ascenso,= sin cambio,League One
-Luton Town,League One,-,= sin cambio,League One
-Plymouth Argyle,League One,-,= sin cambio,League One
-Huddersfield Town,League One,-,= sin cambio,League One
-Mansfield Town,League One,-,= sin cambio,League One
-Wycombe Wanderers,League One,-,= sin cambio,League One
-Reading,League One,-,= sin cambio,League One
-Blackpool,League One,-,= sin cambio,League One
-Doncaster Rovers,League One,-,= sin cambio,League One
-Barnsley,League One,-,= sin cambio,League One
-Wigan Athletic,League One,-,= sin cambio,League One
-Burton Albion,League One,-,= sin cambio,League One
-Peterborough United,League One,-,= sin cambio,League One
-AFC Wimbledon,League One,-,= sin cambio,League One
-Leyton Orient,League One,-,= sin cambio,League One
-Exeter City,League One,descenso,↓ descenso,League Two
-Port Vale,League One,descenso,↓ descenso,League Two
-Rotherham United,League One,descenso,↓ descenso,League Two
-Northampton Town,League One,"descenso, ultimo_lugar",↓ descenso,League Two
-Bromley,League Two,campeon,↑ ascenso,League One
-Milton Keynes Dons,League Two,ascenso_directo,↑ ascenso,League One
-Cambridge United,League Two,ascenso_directo,↑ ascenso,League One
-Salford City,League Two,playoff_sin_ascenso,= sin cambio,League Two
-Notts County,League Two,playoff_sin_ascenso,= sin cambio,League Two
-Chesterfield,League Two,playoff_sin_ascenso,= sin cambio,League Two
-Grimsby Town,League Two,playoff_sin_ascenso,= sin cambio,League Two
-Barnet,League Two,-,= sin cambio,League Two
-Swindon Town,League Two,-,= sin cambio,League Two
-Oldham Athletic,League Two,-,= sin cambio,League Two
-Crewe Alexandra,League Two,-,= sin cambio,League Two
-Colchester United,League Two,-,= sin cambio,League Two
-Walsall,League Two,-,= sin cambio,League Two
-Bristol Rovers,League Two,-,= sin cambio,League Two
-Fleetwood Town,League Two,-,= sin cambio,League Two
-Accrington Stanley,League Two,-,= sin cambio,League Two
-Gillingham,League Two,-,= sin cambio,League Two
-Cheltenham Town,League Two,-,= sin cambio,League Two
-Shrewsbury Town,League Two,-,= sin cambio,League Two
-Newport County,League Two,-,= sin cambio,League Two
-Tranmere Rovers,League Two,-,= sin cambio,League Two
-Crawley Town,League Two,-,= sin cambio,League Two
-Harrogate Town,League Two,descenso,↓ descenso,National League
-Barrow,League Two,"descenso, ultimo_lugar",↓ descenso,National League
-York City,National League,campeon,↑ ascenso,League Two
-Rochdale,National League,ascenso_directo,↑ ascenso,League Two
-Carlisle United,National League,playoff_sin_ascenso,= sin cambio,National League
-Boreham Wood,National League,playoff_sin_ascenso,= sin cambio,National League
-Scunthorpe United,National League,playoff_sin_ascenso,= sin cambio,National League
-Southend United,National League,playoff_sin_ascenso,= sin cambio,National League
-Forest Green Rovers,National League,-,= sin cambio,National League
-FC Halifax Town,National League,-,= sin cambio,National League
-Hartlepool United,National League,-,= sin cambio,National League
-Woking,National League,-,= sin cambio,National League
-Tamworth,National League,-,= sin cambio,National League
-Boston United,National League,-,= sin cambio,National League
-Altrincham,National League,-,= sin cambio,National League
-Solihull Moors,National League,-,= sin cambio,National League
-Wealdstone,National League,-,= sin cambio,National League
-Yeovil Town,National League,-,= sin cambio,National League
-Eastleigh,National League,-,= sin cambio,National League
-Gateshead,National League,-,= sin cambio,National League
-Sutton United,National League,-,= sin cambio,National League
-Aldershot Town,National League,-,= sin cambio,National League
-Brackley Town,National League,-,= sin cambio,National League
-Morecambe,National League,descenso,↓ descenso,National League North
-Braintree Town,National League,descenso,↓ descenso,National League North
-Truro City,National League,"descenso, ultimo_lugar",↓ descenso,National League North
-York City,National League North,campeon,↑ ascenso,National League
-Rochdale,National League North,ascenso_directo,↑ ascenso,National League
-Carlisle United,National League North,playoff_sin_ascenso,= sin cambio,National League North
-Boreham Wood,National League North,playoff_sin_ascenso,= sin cambio,National League North
-Scunthorpe United,National League North,playoff_sin_ascenso,= sin cambio,National League North
-Southend United,National League North,playoff_sin_ascenso,= sin cambio,National League North
-Forest Green Rovers,National League North,-,= sin cambio,National League North
-FC Halifax Town,National League North,-,= sin cambio,National League North
-Hartlepool United,National League North,-,= sin cambio,National League North
-Woking,National League North,-,= sin cambio,National League North
-Tamworth,National League North,-,= sin cambio,National League North
-Boston United,National League North,-,= sin cambio,National League North
-Altrincham,National League North,-,= sin cambio,National League North
-Solihull Moors,National League North,-,= sin cambio,National League North
-Wealdstone,National League North,-,= sin cambio,National League North
-Yeovil Town,National League North,-,= sin cambio,National League North
-Eastleigh,National League North,-,= sin cambio,National League North
-Gateshead,National League North,-,= sin cambio,National League North
-Sutton United,National League North,-,= sin cambio,National League North
-Aldershot Town,National League North,-,= sin cambio,National League North
-Brackley Town,National League North,-,= sin cambio,National League North
-Morecambe,National League North,descenso,↓ descenso,National League South
-Braintree Town,National League North,descenso,↓ descenso,National League South
-Truro City,National League North,"descenso, ultimo_lugar",↓ descenso,National League South
-York City,National League South,campeon,↑ ascenso,National League North
-Rochdale,National League South,ascenso_directo,↑ ascenso,National League North
-Carlisle United,National League South,playoff_sin_ascenso,= sin cambio,National League South
-Boreham Wood,National League South,playoff_sin_ascenso,= sin cambio,National League South
-Scunthorpe United,National League South,playoff_sin_ascenso,= sin cambio,National League South
-Southend United,National League South,playoff_sin_ascenso,= sin cambio,National League South
-Forest Green Rovers,National League South,-,= sin cambio,National League South
-FC Halifax Town,National League South,-,= sin cambio,National League South
-Hartlepool United,National League South,-,= sin cambio,National League South
-Woking,National League South,-,= sin cambio,National League South
-Tamworth,National League South,-,= sin cambio,National League South
-Boston United,National League South,-,= sin cambio,National League South
-Altrincham,National League South,-,= sin cambio,National League South
-Solihull Moors,National League South,-,= sin cambio,National League South
-Wealdstone,National League South,-,= sin cambio,National League South
-Yeovil Town,National League South,-,= sin cambio,National League South
-Eastleigh,National League South,-,= sin cambio,National League South
-Gateshead,National League South,-,= sin cambio,National League South
-Sutton United,National League South,-,= sin cambio,National League South
-Aldershot Town,National League South,-,= sin cambio,National League South
-Brackley Town,National League South,-,= sin cambio,National League South
-Morecambe,National League South,descenso,↓ descenso,Northern Premier Division
-Braintree Town,National League South,descenso,↓ descenso,Northern Premier Division
-Truro City,National League South,"descenso, ultimo_lugar",↓ descenso,Northern Premier Division
-Hebburn Town,Northern Premier Division,campeon,↑ ascenso,National League South
-Hednesford Town,Northern Premier Division,ascenso_directo,↑ ascenso,National League South
-FC United of Manchester,Northern Premier Division,playoff_sin_ascenso,= sin cambio,Northern Premier Division
-Warrington Rylands 1906,Northern Premier Division,playoff_sin_ascenso,= sin cambio,Northern Premier Division
-Lancaster City,Northern Premier Division,playoff_sin_ascenso,= sin cambio,Northern Premier Division
-Gainsborough Trinity,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Leek Town,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Cleethorpes Town,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Ashton United,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Ilkeston Town,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Bamber Bridge,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Guiseley,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Warrington Town,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Hyde United,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Rushall Olympic,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Whitby Town,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Workington,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Prescot Cables,Northern Premier Division,-,= sin cambio,Northern Premier Division
-Morpeth Town,Northern Premier Division,descenso,↓ descenso,Southern League Premier Central
-Stocksbridge Park Steels,Northern Premier Division,descenso,↓ descenso,Southern League Premier Central
-Widnes,Northern Premier Division,"descenso, ultimo_lugar",↓ descenso,Southern League Premier Central
-Harborough Town,Southern League Premier Central,campeon,↑ ascenso,Northern Premier Division
-Spalding United,Southern League Premier Central,ascenso_directo,↑ ascenso,Northern Premier Division
-Real Bedford,Southern League Premier Central,playoff_sin_ascenso,= sin cambio,Southern League Premier Central
-Kettering Town,Southern League Premier Central,playoff_sin_ascenso,= sin cambio,Southern League Premier Central
-Halesowen Town,Southern League Premier Central,playoff_sin_ascenso,= sin cambio,Southern League Premier Central
-Needham Market,Southern League Premier Central,playoff_sin_ascenso,= sin cambio,Southern League Premier Central
-Redditch United,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Quorn,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Worcester City,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Leiston,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Stratford Town,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Banbury United,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Bury Town,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Alvechurch,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Stourbridge,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Bishop's Stortford,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Stamford,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Bromsgrove Sporting,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-St Ives Town,Southern League Premier Central,-,= sin cambio,Southern League Premier Central
-Barwell,Southern League Premier Central,descenso,↓ descenso,Southern League Premier South
-Royston Town,Southern League Premier Central,descenso,↓ descenso,Southern League Premier South
-AFC Sudbury,Southern League Premier Central,"descenso, ultimo_lugar",↓ descenso,Southern League Premier South
-Harborough Town,Southern League Premier South,campeon,↑ ascenso,Southern League Premier Central
-Spalding United,Southern League Premier South,ascenso_directo,↑ ascenso,Southern League Premier Central
-Real Bedford,Southern League Premier South,playoff_sin_ascenso,= sin cambio,Southern League Premier South
-Kettering Town,Southern League Premier South,playoff_sin_ascenso,= sin cambio,Southern League Premier South
-Halesowen Town,Southern League Premier South,playoff_sin_ascenso,= sin cambio,Southern League Premier South
-Needham Market,Southern League Premier South,playoff_sin_ascenso,= sin cambio,Southern League Premier South
-Redditch United,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Quorn,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Worcester City,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Leiston,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Stratford Town,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Banbury United,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Bury Town,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Alvechurch,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Stourbridge,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Bishop's Stortford,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Stamford,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Bromsgrove Sporting,Southern League Premier South,-,= sin cambio,Southern League Premier South
-St Ives Town,Southern League Premier South,-,= sin cambio,Southern League Premier South
-Barwell,Southern League Premier South,descenso,↓ descenso,Isthmian League Premier Division
-Royston Town,Southern League Premier South,descenso,↓ descenso,Isthmian League Premier Division
-AFC Sudbury,Southern League Premier South,"descenso, ultimo_lugar",↓ descenso,Isthmian League Premier Division
-Folkestone Invicta,Isthmian League Premier Division,campeon,↑ ascenso,Southern League Premier South
-Aveley,Isthmian League Premier Division,ascenso_directo,↑ ascenso,Southern League Premier South
-Billericay Town,Isthmian League Premier Division,playoff_sin_ascenso,= sin cambio,Isthmian League Premier Division
-Chatham Town,Isthmian League Premier Division,playoff_sin_ascenso,= sin cambio,Isthmian League Premier Division
-Brentwood Town,Isthmian League Premier Division,playoff_sin_ascenso,= sin cambio,Isthmian League Premier Division
-Dartford,Isthmian League Premier Division,playoff_sin_ascenso,= sin cambio,Isthmian League Premier Division
-Cray Wanderers,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Burgess Hill Town,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Dulwich Hamlet,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Ramsgate,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-St Albans City,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Chichester City,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Cheshunt,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Whitehawk,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Welling United,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Wingate & Finchley,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Lewes,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Carshalton Athletic,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Cray Valley Paper Mills,Isthmian League Premier Division,-,= sin cambio,Isthmian League Premier Division
-Hashtag United,Isthmian League Premier Division,descenso,↓ descenso,Isthmian League Premier Division
-Potters Bar Town,Isthmian League Premier Division,descenso,↓ descenso,Isthmian League Premier Division
-Canvey Island,Isthmian League Premier Division,"descenso, ultimo_lugar",↓ descenso,Isthmian League Premier Division
+equipo,division_actual
+Arsenal,Premier League
+Aston Villa,Premier League
+Brentford,Premier League
+Bournemouth,Premier League
+Brighton & Hove Albion,Premier League
+Chelsea,Premier League
+Coventry City,Premier League
+Crystal Palace,Premier League
+Everton,Premier League
+Fulham,Premier League
+Hull City,Premier League
+Ipswich Town,Premier League
+Leeds United,Premier League
+Liverpool,Premier League
+Manchester City,Premier League
+Manchester United,Premier League
+Newcastle United,Premier League
+Nottingham Forest,Premier League
+Sunderland,Premier League
+Tottenham Hotspur,Premier League
+Birmingham City,Championship
+Blackburn Rovers,Championship
+Bolton Wanderers,Championship
+Bristol City,Championship
+Burnley,Championship
+Cardiff City,Championship
+Charlton Athletic,Championship
+Derby County,Championship
+Lincoln City,Championship
+Middlesbrough,Championship
+Millwall,Championship
+Norwich City,Championship
+Portsmouth,Championship
+Preston North End,Championship
+Queens Park Rangers,Championship
+Sheffield United,Championship
+Stoke City,Championship
+Swansea City,Championship
+Watford,Championship
+West Bromwich Albion,Championship
+West Ham United,Championship
+Wolverhampton Wanderers,Championship
+Wrexham,Championship
+Southampton,Championship
+AFC Wimbledon,League One
+Barnsley,League One
+Blackpool,League One
+Bradford City,League One
+Bromley,League One
+Burton Albion,League One
+Cambridge United,League One
+Doncaster Rovers,League One
+Huddersfield Town,League One
+Leicester City,League One
+Leyton Orient,League One
+Luton Town,League One
+Mansfield Town,League One
+Milton Keynes Dons,League One
+Notts County,League One
+Oxford United,League One
+Peterborough United,League One
+Plymouth Argyle,League One
+Reading,League One
+Sheffield Wednesday,League One
+Stevenage,League One
+Stockport County,League One
+Wigan Athletic,League One
+Wycombe Wanderers,League One
+Accrington Stanley,League Two
+Barnet,League Two
+Bristol Rovers,League Two
+Cheltenham Town,League Two
+Chesterfield,League Two
+Colchester United,League Two
+Crawley Town,League Two
+Crewe Alexandra,League Two
+Exeter City,League Two
+Fleetwood Town,League Two
+Gillingham,League Two
+Grimsby Town,League Two
+Newport County,League Two
+Northampton Town,League Two
+Oldham Athletic,League Two
+Port Vale,League Two
+Rochdale,League Two
+Rotherham United,League Two
+Salford City,League Two
+Shrewsbury Town,League Two
+Swindon Town,League Two
+Tranmere Rovers,League Two
+Walsall,League Two
+York City,League Two
+AFC Fylde,National League
+Aldershot Town,National League
+Altrincham,National League
+Barrow,National League
+Boreham Wood,National League
+Boston United,National League
+Carlisle United,National League
+Eastleigh,National League
+FC Halifax Town,National League
+Forest Green Rovers,National League
+Gateshead,National League
+Harrogate Town,National League
+Hartlepool United,National League
+Hornchurch,National League
+Kidderminster Harriers,National League
+Scunthorpe United,National League
+Solihull Moors,National League
+Southend United,National League
+Sutton United,National League
+Tamworth,National League
+Wealdstone,National League
+Woking,National League
+Worthing,National League
+Yeovil Town,National League
+AFC Telford United,National League North
+Bedford Town,National League North
+Brackley Town,National League North
+Buxton,National League North
+Chester,National League North
+Chorley,National League North
+Darlington,National League North
+Harborough Town,National League North
+Hebburn Town,National League North
+Hednesford Town,National League North
+Hereford,National League North
+King's Lynn Town,National League North
+Macclesfield,National League North
+Marine,National League North
+Merthyr Town,National League North
+Morecambe,National League North
+Oxford City,National League North
+Radcliffe,National League North
+Scarborough Athletic,National League North
+South Shields,National League North
+Southport,National League North
+Spalding United,National League North
+Spennymoor Town,National League North
+Worksop Town,National League North
+AFC Totton,National League South
+Billericay Town,National League South
+Braintree Town,National League South
+Chelmsford City,National League South
+Chesham United,National League South
+Dagenham & Redbridge,National League South
+Dorking Wanderers,National League South
+Dover Athletic,National League South
+Ebbsfleet United,National League South
+Farnborough,National League South
+Farnham Town,National League South
+Folkestone Invicta,National League South
+Hampton & Richmond Borough,National League South
+Hemel Hempstead Town,National League South
+Horsham,National League South
+Maidenhead United,National League South
+Maidstone United,National League South
+Salisbury,National League South
+Slough Town,National League South
+Tonbridge Angels,National League South
+Torquay United,National League South
+Truro City,National League South
+Walton & Hersham,National League South
+Weston-super-Mare,National League South
+Alfreton Town,Northern Premier Division
+Ashton United,Northern Premier Division
+Avro,Northern Premier Division
+Bamber Bridge,Northern Premier Division
+Bury,Northern Premier Division
+Cleethorpes Town,Northern Premier Division
+Curzon Ashton,Northern Premier Division
+Emley,Northern Premier Division
+FC United of Manchester,Northern Premier Division
+Gainsborough Trinity,Northern Premier Division
+Guiseley,Northern Premier Division
+Hyde United,Northern Premier Division
+Ilkeston Town,Northern Premier Division
+Lancaster City,Northern Premier Division
+Leek Town,Northern Premier Division
+Quorn,Northern Premier Division
+Redcar Athletic,Northern Premier Division
+Stockton Town,Northern Premier Division
+Warrington Rylands 1906,Northern Premier Division
+Warrington Town,Northern Premier Division
+Whitby Town,Northern Premier Division
+Workington,Northern Premier Division
+Basingstoke Town,Southern League Premier South
+Bath City,Southern League Premier South
+Berkhamsted,Southern League Premier South
+Bracknell Town,Southern League Premier South
+Chertsey Town,Southern League Premier South
+Chichester City,Southern League Premier South
+Chippenham Town,Southern League Premier South
+Evesham United,Southern League Premier South
+Frome Town,Southern League Premier South
+Gloucester City,Southern League Premier South
+Gosport Borough,Southern League Premier South
+Hanwell Town,Southern League Premier South
+Hanworth Villa,Southern League Premier South
+Havant & Waterlooville,Southern League Premier South
+Malvern Town,Southern League Premier South
+Plymouth Parkway,Southern League Premier South
+Poole Town,Southern League Premier South
+Sholing,Southern League Premier South
+Taunton Town,Southern League Premier South
+Uxbridge,Southern League Premier South
+Wimborne Town,Southern League Premier South
+Yate Town,Southern League Premier South
+Alvechurch,Southern League Premier Central
+Anstey Nomads,Southern League Premier Central
+Banbury United,Southern League Premier Central
+Bishop's Stortford,Southern League Premier Central
+Bromsgrove Sporting,Southern League Premier Central
+Bury Town,Southern League Premier Central
+Halesowen Town,Southern League Premier Central
+Hitchin Town,Southern League Premier Central
+Kettering Town,Southern League Premier Central
+Leamington,Southern League Premier Central
+Leighton Town,Southern League Premier Central
+Leiston,Southern League Premier Central
+Needham Market,Southern League Premier Central
+Peterborough Sports,Southern League Premier Central
+Racing Club Warwick,Southern League Premier Central
+Real Bedford,Southern League Premier Central
+Redditch United,Southern League Premier Central
+Rushall Olympic,Southern League Premier Central
+Stamford,Southern League Premier Central
+Stourbridge,Southern League Premier Central
+Stratford Town,Southern League Premier Central
+Worcester City,Southern League Premier Central
+AFC Whyteleafe,Isthmian League Premier Division
+Aveley,Isthmian League Premier Division
+Brentwood Town,Isthmian League Premier Division
+Burgess Hill Town,Isthmian League Premier Division
+Carshalton Athletic,Isthmian League Premier Division
+Chatham Town,Isthmian League Premier Division
+Cheshunt,Isthmian League Premier Division
+Cray Wanderers,Isthmian League Premier Division
+Dartford,Isthmian League Premier Division
+Dulwich Hamlet,Isthmian League Premier Division
+Eastbourne Borough,Isthmian League Premier Division
+Enfield Town,Isthmian League Premier Division
+Leatherhead,Isthmian League Premier Division
+Lewes,Isthmian League Premier Division
+Maldon & Tiptree,Isthmian League Premier Division
+Ramsgate,Isthmian League Premier Division
+St Albans City,Isthmian League Premier Division
+Stanway Rovers,Isthmian League Premier Division
+Three Bridges,Isthmian League Premier Division
+Welling United,Isthmian League Premier Division
+Whitehawk,Isthmian League Premier Division
+Wingate & Finchley,Isthmian League Premier Division

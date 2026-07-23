@@ -3,29 +3,30 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'config'))
-from config import DIVISION_POINTS, MODIFIERS
+from config import MODIFIERS
 
 DIVISION_FACTORS = {
-    "Premier League": 1.0,
-    "Championship": 0.7,
-    "League One": 0.45,
-    "League Two": 0.25,
-    "National League": 0.15,
-    "National League North": 0.08,
-    "National League South": 0.08,
-    "Northern Premier Division": 0.04,
-    "Southern League Premier Central": 0.04,
-    "Southern League Premier South": 0.04,
-    "Isthmian League Premier Division": 0.04,
+    "Premier League": 3.0,
+    "Championship": 2.0,
+    "League One": 1.3,
+    "League Two": 0.8,
+    "National League": 0.5,
+    "National League North": 0.3,
+    "National League South": 0.3,
+    "Northern Premier Division": 0.15,
+    "Southern League Premier Central": 0.15,
+    "Southern League Premier South": 0.15,
+    "Isthmian League Premier Division": 0.15,
 }
 
-def detect_modifiers(position, total_teams, division_name, base_points):
+def detect_modifiers(position, total_teams, division_name, factor):
     mods = []
     total_points = 0
+    base = 100 * factor
 
     if position == 1:
         mods.append("campeon")
-        total_points += round(base_points * 0.20, 1)
+        total_points += round(base * 0.20, 1)
 
     ascenso_directo = {
         "Championship": [2], "League One": [2], "League Two": [2, 3],
@@ -35,7 +36,7 @@ def detect_modifiers(position, total_teams, division_name, base_points):
     }
     if division_name in ascenso_directo and position in ascenso_directo[division_name]:
         mods.append("ascenso_directo")
-        total_points += round(base_points * 0.10, 1)
+        total_points += round(base * 0.10, 1)
 
     playoff_positions = {
         "Championship": [3,4,5,6], "League One": [3,4,5,6], "League Two": [4,5,6,7],
@@ -46,7 +47,7 @@ def detect_modifiers(position, total_teams, division_name, base_points):
     }
     if division_name in playoff_positions and position in playoff_positions[division_name]:
         mods.append("playoff_sin_ascenso")
-        total_points += round(base_points * 0.03, 1)
+        total_points += round(base * 0.03, 1)
 
     descenso_positions = {
         "Premier League": list(range(total_teams - 2, total_teams + 1)),
@@ -63,11 +64,11 @@ def detect_modifiers(position, total_teams, division_name, base_points):
     }
     if division_name in descenso_positions and position in descenso_positions[division_name]:
         mods.append("descenso")
-        total_points -= round(base_points * 0.15, 1)
+        total_points -= round(base * 0.15, 1)
 
     if position == total_teams:
         mods.append("ultimo_lugar")
-        total_points -= round(base_points * 0.10, 1)
+        total_points -= round(base * 0.10, 1)
 
     return mods, round(total_points, 1)
 
@@ -78,16 +79,14 @@ print("Recalculando valores...")
 nuevos_registros = []
 for _, row in df.iterrows():
     division_name = row["division"]
-    base_points = DIVISION_POINTS.get(division_name, 0)
     factor = DIVISION_FACTORS.get(division_name, 1.0)
     pts_tabla = row["pts_tabla"]
     pts_ponderados = round(pts_tabla * factor, 1)
     position = int(row["posicion"])
+    total_teams = int(df[(df["temporada"] == row["temporada"]) & (df["division"] == division_name)]["posicion"].max())
 
-    total_teams = df[(df["temporada"] == row["temporada"]) & (df["division"] == division_name)]["posicion"].max()
-
-    mods, mod_points = detect_modifiers(position, total_teams, division_name, base_points)
-    year_value = round(base_points + pts_ponderados + mod_points, 1)
+    mods, mod_points = detect_modifiers(position, total_teams, division_name, factor)
+    year_value = round(pts_ponderados + mod_points, 1)
 
     nuevos_registros.append({
         **row.to_dict(),
