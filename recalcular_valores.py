@@ -73,12 +73,11 @@ def detect_modifiers(position, total_teams, division_name, factor):
     return mods, round(total_points, 1)
 
 print("Cargando historial...")
-print("Cargando historial...")
-df = pd.read_csv("data/db1_historial.csv")
+df = pd.read_excel("data/db1_historial.xlsx")
 
 # Aplicar correcciones
 if os.path.exists("data/correcciones.csv"):
-    corr = pd.read_csv("data/correcciones.csv")
+    corr = pd.read_excel("data/correcciones.xlsx")
     for _, c in corr.iterrows():
         existe = ((df["temporada"] == c["temporada"]) & 
                   (df["equipo"] == c["equipo"])).any()
@@ -119,7 +118,9 @@ avg_df = df_nuevo.groupby("equipo").agg(
 avg_df = avg_df.sort_values("valor_promedio", ascending=False)
 
 df_nuevo.to_csv("data/db1_historial.csv", index=False, encoding="utf-8")
+avg_df.to_excel("data/db1_valores.xlsx", index=False)
 avg_df.to_csv("data/db1_valores.csv", index=False, encoding="utf-8")
+
 
 print("\nListo.")
 print(f"  Registros: {len(df_nuevo)}")

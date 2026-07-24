@@ -1,0 +1,73 @@
+# The Season — Reglamento oficial
+
+## Descripción del juego
+The Season es un juego de fantasy football basado en la pirámide del fútbol inglés. 
+Cada jugador elige equipos reales de distintas divisiones y acumula puntos según la 
+performance de esos equipos a lo largo de la temporada.
+
+## La pirámide
+El juego abarca 7 niveles de la pirámide del fútbol inglés:
+- Nivel 1: Premier League
+- Nivel 2: Championship
+- Nivel 3: League One
+- Nivel 4: League Two
+- Nivel 5: National League
+- Nivel 6: National League North / National League South
+- Nivel 7: Northern Premier Division / Southern League Premier Central / Southern League Premier South / Isthmian League Premier Division
+
+## Sistema de picks
+- Cada jugador elige 1 equipo por nivel al inicio de la temporada.
+- En niveles con más de una liga (nivel 6 y nivel 7), el primer pick de la categoría 
+  determina la división en la que deben elegirse todos los equipos de ese nivel. 
+  Todos los jugadores deben pickear en la misma división dentro de cada nivel.
+- Los picks se mantienen durante toda la temporada sin posibilidad de cambio.
+- Los equipos de Premier League son fijos por jugador y no se pierden entre temporadas.
+- Si un equipo pickeado asciende o desciende al finalizar la temporada, el jugador 
+  debe mantener ese pick para la temporada siguiente.
+
+## Sistema de puntos
+- Los puntos del jugador son la sumatoria de los puntos de tabla de todos sus equipos 
+  pickeados durante la temporada.
+- Un equipo suma 3 puntos por victoria, 1 punto por empate y 0 por derrota, 
+  igual que en la tabla real de cada división.
+
+## Regla H2H (Head to Head)
+Cuando dos equipos pickeados por distintos jugadores se enfrentan en la liga:
+- El equipo ganador suma el doble de puntos: 6 en lugar de 3.
+- En caso de empate, cada equipo suma 1 punto (sin bonus).
+- El equipo perdedor suma 0 puntos.
+- La regla H2H aplica en todas las divisiones.
+
+## Sistema de créditos
+- Cada jugador dispone de créditos para "comprar" equipos durante el draft.
+- Créditos base al inicio: 500 créditos.
+- Los créditos no gastados se acumulan para la temporada siguiente.
+- Cada equipo tiene un valor en créditos calculado en base a su historial 
+  de performance en las últimas 10 temporadas.
+
+## Bonus por posición al finalizar la temporada
+Al terminar cada temporada, se otorgan créditos extra para la siguiente:
+- 1er lugar: +50 créditos
+- 2do lugar: +50 créditos
+- 3er lugar: +0 créditos
+
+## Regla de blindaje
+- El jugador campeón de la temporada tiene derecho a blindar un equipo que haya 
+  utilizado durante esa temporada.
+- El equipo blindado no puede ser pickeado por ningún otro jugador en la 
+  temporada siguiente.
+- El blindaje se aplica una vez por temporada y solo lo puede ejercer el campeón.
+
+## Draft
+- El draft se realiza al inicio de cada temporada, antes del comienzo de los partidos.
+- Un administrador registra los picks de cada jugador en el sistema.
+- El orden del draft y las reglas específicas del mismo se definen entre los jugadores 
+  antes de cada temporada.
+
+## Valor de los equipos
+- El valor de cada equipo se calcula automáticamente en base a:
+  - Puntos de tabla ponderados por división en los últimos 10 años
+  - Modificadores por logros: campeón (+20%), ascenso directo (+10%), 
+    playoff sin ascenso (+3%), descenso (-15%), último lugar (-10%)
+- El valor final es el promedio de los últimos 10 años disponibles.
+- Los valores se actualizan al inicio de cada temporada.

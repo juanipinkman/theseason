@@ -8,76 +8,75 @@ Tottenham Hotspur,189.3,10,63.1
 Newcastle United,164.7,10,56.7
 Aston Villa,163.9,10,61.6
 Leeds United,157.4,10,67.6
-Brentford,152.6,9,61.6
 Brighton & Hove Albion,150.5,10,52.6
+Brentford,150.1,10,61.8
 Everton,145.2,10,48.4
-Leicester City,143.3,9,53.2
 Fulham,142.3,10,59.8
 Bournemouth,141.8,10,53.4
 Crystal Palace,138.3,10,46.1
 West Ham United,137.4,10,47.3
 Wolverhampton Wanderers,136.2,10,51.8
+Leicester City,135.2,10,52.5
 Middlesbrough,130.5,10,65.2
 Millwall,128.7,10,66.4
 Nottingham Forest,128.7,10,55.1
 Burnley,125.1,10,50.9
 Preston North End,124.6,10,62.3
 Swansea City,123.7,10,59.8
-Sheffield Wednesday,123.4,8,68.8
 Bristol City,122.8,10,61.1
-Derby County,122.2,9,67.9
 Norwich City,122.1,10,62.1
 Sheffield United,122.1,9,64.1
 West Bromwich Albion,120.9,9,59.7
+Blackburn Rovers,118.8,10,63.6
 Coventry City,117.7,10,66.3
-Blackburn Rovers,115.8,10,63.6
+Derby County,116.7,10,64.5
 Queens Park Rangers,114.4,10,57.2
 Watford,114.2,10,51.2
 Cardiff City,113.6,10,62.6
-Reading,112.8,7,62.9
+Reading,108.9,8,60.1
 Stoke City,108.2,10,52.5
-Birmingham City,107.8,9,58.4
 Southampton,107.5,10,46.0
+Birmingham City,107.4,10,57.8
 Hull City,106.9,10,58.0
 Ipswich Town,105.2,10,63.7
 Luton Town,103.6,10,67.6
 Portsmouth,102.1,10,72.2
 Sunderland,100.5,10,62.1
-Bolton Wanderers,99.1,8,74.0
+Sheffield Wednesday,96.9,10,59.1
 Huddersfield Town,95.8,10,54.5
 Wigan Athletic,95.0,7,63.4
 Barnsley,94.4,10,62.9
 Charlton Athletic,90.1,10,65.3
 Plymouth Argyle,86.3,10,67.7
 Peterborough United,85.6,10,64.6
+Oxford United,85.6,10,61.9
 Lincoln City,84.8,10,73.0
-Oxford United,83.6,10,61.9
+Bolton Wanderers,82.6,10,63.8
 Wycombe Wanderers,81.7,10,67.2
 Blackpool,80.1,10,62.1
 Burton Albion,70.7,10,51.7
 Doncaster Rovers,69.5,10,64.0
 Fleetwood Town,68.4,10,58.2
-Milton Keynes Dons,64.4,10,63.7
+Milton Keynes Dons,66.4,10,63.7
+Rotherham United,64.5,10,51.3
 Bradford City,63.9,10,65.4
 Exeter City,63.6,10,66.2
 Wrexham,63.0,10,77.3
 Shrewsbury Town,62.8,10,52.4
-Rotherham United,62.5,10,51.3
 Bristol Rovers,60.9,10,55.7
 Mansfield Town,60.6,10,66.7
 Accrington Stanley,59.8,10,58.5
 Stevenage,58.1,10,60.9
 Gillingham,57.9,10,54.9
 Stockport County,57.6,10,78.8
+AFC Wimbledon,56.8,10,52.2
 Leyton Orient,56.8,10,63.2
 Cambridge United,55.1,10,57.4
-AFC Wimbledon,54.9,10,52.2
 Northampton Town,54.5,10,57.3
 Cheltenham Town,53.2,10,57.0
 Walsall,52.0,10,57.3
 Swindon Town,51.6,10,61.7
 Crewe Alexandra,50.4,10,59.8
-Bury,50.2,3,55.0
 Rochdale,49.5,10,59.0
 Port Vale,48.4,10,55.2
 Salford City,48.0,10,72.0
@@ -85,10 +84,10 @@ Colchester United,47.6,10,59.2
 Notts County,47.5,10,70.9
 Tranmere Rovers,46.8,10,63.7
 Newport County,46.5,10,57.5
-Southend United,44.0,9,58.3
+Southend United,45.5,9,58.3
 Carlisle United,43.6,10,61.0
-Scunthorpe United,43.4,10,61.0
 Crawley Town,43.4,10,53.5
+Scunthorpe United,43.4,10,61.0
 Grimsby Town,43.4,10,59.2
 Forest Green Rovers,42.7,10,64.6
 Macclesfield Town,41.7,3,68.0
@@ -105,6 +104,7 @@ FC Halifax Town,32.6,10,67.3
 Boreham Wood,32.3,10,66.7
 Hartlepool United,30.9,10,57.7
 Dagenham & Redbridge,29.9,10,62.0
+Bury,29.5,4,41.2
 Eastleigh,29.0,10,58.0
 Aldershot Town,28.6,9,58.1
 Torquay United,28.1,9,66.0
@@ -227,33 +227,33 @@ Whitehawk,7.8,6,46.8
 Lancaster City,7.7,9,50.7
 Leiston,7.7,10,52.4
 Basingstoke Town,7.7,5,54.4
-Gosport Borough,7.6,9,49.8
 Stourbridge,7.5,10,51.3
+Hashtag United,7.5,3,55.0
 Workington,7.5,6,52.2
 Mickleover Sports,7.5,4,50.0
 Winchester City,7.5,3,50.3
-Hashtag United,7.5,3,55.0
 Bognor Regis Town,7.5,7,53.9
+Hyde United,7.4,8,48.6
 Whitby Town,7.4,9,50.6
 Swindon Supermarine,7.4,7,50.6
 Wingate & Finchley,7.4,10,50.1
-Hyde United,7.4,8,48.6
 Prescot Cables,7.4,2,49.5
 Mickleover,7.3,4,47.0
-Stratford Town,7.2,9,48.7
 Alvechurch,7.2,8,44.5
+Leatherhead,7.2,6,50.2
+Stratford Town,7.2,9,48.7
+Tiverton Town,7.1,9,47.4
 Hendon,7.1,9,46.9
 Cheshunt,7.1,7,44.0
-Tiverton Town,7.1,9,47.4
-Leatherhead,7.0,5,48.8
-Halesowen Town,7.0,6,48.2
-Evesham United,7.0,1,47.0
-Royston Town,7.0,7,48.7
 Redditch United,7.0,9,45.8
+Royston Town,7.0,7,48.7
+Evesham United,7.0,1,47.0
 Sutton Coldfield Town,7.0,1,47.0
+Halesowen Town,7.0,6,48.2
 Matlock Town,6.9,7,48.0
-Corby Town,6.9,1,46.0
+Gosport Borough,6.9,10,46.7
 Stamford,6.9,4,45.5
+Corby Town,6.9,1,46.0
 Bamber Bridge,6.9,8,47.1
 Hednesford Town,6.8,7,47.9
 Morpeth Town,6.6,7,45.9
@@ -292,13 +292,13 @@ Hartley Wintney,4.7,5,36.2
 AFC Sudbury,4.6,4,40.2
 Bury Town,4.6,2,29.0
 Lowestoft Town,4.6,6,39.5
+Merstham,4.5,6,40.2
 Biggleswade Town,4.5,5,37.8
 Corinthian-Casuals,4.4,5,32.2
 Stalybridge Celtic,4.2,6,34.8
 Bowers & Pitsea,3.9,5,30.8
-Worcester City,3.9,3,32.7
 Atherton Collieries,3.9,5,32.2
-Merstham,3.8,5,37.6
+Worcester City,3.9,3,32.7
 Brightlingsea Regent,3.8,6,33.7
 Liversedge,3.8,1,40.0
 Frickley Athletic,3.6,1,39.0
